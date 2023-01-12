@@ -2807,6 +2807,35 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
   display: block;
   max-width: 220px;
 }
+table[width="930"] tr td > div.label + b:first-of-type,
+table[width="930"] tr td > div.label ~ b:last-of-type {
+  box-sizing: border-box;
+  display: inline-block;
+}
+.label ~ b > a[href="#for"],
+.label ~ b > a[href="#against"] {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0.15rem 0.5rem;
+  margin-right: 0.2rem;
+  border-radius: var(--input-box-border-radius)
+}
+.label ~ b > a[href="#for"] {
+  border: 1px solid var(--green)
+}
+.label ~ b > a[href="#against"] {
+  border: 1px solid var(--red)
+}
+.label ~ b > a[href="#for"] font {
+  box-sizing: border-box;
+  color: var(--green);
+  vertical-align: middle;
+}
+.label ~ b > a[href="#against"] font {
+  color: var(--red);
+  box-sizing: border-box;
+
+}
 input#offersearch,
 input[type=text][name="items[comment][]"],
 textarea {
