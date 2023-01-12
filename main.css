@@ -6413,6 +6413,9 @@ img[alt="Read"] {
     min-width: 300px;
     display: flex;
   }
+  #sidebar-container + .bottom > table[width="800"][cellspacing="0"][cellpadding="10"][border="1"][align="center"]:first-child {
+    width: auto;
+  }
   #header.main tbody tr td.embedded:nth-child(3) {
     order: -1;
     flex: 1 1 100%;
