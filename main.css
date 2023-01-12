@@ -4323,6 +4323,10 @@ div.div_showhide {
 html>body>table.main>tbody>tr>td.bottom:nth-child(2)>table:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1)>table:nth-child(1) {
   max-width: 64rem
 }
+#plotcell > .content {
+  display: flex;
+  max-height: 125px;
+}
 .cast__img,
 img.actorpic,
 .cast img {
