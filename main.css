@@ -6400,6 +6400,8 @@ img[alt="Read"] {
   body>table.main:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(2) {
     display: flex;
     justify-content: center;
+    flex: 100%;
+    align-items:none;
     /* flex-direction: row; */
   }
   body>table.main:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1) {
@@ -6415,6 +6417,10 @@ img[alt="Read"] {
   }
   #sidebar-container + .bottom > table[width="800"][cellspacing="0"][cellpadding="10"][border="1"][align="center"]:first-child {
     width: auto;
+  }
+  ul#tabs,
+  #searchbox {
+    min-width: auto;
   }
   #header.main tbody tr td.embedded:nth-child(3) {
     order: -1;
