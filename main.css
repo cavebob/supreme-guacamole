@@ -3950,7 +3950,8 @@ td.bottom>form[action="upload/upload"]>table,
 form#invite_form>div>table,
 form[name="editupload"]>table,
 form[action="delete.php"]>table,
-form[action="dox.php?action=edit"]>table {
+form[action="dox.php?action=edit"]>table,
+form[action*="/forums/editpost"] > table{
   background-color: var(--background1);
   max-width: 64rem;
   padding: 1rem;
@@ -4678,7 +4679,9 @@ td.embedded>p:first-child+h2:only-of-type:not(#details) {
   padding: 0 0.3rem;
   text-align: left;
 }
+form[action*="/forums/editpost"] .message textarea#body, 
 form[action*="/forums/post"] .message textarea#body,
+form[action*="/forums/editpost"] .message div#displayarea.previewbox, 
 form[action*="/forums/post"] .message div#displayarea.previewbox {
   font-size: 0.8125rem
 }
