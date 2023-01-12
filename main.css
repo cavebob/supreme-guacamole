@@ -2555,9 +2555,17 @@ td.center span {
   float: right;
   color: var(--username-text-color)
 }
+a[href*="userdetails.php?id="]:not(#sidebar-container a[href]),
 a.altlink[href^="userdetails.php?id="],
-a[href*="userdetails.php?id="]:not(a.normal):not(.curuser-stats a[href]):not(#thankers a) * {
+a[href*="userdetails.php?id="]:not(a.normal) * {
   color: var(--username-text-color);
+  font-weight: bold;
+}
+#thanksbutton {
+  font-weight: bold;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  padding: 0.1rem 1rem;
 }
 table#torrent-list tbody td:nth-child(7) {
   font-size: 0;
@@ -6388,7 +6396,7 @@ img[alt="Read"] {
     min-width: fit-content;
   }
   table.main td#sidebar-container+td.bottom>table.main:not(table.main[width="100%"]) {
-    width: 100% !important;
+    /* width: 100% !important; */
     max-width: 95vw;
   }
   .menu {
@@ -6401,7 +6409,7 @@ img[alt="Read"] {
     display: flex;
     justify-content: center;
     flex: 100%;
-    align-items:initial;
+    align-items:center;
     /* flex-direction: row; */
   }
   body>table.main:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1) {
