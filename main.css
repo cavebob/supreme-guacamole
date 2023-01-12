@@ -446,14 +446,19 @@ textarea {
   border-radius: var(--input-box-border-radius);
   box-sizing: border-box
 }
-.previewbox {
+.previewbox[style="display: block;"]{
   border: 1px solid var(--inner-table-border-color);
   border-radius: var(--input-box-border-radius);
   height: auto;
   max-width: 64rem;
   padding: .5rem;
   box-sizing: border-box;
-  width: 100%
+  width: 100%;
+}
+.message textarea#msg,
+input[type="text"][name="subject"],
+.message .previewbox[style="display: block;"] {
+  font-size: 0.8125rem 
 }
 input[type=text] {
   padding: 0 .5rem
@@ -4673,8 +4678,8 @@ td.embedded>p:first-child+h2:only-of-type:not(#details) {
   padding: 0 0.3rem;
   text-align: left;
 }
-form[action*="/forum/post"] .message textarea#body,
-form[action*="/forum/post"] .message div#displayarea.previewbox {
+form[action*="/forums/post"] .message textarea#body,
+form[action*="/forums/post"] .message div#displayarea.previewbox {
   font-size: 0.8125rem
 }
 .rc.js-rc {
