@@ -6401,7 +6401,7 @@ img[alt="Read"] {
     display: flex;
     justify-content: center;
     flex: 100%;
-    align-items:none;
+    align-items:initial;
     /* flex-direction: row; */
   }
   body>table.main:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1) {
