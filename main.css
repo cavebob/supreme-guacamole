@@ -2592,6 +2592,17 @@ a[href*="userdetails.php?id="]:not(a.normal) * {
   color: var(--username-text-color);
   font-weight: bold;
 }
+a.sublink[href*="userdetails"],
+a.sublink[href="invite.php"],
+a.sublink[href*="uppedby"] {
+  color: var(--link-text-color);
+  font-weight: bold;
+}
+a.sublink[href*="userdetails"]:hover,
+a.sublink[href="invite.php"]:hover,
+a.sublink[href*="uppedby"]:hover {
+  font-weight: bold;
+}
 #thanksbutton {
   font-weight: bold;
   font-size: 0.75rem;
