@@ -98,6 +98,9 @@ textarea {
 option {
 	color: var(--selected-text-fg-color);
 }
+select:focus {
+  outline: 1px solid var(--highlighted-input-border-focus-color);
+}
 #header,
 .menu,
 .menu tbody tr {
