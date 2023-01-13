@@ -40,7 +40,7 @@
   --scrollbar-fg-color: hsl(240, 20%, 20%);
   --selected-text-bg-color: hsl(215, 49%, 67%);
   --selected-text-fg-color: #000000;
-  --mono-font-stack: SFMono-Regular, Menlo, Monaco, Inconsolata, Consolas, "Liberation Mono", "Courier New", monospace;
+  --mono-font-stack: SFMono-Regular, Menlo, Monaco, Inconsolata, "Fira Mono", Consolas, "Liberation Mono", "Courier New", monospace;
 }
 /* html {
   font-size: calc(13 / 11 * 100%)
@@ -94,6 +94,10 @@ input,
 select,
 textarea {
   font-size: var(--font-size)
+}
+option {
+	background: var(--background0);
+	color: var(--selected-text-bg-color);
 }
 #header,
 .menu,
