@@ -2542,7 +2542,8 @@ a[onclick*="delWishlist"] {
   mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
   width: 1rem;
   height: 1rem;
-  filter: brightness(90%)
+  filter: brightness(90%);
+  cursor: pointer;
 }
 a[onclick*="delWishlist"],
 a[href*="javascript:unignoreshow"] {
@@ -2554,6 +2555,7 @@ a[href*="javascript:unignoreshow"] {
   height: 1rem;
   filter: brightness(90%);
   vertical-align: bottom;
+  cursor: pointer;
 }
 a[onclick*="delWishlist"]>img,
 a[href*="javascript:unignoreshow"]>img {
