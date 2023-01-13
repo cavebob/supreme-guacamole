@@ -40,6 +40,7 @@
   --scrollbar-fg-color: hsl(240, 20%, 20%);
   --selected-text-bg-color: hsl(215, 49%, 67%);
   --selected-text-fg-color: #000000;
+  --mono-font-stack: SFMono-Regular, Menlo, Monaco, Inconsolata, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 /* html {
   font-size: calc(13 / 11 * 100%)
@@ -163,10 +164,10 @@ body {
   background: var(--background0);
   box-sizing: border-box;
   align-items: center;
-  margin: 1rem auto;
+  margin: 1rem;
   position: relative;
   height: 100%;
-  width: 98%;
+  /* width: 98%; */
   line-height: normal
 }
 #details,
@@ -1712,7 +1713,7 @@ table.poll>tbody>tr>td:first-child>nobr {
 table.poll>tbody>tr>td:last-child {
   flex: 1 1 49%;
   text-align: left;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: var(--mono-font-stack);
   /* font-size: 0.6125rem; */
 }
 input[type="radio"] {
@@ -1796,7 +1797,7 @@ table:nth-child(5) tbody tr td .interiortable {
   padding-right: 0.7rem;
 }
 .interiortable+br+font.small {
-  font-family: 'Courier New', Courier, monospace
+  font-family: var(--mono-font-stack)
 }
 .interiortable>tbody>tr td.bottom>table[width="500"]>tbody>tr:only-child,
 td.bottom:nth-child(2)>table[width="800"]:nth-child(1)>tbody:nth-child(1)>tr:nth-child(1),
@@ -2237,14 +2238,14 @@ div.dhtmlxcalendar_yahoolike .dxcaldays_ie td,
 div.dhtmlxcalendar_yahoolike .dxcaldlabel td {
   box-sizing: border-box;
   background: var(--background1);
-  font-family: Inconsolata, monospace;
+  font-family: var(--mono-font-stack);
   font-size: var(--font-size);
   text-align: center
 }
 div>div.dhtmlxcalendar_yahoolike {
   background: var(--background1);
   border: 1px solid var(--inner-table-border-color);
-  font-family: Inconsolata, monospace;
+  font-family: var(--mono-font-stack);
   font-size: var(--font-size);
   width: auto;
   height: auto;
@@ -2257,7 +2258,7 @@ div>div.dhtmlxcalendar_yahoolike {
 }
 tr>td>div[id].label,
 tr.logentry>td {
-  font-family: 'Courier New', Courier, monospace
+  font-family: var(--mono-font-stack)
 }
 .dhtmlxcalendar_yahoolike table.entbox {
   margin: auto;
@@ -2300,7 +2301,7 @@ div.dhtmlxcalendar_yahoolike div.planeYear {
   color: var(--link-text-color)
 }
 div.dhtmlxcalendar select.dhtmlxRichSelector {
-  font-family: 'Courier New', monospace;
+  font-family: var(--mono-font-stack);
   position: absolute;
   font-size: .6875rem;
   min-height: 150px;
@@ -2767,7 +2768,7 @@ table#details>tbody>tr>td>span[style*="float:right"] {
   flex: 1 0 max-content;
   justify-content: flex-end;
   align-items: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: var(--mono-font-stack);
   font-weight: 400;
 }
 .lottery_table2>tbody>tr:nth-child(2)>td>div[id^=c].hideablecontent,
@@ -3273,7 +3274,7 @@ table.padding2 td {
 #table_detail_files td,
 #table_details_seeders nobr,
 #table_details_leechers nobr {
-  font-family: monospace;
+  font-family: var(--mono-font-stack);
   padding: 0.15rem 0.5rem;
   color: var(--table-details-text-color);
 }
@@ -3282,7 +3283,7 @@ table.padding2 td {
 #table_completed td,
 #table_uploaded td,
 .table_seed_leech td {
-  font-family: liberation mono, monospace;
+  font-family: var(--mono-font-stack);
   padding: 0.15rem 0.5rem;
   color: var(--table-details-text-color);
   border-top: 1px solid var(--inner-table-border-color);
@@ -4400,7 +4401,7 @@ pre {
   max-width: 90vw
 }
 .std-content>tbody>tr>td>table>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1)>p:nth-child(2) {
-  font-family: Inconsolata, monospace;
+  font-family: var(--mono-font-stack);
   margin: auto;
   padding: .2rem;
   text-align: right;
@@ -5098,7 +5099,7 @@ body>table.main>tbody>tr>td.bottom>p+table[width="750"]+p:empty+p+table[width="7
 }
 body>table.main>tbody>tr>td.bottom>h1.center+p+table[width="750"] p.sub,
 body>table.main>tbody>tr>td.bottom>p+table[width="750"]+p:empty+p+table[width="750"] p.sub {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: var(--mono-font-stack);
 }
 body>table.main>tbody>tr>td.bottom>h1.center+p+table[width="750"] td.text>p[align="center"]:first-child,
 body>table.main>tbody>tr>td.bottom>p+table[width="750"]+p:empty+p+table[width="750"] td.text>p[align="center"]:first-child {
