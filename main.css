@@ -1,6 +1,6 @@
 :root {
-  --background0: hsl(240, 15%, 5%);  /* --background0: rgb(6, 6, 7); */
-  --background1: hsl(231, 13%, 10%);  /**rgb(22, 23, 29);*/
+  --background0: hsl(240, 15%, 5%);  
+  --background1: hsl(231, 13%, 10%); 
   --foreground: hsl(212, 30%, 78%);  /* text */
   --soft-text-color: hsl(207, 40%, 66%);
   --table-details-text-color: hsl(212, 30%, 65%);
@@ -96,8 +96,7 @@ textarea {
   font-size: var(--font-size)
 }
 option {
-	background: var(--background0);
-	color: var(--selected-text-bg-color);
+	color: var(--selected-text-fg-color);
 }
 #header,
 .menu,
@@ -147,6 +146,7 @@ body {
   text-decoration: none;
   list-style: none;
   scrollbar-color: var(--scrollbar-fg-color) var(--scrollbar-bg-color);
+  scrollbar-width: thin;
 }
 ::selection {
   background-color: var(--selected-text-bg-color);
