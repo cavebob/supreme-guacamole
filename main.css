@@ -1857,14 +1857,16 @@ div.chosen-container.chosen-container-multi.chosen.chosen-with-drop.chosen-conta
 }
 .chosen-container .chosen-drop {
   position: absolute;
-  top: 100%;
+  /* top: 100%; */
   z-index: 1010;
-  width: 100%;
+  width: auto;
   border-top: 0;
-  clip: rect(0, 0, 0, 0);
-  -webkit-clip-path: inset(100% 100%);
-  clip-path: inset(100% 100%);
-  border-radius: 0 0 var(--input-box-border-radius) var(--input-box-border-radius)
+  clip: unset;
+  -webkit-clip-path: unset;
+  clip-path: unset;
+  border: 1px solid var(--highlighted-input-border-focus-color);
+  overflow: clip;
+  filter: drop-shadow(0 0.6rem .5rem black);
 }
 .chosen-container.chosen-with-drop .chosen-drop {
   -webkit-clip-path: none;
@@ -1962,9 +1964,9 @@ div.chosen-container.chosen-container-multi.chosen.chosen-with-drop.chosen-conta
 }
 .chosen-container-single.chosen-container-single-nosearch .chosen-search {
   position: absolute;
-  clip: rect(0, 0, 0, 0);
-  -webkit-clip-path: inset(100% 100%);
-  clip-path: inset(100% 100%)
+  clip: unset;
+  -webkit-clip-path: unset;
+  clip-path: unset
 }
 .chosen-container .chosen-results li.active-result {
   display: list-item;
@@ -2161,7 +2163,7 @@ div.chosen-container .search-choice {
   overflow: hidden;
   margin: 0;
   width: auto;
-  height: 24px;
+  height: auto;
   border: 1px solid var(--inner-table-border-color);
   background-color: var(--background1);
   background-image: none;
@@ -2174,7 +2176,7 @@ div.chosen-container .search-choice {
   border: 1px solid var(--highlighted-hover-border-color);
   background: var(--background1);
   box-shadow: none;
-  border-radius: var(--input-box-border-radius) var(--input-box-border-radius) 0 0
+  border-radius: var(--input-box-border-radius)
 }
 .chosen-container-multi .chosen-choices li.search-choice {
   position: relative;
@@ -2196,24 +2198,30 @@ div.chosen-container .search-choice {
 }
 .chosen-container .chosen-results {
   display: flex;
+  flex-direction: row wrap;
   color: var(--link-text-color);
   background-color: var(--background0);
   position: relative;
-  overflow-x: hidden;
+  overflow-x: scroll;
   overflow-y: auto;
-  margin: -2px -1px -1px;
+  margin: 0;
   padding: 0;
-  max-height: auto;
+  max-width: 30vw;
+  max-height: 400px;
   font-size: var(--font-size);
   -webkit-overflow-scrolling: auto;
-  border-radius: 0 0 var(--input-box-border-radius) var(--input-box-border-radius)
+  border-radius: var(--input-box-border-radius);
+  gap: 2px;
+}
+li.active-result {
+  flex: 1;
 }
 .chosen-container.chosen-with-drop .chosen-drop {
-  clip: auto;
-  -webkit-clip-path: none;
-  clip-path: none;
+  clip: unset;
+  -webkit-clip-path: unset;
+  clip-path: unset;
   background-color: var(--background0);
-  border: 2px solid var(--highlighted-hover-border-color)
+  border: 1px solid var(--highlighted-hover-border-color)
 }
 .chosen-container .chosen-results li {
   display: none;
@@ -2223,17 +2231,20 @@ div.chosen-container .search-choice {
   flex-grow: 1;
   text-align: center;
   margin: 0;
-  padding: 2px 9px;
+  padding: 3px 8px;
   list-style: none;
-  line-height: 18px;
+  line-height: 1rem;
   overflow-wrap: break-word;
-  border-bottom: 2px solid var(--background0)
+  border: 1px solid var(--background0);
+  flex: 1 1 auto;
+  margin: 1px;
 }
 .chosen-container .chosen-results li.highlighted {
+  border-radius: 2px;
   background-color: var(--background0);
-  color: var(--highlight-link-text-color);
-  border-bottom: 2px solid var(--highlight-link-text-color);
-  background-image: none
+  color: var(--link-text-color);
+  border: 1px solid var(--link-text-color);
+  background-image: none;
 }
 .dhtmlxcalendar.dhtmlxcalendar_yahoolike tr,
 div.dhtmlxcalendar.dhtmlxcalendar_yahoolike div,
