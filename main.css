@@ -1857,11 +1857,10 @@ div.chosen-container.chosen-container-multi.chosen.chosen-with-drop.chosen-conta
 }
 .chosen-container .chosen-drop {
   position: absolute;
-  /* top: 100%; */
   z-index: 1010;
   width: auto;
   border-top: 0;
-  clip: unset;
+  clip: rect(0, 0, 0, 0);
   -webkit-clip-path: unset;
   clip-path: unset;
   border: 1px solid var(--highlighted-input-border-focus-color);
@@ -2198,7 +2197,7 @@ div.chosen-container .search-choice {
 }
 .chosen-container .chosen-results {
   display: flex;
-  flex-direction: row wrap;
+  flex-flow: row wrap;
   color: var(--link-text-color);
   background-color: var(--background0);
   position: relative;
@@ -2240,9 +2239,9 @@ li.active-result {
   margin: 1px;
 }
 .chosen-container .chosen-results li.highlighted {
-  border-radius: 2px;
-  background-color: var(--background0);
-  color: var(--link-text-color);
+  border-radius: 4px;
+  background-color: var(--link-text-color);
+  color: var(--background0);
   border: 1px solid var(--link-text-color);
   background-image: none;
 }
