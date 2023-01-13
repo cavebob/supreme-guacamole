@@ -1849,7 +1849,7 @@ div.chosen-container\ chosen-container-single {
   display: none !important
 }
 div.chosen-container.chosen-container-multi.chosen.chosen-with-drop.chosen-container-active {
-  border-radius: var(--input-box-border-radius) var(--input-box-border-radius) 0 0 !important
+  border-radius: var(--input-box-border-radius)
 }
 .chosen-container * {
   -webkit-box-sizing: border-box;
@@ -2172,7 +2172,7 @@ div.chosen-container .search-choice {
   box-sizing: border-box
 }
 .chosen-container-active .chosen-choices {
-  border: 1px solid var(--highlighted-hover-border-color);
+  border: 1px solid var(--highlighted-input-border-focus-color);
   background: var(--background1);
   box-shadow: none;
   border-radius: var(--input-box-border-radius)
