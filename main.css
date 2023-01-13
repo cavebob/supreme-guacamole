@@ -1863,7 +1863,6 @@ div.chosen-container.chosen-container-multi.chosen.chosen-with-drop.chosen-conta
   clip: rect(0, 0, 0, 0);
   -webkit-clip-path: unset;
   clip-path: unset;
-  border: 1px solid var(--highlighted-input-border-focus-color);
   overflow: clip;
   filter: drop-shadow(0 0.6rem .5rem black);
 }
@@ -2208,7 +2207,7 @@ div.chosen-container .search-choice {
   max-width: 30vw;
   max-height: 400px;
   font-size: var(--font-size);
-  -webkit-overflow-scrolling: auto;
+  border: 1px solid var(--highlighted-input-border-focus-color);
   border-radius: var(--input-box-border-radius);
   gap: 2px;
 }
