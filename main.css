@@ -40,8 +40,8 @@
   --scrollbar-fg-color: hsl(240, 20%, 20%);
   --selected-text-bg-color: hsl(215, 49%, 67%);
   --selected-text-fg-color: #000000;
-  --mono-font-stack: SFMono-Regular, Menlo, Monaco, Inconsolata, "Fira Mono", Consolas, "Liberation Mono", "Courier New", monospace;
-  --sans-font-stack: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, sans-serif;
+  --mono-font-stack: ui-monospace, SFMono-Regular, Menlo, Monaco, Inconsolata, "Fira Mono", Consolas, "Liberation Mono", "Courier New", monospace;
+  --sans-font-stack: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /* html {
   font-size: calc(13 / 11 * 100%)
