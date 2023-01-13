@@ -2586,7 +2586,7 @@ td.center span {
   float: right;
   color: var(--username-text-color)
 }
-a[href*="userdetails.php?id="]:not(#sidebar-container a[href], a[href*="userdetails.php?"]:hover),
+a[href*="userdetails.php?id="]:not(#sidebar-container a[href], a.sublink, #header a[href*="userdetails.php?"]:hover),
 a.altlink[href^="userdetails.php?id="],
 a[href*="userdetails.php?id="]:not(a.normal) * {
   color: var(--username-text-color);
@@ -2601,6 +2601,7 @@ a.sublink[href*="uppedby"] {
 a.sublink[href*="userdetails"]:hover,
 a.sublink[href="invite.php"]:hover,
 a.sublink[href*="uppedby"]:hover {
+  color: var(--highlight-link-text-color);
   font-weight: bold;
 }
 #thanksbutton {
