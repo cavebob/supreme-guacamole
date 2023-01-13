@@ -1198,22 +1198,70 @@ body>table.main>tbody>tr>td.bottom:nth-child(2)>table:nth-child(1)>tbody>tr:nth-
   font-weight: 700;
   width: 100%;
 }
-html body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="1"]>tbody>tr>td.text:only-child>ul {
-  display: flex;
-  flex-flow: row wrap;
-  justify-items: flex-start;
-  gap: 0.25rem;
+html body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="1"]+h2+table[width="100%"][border="1"]>tbody>tr>td:only-child>p {
+  font-size: 0.812rem;
+  padding: 1rem;
+  background-color: var(--background1);
   text-align: start;
+  width: auto;
+}
+html body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="1"]+h2+table[width="100%"][border="1"]>tbody>tr>td:only-child>p:first-child:nth-last-child(3) {
+  border-top-left-radius: var(--main-border-radius);
+  border-top-right-radius: var(--main-border-radius);
+  padding-bottom: 0;
+}
+html body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="1"]+h2+table[width="100%"][border="1"]>tbody>tr>td:only-child>p:last-child:nth-last-child(1){
+  border-bottom-left-radius: var(--main-border-radius);
+  border-bottom-right-radius: var(--main-border-radius);
+  padding-top: 0;
+}
+html body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="1"]>tbody>tr>td.text:only-child>ul,
+html body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="1"]>tbody>tr>td:only-child>ul:only-child {
+  display: flex;
+  padding: 1rem;
+  background-color: var(--background1);
+  border-radius: var(--main-border-radius);
+  flex-flow: column wrap;
+  justify-items: flex-start;
+  gap: 0.5rem;
+  text-align: start;
+  width: max-content;
 }
 html body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="1"]>tbody>tr>td.text:only-child>ul>b {
   width: 100%;
   flex: 100%;
+  font-size: 110%;
+  border-bottom: 1px solid var(--inner-table-border-color);
+  padding: .25rem .5rem;
+}
+html body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="1"]>tbody>tr>td:only-child:not(td.text)>ul>li {
+  width: 100%;
+  flex: 100%;
+  font-size: 0.812rem;
+}
+html body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="1"]>tbody>tr>td:only-child>ul>li>a+img.minicon {
+  display: inline-flex;
+margin: 0;
+background: var(--svg-gradient-bg-hover-color);
+-webkit-mask: url("img/icon/rss.svg") center no-repeat;
+mask: url("img/icon/rss.svg") center no-repeat;
+max-width: 1rem;
+height: 1rem;
+filter: brightness(90%);
+vertical-align: middle;
+padding-left: 2rem;
+margin-left: -1rem;
+margin-right: -1rem;
+opacity: 1;
 }
 html body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="1"]>tbody>tr>td.text:only-child>ul>li>a.altlink {
   min-width: auto;
   display: inline-flex;
   padding: 0.2rem 0.3rem;
   justify-self: flex-start;
+}
+body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="1"]>tbody>tr>td:only-child>ul>li {
+  color: var(--foreground);
 }
 ul#tabs,
 td.bottom:nth-child(2)>script+table[width="800"]:nth-child(2)>tbody:nth-child(1)>tr:nth-child(1),
