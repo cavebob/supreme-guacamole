@@ -2219,7 +2219,7 @@ li.active-result {
   -webkit-clip-path: unset;
   clip-path: unset;
   background-color: var(--background0);
-  border: 1px solid var(--highlighted-hover-border-color)
+  border: 0;
 }
 .chosen-container .chosen-results li {
   display: none;
