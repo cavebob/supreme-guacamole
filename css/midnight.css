@@ -1225,7 +1225,8 @@ html body table.main td.bottom table.main td.embedded h2+table[width="100%"][bor
   justify-items: flex-start;
   gap: 0.5rem;
   text-align: start;
-  width: max-content;
+  width: 100%;
+  box-sizing: border-box;
 }
 html body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="1"]>tbody>tr>td.text:only-child>ul>b {
   width: 100%;
@@ -1237,7 +1238,7 @@ html body table.main td.bottom table.main td.embedded h2+table[width="100%"][bor
 html body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="1"]>tbody>tr>td:only-child:not(td.text)>ul>li {
   width: 100%;
   flex: 100%;
-  font-size: 0.812rem;
+  /* font-size: 0.812rem; */
 }
 html body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="1"]>tbody>tr>td:only-child>ul>li>a+img.minicon {
   display: inline-flex;
