@@ -1531,7 +1531,12 @@ select[name=imdblt] {
   padding: 0 10px;
   min-width: 50px;
   cursor: pointer;
-  font-weight: 500
+  font-weight: 700
+}
+input[type="submit"],
+input[type="reset"],
+button {
+  font-weight: bold;
 }
 input#cflip[type="button"],
 input#coflip[type="button"],
@@ -3405,7 +3410,8 @@ table.padding2 tr:first-child>td {
   color: var(--soft-text-color);
   filter: brightness(50%)
 }
-.bottom > h1 + strong ~ p ~ #torrent-list tbody tr td.center:last-child {
+.bottom > h1 + strong ~ p ~ #torrent-list tbody tr td.center:last-child,
+.lottery_table.tablesorter.table_encodes > tbody > tr > td:last-child {
   font-family: var(--mono-font-stack);
 }
 #table_details_seeders tr td:first-child>em,
