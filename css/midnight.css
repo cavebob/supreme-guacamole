@@ -4181,7 +4181,7 @@ div#list-items {
   border: 1px solid var(--highlighted-input-border-focus-color);
   border-radius: var(--main-border-radius);
   width: 100%;
-  height: auto
+  height: 1.5rem;
 }
 #list-items {
   flex-flow: row wrap;
