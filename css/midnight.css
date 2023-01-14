@@ -3775,6 +3775,10 @@ body>table.main>tbody>tr>td.bottom>table[width="800"][cellpadding="10"]:first-ch
   background-color: var(--inner-th-bg-color);
   border-top: 1px solid var(--inner-table-border-color)
 }
+#offerstable th {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem 
+}
 #profilesettings,
 body>table.main>tbody>tr>td.bottom>form[action="/log"]~table:nth-child(4),
 td.bottom form[method="get"][action=""][style="margin-bottom:20px;"]+table[cellpadding="5"],
