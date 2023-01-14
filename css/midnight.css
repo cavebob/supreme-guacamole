@@ -3578,9 +3578,10 @@ td.bottom>h1+table[width="660"][cellpadding="4"] tr:nth-child(4):last-child td f
   border-radius: var(--input-box-border-radius);
   background: var(--input-box-background);
 }
-td.bottom>h1+form[action="inbox.php"][method="post"] {
+td.bottom>h1+form[action="inbox.php"][method="post"],
+#list-add > .form-input {
   background-color: var(--background1);
-  filter: var(--filterdropshadow);
+  /* filter: var(--filterdropshadow); */
   padding: 1rem;
   border-radius: var(--main-border-radius);
   max-width: 64rem;
@@ -4135,8 +4136,53 @@ div.list-entry-row label:last-child {
 }
 div#list-items {
   display: flex;
-  flex-direction: column;
-  gap: 0.2rem
+  /* flex-direction: column; */
+  gap: 0.3rem
+}
+.list-entry-row {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 100%;
+}
+.list-show-row {
+  cursor: move;
+  order: 0;
+}
+.list-edit-row {
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: space-evenly; */
+  gap: 0.2rem;
+  flex: auto;
+  order: 1;
+}
+.list-edit-row > label:nth-child(4):last-of-type {
+  display: flex;
+  flex: 100%;
+  max-width: 33rem;
+}
+.js-list-entry-ok {
+  
+  max-width: 4rem;
+  flex: 100%
+}
+.js-hidden {
+  display: none;
+}
+.list-show-row.js-hidden {
+  display: block;
+  font-weight: bold;
+  flex: 25%;
+}
+.list-show-row.js-hidden > button[class*="js-list-entry"] {
+  display: none;
+}
+.list-entry-placeholder {
+  border: 1px solid var(--highlighted-input-border-focus-color);
+  border-radius: var(--main-border-radius);
+}
+#list-items {
+  flex-flow: row wrap;
 }
 #list-add>input[type=submit] {
   position: relative;
