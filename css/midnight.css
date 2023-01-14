@@ -4180,6 +4180,7 @@ div#list-items {
 .list-entry-placeholder {
   border: 1px solid var(--highlighted-input-border-focus-color);
   border-radius: var(--main-border-radius);
+  width: 100%;
 }
 #list-items {
   flex-flow: row wrap;
