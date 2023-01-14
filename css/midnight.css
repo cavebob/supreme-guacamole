@@ -1288,6 +1288,19 @@ td.bottom:nth-child(2)>h1+script+table[width="800"]:nth-child(3)>tbody:nth-child
   box-shadow: none;
   white-space: nowrap;
 }
+td.bottom>table[width="500"]>tbody>tr>td[width="16%"][align="center"]:first-child:nth-last-child(2),
+td.bottom>table[width="500"]>tbody>tr>td[width="16%"][align="center"]:last-child:nth-child(2) {
+  background: var(--background1);
+  width: 20%;
+  font-size: 0.8125rem;
+}
+td.bottom>table[width="500"]>tbody>tr>td[width="16%"][align="center"]:first-child:nth-last-child(2) {
+  border-radius: var(--main-border-radius) 0 0 var(--main-border-radius);
+
+}
+td.bottom>table[width="500"]>tbody>tr>td[width="16%"][align="center"]:last-child:nth-child(2) {
+  border-radius: 0 var(--main-border-radius) var(--main-border-radius) 0;
+}
 li.tab a {
   box-shadow: none;
 }
@@ -3779,6 +3792,31 @@ body>table.main>tbody>tr>td.bottom>table[width="800"][cellpadding="10"]:first-ch
   padding-left: 0.3rem;
   padding-right: 0.3rem 
 }
+/* #### ADD COMMENT STYLING ###### */
+.bottom > #details ~ p[align="center"],
+.bottom > #list-container ~ p[align="center"],
+.bottom > a[name="startcomments"] ~ p[align="center"] {
+  padding: 0;
+  background: initial;
+}
+a.index[href*="comments/add?"] {
+  background: var(--background1);
+  border: 1px solid var(--inner-table-border-color);
+  border-radius: var(--input-box-border-radius);
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  display:flex;
+  justify-content: center;
+}
+a.index[href*="comments/add?"]:hover {
+  background: var(--svg-gradient-bg-hover-color);
+  color: var(--background0);
+}
+a.index[href*="comments/add?"]:active {
+  filter: brightness(120%);
+  transition: all .25s cubic-bezier(.25, .46, .45, .94); 
+}
+/* #### ADD COMMENT STYLING ###### */
 #profilesettings,
 body>table.main>tbody>tr>td.bottom>form[action="/log"]~table:nth-child(4),
 td.bottom form[method="get"][action=""][style="margin-bottom:20px;"]+table[cellpadding="5"],
@@ -3801,6 +3839,17 @@ body>table.main>tbody>tr>td.bottom>table[width="800"][cellpadding="10"]:first-ch
 /* ################################# */
 /* TESTING SELECTORS FOR FORUM PAGES */
 /* ################################# */
+#torrent-list-container > #torrent-list {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  gap: 0.25rem;
+  text-align: left;
+  box-sizing: border-box;
+}
+#torrent-list-container > #torrent-list > tbody:first-child{
+  border-bottom: 1px solid var(--inner-table-border-color);
+}
 #torrent-list thead th {
   background-color: var(--inner-th-bg-color);
   border-top: 1px solid var(--inner-table-border-color);
@@ -3943,8 +3992,29 @@ td.bottom:nth-child(2)>table.main:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1
   max-width: 64rem;
 }
 form td.heading,
-form td.rowhead {
+form td.rowhead,
+td.rowhead,
+td.heading{
   font-weight: bold;
+}
+a#listsback {
+  font-weight: bold;
+  font-size: 0.8125rem;
+  background: var(--background1);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--main-border-radius)
+}
+#header .curuser-stats:last-child > font[color="#1900D1"] {
+  color: var(--blue);
+}
+#header .curuser-stats:last-child > font[color="green"] {
+  color: var(--green);
+}
+#header .curuser-stats:last-child > font[color="darkred"] {
+  color: var(--red);
+}
+#header .curuser-stats:last-child > font[color="darkred"]:last-of-type {
+  color: var(--completed-tag-text-color);
 }
 #profilesettings div#complex tbody {
   display: flex;
