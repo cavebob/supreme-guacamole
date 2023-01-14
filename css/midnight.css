@@ -4177,10 +4177,11 @@ div#list-items {
 .list-show-row.js-hidden > button[class*="js-list-entry"] {
   display: none;
 }
-.list-entry-placeholder {
+#list-items .list-entry-placeholder {
   border: 1px solid var(--highlighted-input-border-focus-color);
   border-radius: var(--main-border-radius);
   width: 100%;
+  height: auto
 }
 #list-items {
   flex-flow: row wrap;
