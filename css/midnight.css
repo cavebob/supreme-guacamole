@@ -3392,6 +3392,9 @@ table.padding2 tr:first-child>td {
   color: var(--soft-text-color);
   filter: brightness(50%)
 }
+.bottom > h1 + strong ~ p ~ #torrent-list tbody tr td.center:last-child {
+  font-family: var(--mono-font-stack);
+}
 #table_details_seeders tr td:first-child>em,
 #table_details_leechers tr td:first-child>em {
   text-align: left;
@@ -5144,6 +5147,18 @@ td.bottom>form[action^="/forums/search"]~table[cellpadding="5"][border="1"]:nth-
 td.comment,
 td.text {
   font-size: 0.8125rem;
+}
+#sidebar-container + .bottom > .main[width="750"]:only-child > tbody > tr > .embedded:only-child > h2:only-of-type:first-child + table[width="100%"]:only-of-type:last-child > tbody > tr > td.text:only-child {
+  border-radius: var(--main-border-radius);
+  background: var(--background1);
+  padding: 1rem;
+  width: fit-content;
+  display: block;
+  
+}
+#sidebar-container + .bottom > .main[width="750"]:only-child > tbody > tr > .embedded:only-child > h2:only-of-type:first-child + table[width="100%"]:only-of-type:last-child > tbody > tr > td.text:only-child > br:first-of-type,
+#sidebar-container + .bottom > .main[width="750"]:only-child > tbody > tr > .embedded:only-child > h2:only-of-type:first-child + table[width="100%"]:only-of-type:last-child > tbody > tr > td.text:only-child > b:last-of-type + br{
+  display: none;
 }
 #details+p {
   display: block;
