@@ -459,7 +459,7 @@ textarea {
   border-radius: var(--input-box-border-radius);
   box-sizing: border-box
 }
-select {
+select:not(#sidebar-container select) {
   padding: 4px 8px;
 }
 .previewbox[style="display: block;"]{
