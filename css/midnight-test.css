@@ -196,7 +196,7 @@ body {
 .tab\ selected a,
 td.bottom:nth-child(2)>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(1) a,
 td.bottom:nth-child(2)>table[cellpadding="5"]:nth-child(5) {
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     box-shadow: var(--bs)
 }
 td.bottom>table,
@@ -280,7 +280,7 @@ body>table.main:nth-child(3) {
 #header {
     border-radius: var(--main-border-radius) var(--main-border-radius) 0 0;
     margin-bottom: 0 !important;
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     min-height: 80px;
     top: 1rem;
     z-index: 50
@@ -306,13 +306,13 @@ body>table.main:nth-child(3) {
 }
 .menu {
     border: none;
-    background: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background: var(--background1);
     z-index: 59;
     top: 118px;
     font-size: 0.8125rem;
     font-weight: 700;
     border-radius: 0 0 var(--main-border-radius) var(--main-border-radius);
-    filter: drop-shadow(0 10px 4px var(--background0))
+    filter: drop-shadow(0 10px 4px rgba(0,0,0,0.4))
 }
 .menu tbody tr {
     top: 8vh;
@@ -538,7 +538,7 @@ input#sitesearchinput:focus,
 textarea:focus,
 input[type="text"]:focus {
     border: 1px solid var(--highlighted-input-border-focus-color);
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     color: var(--highlight-link-text-color);
     filter: brightness(100%);
     -moz-transition: all 0.25s ease;
@@ -605,7 +605,7 @@ input[type="text"]:focus {
     border-top-right-radius: 0;
 }
 .autocomplete-suggestions {
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     color: var(--link-text-color);
     line-height: 1rem;
     border: 0 1px 1px 1px solid var(--inner-table-border-color);
@@ -1181,7 +1181,7 @@ td.bottom form[method=get][action=""][style="margin-bottom:20px;"]+table[cellpad
 #tabs>.tab a,
 td.bottom:nth-child(2)>script+table[width="800"]:nth-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td[width="20%"] a,
 td.bottom:nth-child(2)>h1+script+table[width="800"]:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>td[width="20%"] a {
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     display: inline-block;
     border: 1px solid var(--transparent-border-color);
     border-radius: var(--top-menu-border-radius);
@@ -1193,7 +1193,7 @@ td.bottom:nth-child(2)>h1+script+table[width="800"]:nth-child(3)>tbody:nth-child
     font-weight: 700
 }
 body>table.main>tbody>tr>td.bottom:nth-child(2)>table:nth-child(1)>tbody>tr:nth-child(1)>td[width="16%"]>b>a:not(a[href*="javascript: SmileIT"], a[href*="javascript: PopMoreTags"]) {
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     display: inline-block;
     border: 1px solid var(--transparent-border-color);
     border-radius: var(--top-menu-border-radius);
@@ -1207,7 +1207,7 @@ body>table.main>tbody>tr>td.bottom:nth-child(2)>table:nth-child(1)>tbody>tr:nth-
 html body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="1"]+h2+table[width="100%"][border="1"]>tbody>tr>td:only-child>p {
     font-size: 0.812rem;
     padding: 1rem;
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     text-align: start;
     width: auto;
 }
@@ -1225,7 +1225,7 @@ html body table.main td.bottom table.main td.embedded h2+table[width="100%"][bor
 html body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="1"]>tbody>tr>td:only-child>ul:only-child {
     display: flex;
     padding: 1rem;
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     border-radius: var(--main-border-radius);
     flex-flow: column wrap;
     justify-items: flex-start;
@@ -1273,7 +1273,7 @@ body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="
 ul#tabs,
 td.bottom:nth-child(2)>script+table[width="800"]:nth-child(2)>tbody:nth-child(1)>tr:nth-child(1),
 td.bottom:nth-child(2)>h1+script+table[width="800"]:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1) {
-    background: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background: var(--background1);box-shadow:var(--bs);
     overflow: hidden;
     border-radius: var(--top-menu-border-radius);
     width: 100%;
@@ -1296,7 +1296,7 @@ td.bottom:nth-child(2)>h1+script+table[width="800"]:nth-child(3)>tbody:nth-child
 }
 td.bottom>table[width="500"]>tbody>tr>td[width="16%"][align="center"]:first-child:nth-last-child(2),
 td.bottom>table[width="500"]>tbody>tr>td[width="16%"][align="center"]:last-child:nth-child(2) {
-    background: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background: var(--background1);box-shadow:var(--bs);
     width: 20%;
     font-size: 0.8125rem;
 }
@@ -1612,7 +1612,7 @@ select[name=imdblt] {
     top: calc(118px + 25px + 1rem);
     height: min-content;
     position: sticky;
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     flex: 1 100px
 }
 #sidebar-container>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(1)>td.embedded {
@@ -1632,7 +1632,7 @@ select[name=imdblt] {
 }
 #sidebar-container td.embedded h2+table {
     border: 1px solid var(--inner-table-border-color);
-    background: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background: var(--background1);box-shadow:var(--bs);
     border-top: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -1717,7 +1717,7 @@ body>table.main>tbody>tr>td.bottom>table.main[width="737"]:only-of-type:last-chi
 #news {
     display: flex;
     flex-direction: column;
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     border: 1px solid var(--transparent-border-color);
     border-radius: var(--main-border-radius);
     height: max-content;
@@ -1809,7 +1809,7 @@ input[type="radio"] {
     margin: -2px .2rem 0
 }
 body>table.main>tbody>tr>td.bottom>table.main:only-of-type:last-child:nth-child(2)>tbody:only-child>tr:only-child>td.embedded:only-child>h2:nth-child(2) {
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     border-radius: var(--main-border-radius) var(--main-border-radius) 0 0;
     height: 100%;
     text-align: center;
@@ -1819,7 +1819,7 @@ body>table.main>tbody>tr>td.bottom>table.main:only-of-type:last-child:nth-child(
     border-bottom: 1px solid var(--inner-table-border-color);
 }
 body>table.main>tbody>tr>td.bottom>table.main:only-of-type:last-child:nth-child(2)>tbody:only-child>tr:only-child>td.embedded:only-child>h2:nth-child(4) {
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     border-radius: var(--main-border-radius) var(--main-border-radius) 0 0;
     height: 100%;
     text-align: center;
@@ -1834,7 +1834,7 @@ body>table.main>tbody>tr>td.bottom>table.main:only-of-type:last-child:nth-child(
     justify-content: center;
     line-height: 1rem;
     padding: .5rem;
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     border-radius: 0 0 var(--main-border-radius) var(--main-border-radius);
     filter: var(--filterdropshadow);
     flex: 1 1 68%;
@@ -1845,7 +1845,7 @@ body>table.main>tbody>tr>td.bottom>table.main:only-of-type:last-child:nth-child(
     justify-content: center;
     line-height: 1rem;
     padding: .5rem;
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     align-content: center;
     border-radius: 0 0 var(--main-border-radius) var(--main-border-radius);
     filter: var(--filterdropshadow);
@@ -1893,7 +1893,7 @@ td.bottom:nth-child(2)>h1+script+table[width="800"]:nth-child(3)>tbody:nth-child
     white-space: nowrap;
     align-items: center;
     width: 100%;
-    background: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background: var(--background1);box-shadow:var(--bs);
 }
 td.bottom>table[width="500"]>tbody>tr:only-child {
     justify-content: space-around;
@@ -2241,7 +2241,7 @@ div.chosen-container .search-choice {
     width: auto;
     height: auto;
     border: 1px solid var(--inner-table-border-color);
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     background-image: none;
     cursor: text;
     border-radius: var(--input-box-border-radius);
@@ -2250,7 +2250,7 @@ div.chosen-container .search-choice {
 }
 .chosen-container-active .chosen-choices {
     border: 1px solid var(--highlighted-input-border-focus-color);
-    background: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background: var(--background1);box-shadow:var(--bs);
     box-shadow: none;
     border-radius: var(--input-box-border-radius)
 }
@@ -2259,7 +2259,7 @@ div.chosen-container .search-choice {
     margin: 2px;
     padding: 2px 16px 3px 5px;
     line-height: .6875rem;
-    border: 1px solid var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    border: 1px solid var(--background1);box-shadow:var(--bs);
     max-width: 100%;
     border-radius: 0;
     font-size: 0.625rem;
@@ -2331,13 +2331,13 @@ div.dhtmlxcalendar_yahoolike .dxcaldays td,
 div.dhtmlxcalendar_yahoolike .dxcaldays_ie td,
 div.dhtmlxcalendar_yahoolike .dxcaldlabel td {
     box-sizing: border-box;
-    background: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background: var(--background1);box-shadow:var(--bs);
     font-family: var(--mono-font-stack);
     font-size: var(--font-size);
     text-align: center
 }
 div>div.dhtmlxcalendar_yahoolike {
-    background: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background: var(--background1);box-shadow:var(--bs);
     border: 1px solid var(--inner-table-border-color);
     font-family: var(--mono-font-stack);
     font-size: var(--font-size);
@@ -2430,7 +2430,7 @@ div.dhtmlxcalendar_yahoolike .dxcaldays>tbody>tr>td.hover,
 div.dhtmlxcalendar_yahoolike .dxcaldays>tbody>tr>td.selected {
     border: 1px solid #4682b4;
     background-color: #4682b4;
-    color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    color: var(--background1);box-shadow:var(--bs);
     opacity: 1;
     font-weight: 500;
     box-sizing: border-box
@@ -3173,7 +3173,7 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
 }
 div.film-info {
     padding: .6875rem;
-    background: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background: var(--background1);box-shadow:var(--bs);
     border-radius: var(--main-border-radius)
 }
 .lottery_table2 table.fourcell>tbody>tr,
@@ -3225,7 +3225,7 @@ td.heading {
     padding: 0 .5rem;
     border: 1px solid var(--inner-table-border-color);
     border-radius: var(--inner-table-border-radius);
-    background-color: var(--inner-td-bg-color)
+    background-color: var(--inner-td-bg-color);box-shadow:var(--bs);
 }
 img[src*="pic/flag"] {
     height: 18px;
@@ -3259,7 +3259,7 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
 img#showbanner {
     object-fit: cover;
     border-radius: 0.5rem;
-    margin: .4rem
+    margin: .4rem;box-shadow:var(--bs);
 }
 ul.showlinks {
     margin: .4rem;
@@ -3298,7 +3298,7 @@ ul.showlinks>li>a[href*="anidb.net"] {
     display: block;
 }
 table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth-child(5)~table[width="930"][cellpadding="5"] {
-    background: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background: var(--background1);box-shadow:var(--bs);
     width: auto !important;
     max-width: 64rem;
     padding: 1rem
@@ -3469,7 +3469,7 @@ table.padding2 th {
     color: var(--foreground);
 }
 #tags.tablesorter {
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     padding: .7rem;
     max-width: 64rem;
     border: 0;
@@ -3525,7 +3525,7 @@ input#tagassociate {
     box-sizing: border-box;
     /* display: flex;
   flex-direction: column; */
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     border-radius: var(--main-border-radius)
 }
 td.bottom>table[width="800"]+table.main+h2+table[width="100%"]:nth-last-child(2),
@@ -3534,7 +3534,7 @@ td.bottom>h1+table[width="660"][cellpadding="4"] {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     border-radius: var(--main-border-radius);
     padding: 1rem;
 }
@@ -3606,7 +3606,7 @@ td.bottom>h1+table[width="660"][cellpadding="4"] tr:nth-child(4):last-child td f
 }
 td.bottom>h1+form[action="inbox.php"][method="post"],
 #list-add>.form-input {
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     /* filter: var(--filterdropshadow); */
     padding: 1rem;
     border-radius: var(--main-border-radius);
@@ -4747,7 +4747,7 @@ td.bottom:nth-child(2)>table.main:nth-of-type(2):nth-last-child(2)>tbody:nth-chi
 td.bottom:nth-child(2)>table.main:nth-of-type(2):nth-last-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td.embedded:nth-child(1)>h2:not(td.embedded > p:first-child+h2:only-of-type) {
     border-radius: var(--main-border-radius) var(--main-border-radius) 0 0;
     border: 1px solid var(--inner-table-border-color);
-    background: var(--inner-td-bg-color)
+    background: var(--inner-td-bg-color);box-shadow:var(--bs);
 }
 td.bottom:nth-child(2)>table.main:nth-of-type(2):nth-last-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td.embedded:nth-child(1)>table[width="100%"]+h2:not(h2:first-child),
 td.bottom:nth-child(2)>table.main:nth-of-type(2):nth-last-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td.embedded:nth-child(1)>a[name="uploadrules"]+h2 {
@@ -4982,7 +4982,8 @@ a.tv_morelink:active {
 }
 img.rc__film__poster {
     border-radius: 0.5rem;
-    object-fit: fill
+    object-fit: fill;
+    box-shadow:var(--bs);
 }
 div.rc__rating::before {
     content: 'IMDb: ';
@@ -5531,7 +5532,7 @@ div.statbox_banners>div:first-child {
 #tv-show-list img,
 .rc.js-rc img:not(img.rc__film__poster) {
     object-fit: contain;
-    filter: brightness(90%) contrast(100%)
+    filter: brightness(90%) contrast(100%);box-shadow:var(--bs);
 }
 div .bannertext {
     font-size: 2rem;
@@ -5589,7 +5590,7 @@ div#tv-episode-list {
     padding: 0.25rem 0.25rem;
     border: 1px solid var(--inner-table-border-color);
     border-radius: var(--inner-table-border-radius) var(--inner-table-border-radius) 0 0;
-    background: var(--inner-td-bg-color)
+    background: var(--inner-td-bg-color);box-shadow:var(--bs);
 }
 .show-season .season-torrents,
 .season-packs:last-child {
@@ -5721,6 +5722,8 @@ ul.showseasons>li {
     overflow: hidden;
     order: 0;
     flex: 48%;
+    box-shadow:var(--bs);
+    background-color: var(--inner-td-bg-color)
 }
 #showpage ul.showseasons>li h2 {
     background-color: var(--inner-th-bg-color);
@@ -6531,7 +6534,7 @@ transition:all 0.25s ease;
     width: auto;
 }
 #sidebar-container+td.bottom>table.main[width="450"]>tbody>tr>td.embedded>div>h1~table[class] {
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     padding: 1rem;
 }
 #sidebar-container+td.bottom>table.main[width="450"]>tbody>tr>td.embedded>div>h1~table[class]>tbody>tr>td.embedded>h2:only-of-type:nth-last-child(2) {
@@ -6551,7 +6554,7 @@ div[align="center"] .message td.rowhead {
 }
 /* Staff page */
 .embedded>font[size="+3"]+h2+table table[width="725"] {
-    background-color: var(--background1);box-shadow:var(--bs);box-shadow:var(--bs);
+    background-color: var(--background1);box-shadow:var(--bs);
     padding: 1rem;
 }
 .embedded>font[size="+3"]+h2+table table[width="725"] hr {
