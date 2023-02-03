@@ -6809,5 +6809,5 @@ a[name]:not([href]) {
 }
 a[name]:not([href]), p.sub > a[name]:target {
     pointer-events: none;
-    scroll-margin-top: 9rem
+    scroll-margin-top: 10rem
 }
