@@ -2573,6 +2573,7 @@ a[href*="javascript:delBookmark"] {
 a.js-wishlistadd,
 img.info__wishlist,
 a[title="Add to wishlist"],
+a[title="Add to wishlist"][onclick*="delWishlist"],
 a[title="Add this film to your wishlist"] {
     -webkit-mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
     mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
