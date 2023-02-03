@@ -1664,7 +1664,7 @@ select[name=imdblt] {
     font-size: 0;
 }
 #sidebar-container td.embedded a[href]:not(h2>a[href]) {
-    padding: .5rem 0 !important;
+    padding: .4rem 0 !important;
     text-align: center;
     width: 100%;
     font-size: var(--font-size)
