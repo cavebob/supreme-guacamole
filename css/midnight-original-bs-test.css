@@ -6787,3 +6787,11 @@ img[alt="Read"] {
         order: -10;
     }
 }
+a[name]:not([href]) {
+    display: block;
+}
+a[name]:not([href]), p.sub > a[name]:target {
+    padding-top: 100px;
+    margin-top: -100px;
+    pointer-events: none;
+}
