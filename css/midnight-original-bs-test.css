@@ -6823,3 +6823,10 @@ a[name]:not([href]), p.sub > a[name]:target {
     pointer-events: none;
     scroll-margin-top: 10rem
 }
+body > div.popup {
+    position: absolute;
+    background: var(--blue);
+    color: var(--background0);
+    border: 1px solid var(--background0);
+    filter: drop-shadow(1px 2px 5px black);
+}
