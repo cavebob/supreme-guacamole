@@ -1112,7 +1112,7 @@ a.alert-box:hover:not(.bottom>.main~.alert-box) {
   transition: all ease-in-out .25s;
 } */
 .notification-overlay {
-    position: sticky;
+    position: fixed;
     z-index: 100;
     overflow-y: auto;
     top: 0;
