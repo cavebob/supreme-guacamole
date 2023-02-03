@@ -1,29 +1,29 @@
 :root {
     --background0: hsl(231, 14%, 8%);
     --background1: hsl(231, 15%, 12%);
-    --foreground: hsl(212, 30%, 78%);
-    --soft-text-color: hsl(207, 40%, 66%);
-    --table-details-text-color: hsl(212, 30%, 65%);
+    --foreground: hsl(212, 30%, 85%);
     --heading-color: hsla(31, 100%, 65%, 0.843);
     --span-tag-text-color: #000000;
-    --link-text-color: hsl(212, 55%, 65%);
-    --highlight-link-text-color: hsl(216, 90%, 88%);
+    --link-text-color: hsl(220, 60%, 70%);
+    --highlight-link-text-color: hsl(216, 100%, 88%);
     --username-text-color: #ffcd70;
     --completed-tag-text-color: #ffb86c;
     --internal-tag-text-color: #ffcd50;
     --blue: #51a0fb;
     --green: hsl(135, 94%, 65%);
     --red: #f85454;
-    --input-box-background: hsla(212, 30%, 30%, 0.15);
+    --input-box-background: hsla(220, 30%, 30%, 0.15);
     --transparent-border-color: transparent;
     --inner-table-border-color: hsla(231, 20%, 40%, 0.3);
-    --inner-td-bg-color: hsla(231, 16%, 17%, 0.3);
+    --inner-td-bg-color: hsla(231, 16%, 17%, 0.5);
     --inner-th-bg-color: hsla(231, 16%, 20%, 0.75);
-    --sidebar-header-color: rgba(2, 2, 2, 0.3);
+    --sidebar-header-color: var(--inner-th-bg-color);
+    --soft-text-color: hsl(207, 40%, 66%);
+    --table-details-text-color: hsl(212, 30%, 65%);
     --inner-table-border-radius: 0.5rem;
     --highlighted-hover-border-color: var(--highlight-link-text-color);
     --filterdropshadow: 0;
-    --bs: 0px 2px 8px 0px rgba(0, 0, 0, 0.4);
+    --bs: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
     --tag-border-radius: 0.25rem;
     --input-box-border-radius: 0.25rem;
     --quote-border-radius: 0.375rem;
@@ -34,9 +34,9 @@
     --svg-gradient-bg-hover-color: linear-gradient(135deg, hsl(195, 100%, 57%), hsl(225, 100%, 69%));
     --highlighted-border-hover-color: hsla(207, 56%, 60%, 0.5);
     --highlighted-input-border-focus-color: hsl(207, 44%, 49%);
-    --read-comment-color: rgba(0, 0, 0, 0.15);
-    --unread-comment-color: rgba(57, 135, 199, .015);
-    --highlighted-unread-comment-border-color: var(--inner-table-border-color);
+    --read-comment-color: var(--inner-td-bg-color);
+    --unread-comment-color: hsla(231, 25%, 20%, 0.3);
+    --highlighted-unread-comment-border-color: hsla(231, 20%, 50%, 0.75);
     --default-avatar-color: rgba(51, 96, 133, .501);
     --scrollbar-bg-color: hsl(240, 15%, 7%);
     --scrollbar-fg-color: hsl(240, 20%, 20%);
@@ -196,7 +196,7 @@ body {
 .tab\ selected a,
 td.bottom:nth-child(2)>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(1) a,
 td.bottom:nth-child(2)>table[cellpadding="5"]:nth-child(5) {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
     box-shadow: var(--bs)
 }
 td.bottom>table,
@@ -312,7 +312,7 @@ body>table.main:nth-child(3) {
     font-size: 0.8125rem;
     font-weight: 700;
     border-radius: 0 0 var(--main-border-radius) var(--main-border-radius);
-    filter: drop-shadow(0 10px 4px rgba(0,0,0,0.4))
+    filter: drop-shadow(0 8px 4px rgba(0,0,0,0.2))
 }
 .menu tbody tr {
     top: 8vh;
@@ -1181,7 +1181,7 @@ td.bottom form[method=get][action=""][style="margin-bottom:20px;"]+table[cellpad
 #tabs>.tab a,
 td.bottom:nth-child(2)>script+table[width="800"]:nth-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td[width="20%"] a,
 td.bottom:nth-child(2)>h1+script+table[width="800"]:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>td[width="20%"] a {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
     display: inline-block;
     border: 1px solid var(--transparent-border-color);
     border-radius: var(--top-menu-border-radius);
@@ -1193,7 +1193,7 @@ td.bottom:nth-child(2)>h1+script+table[width="800"]:nth-child(3)>tbody:nth-child
     font-weight: 700
 }
 body>table.main>tbody>tr>td.bottom:nth-child(2)>table:nth-child(1)>tbody>tr:nth-child(1)>td[width="16%"]>b>a:not(a[href*="javascript: SmileIT"], a[href*="javascript: PopMoreTags"]) {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
     display: inline-block;
     border: 1px solid var(--transparent-border-color);
     border-radius: var(--top-menu-border-radius);
@@ -1338,7 +1338,11 @@ td.bottom>table>tbody>tr>td[width="20%"] a b {
     border-radius: var(--main-border-radius);
     max-width: 52rem;
     min-width: 38rem;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    box-shadow: none;
+}
+#searchbox:not(div#searchbox) {
+    box-shadow: var(--bs)
 }
 #searchbox>tbody:nth-child(1) {
     display: flex;
@@ -1671,8 +1675,10 @@ select[name=imdblt] {
     font-size: var(--font-size)
 }
 #sidebar-container td table tbody tr td a[href]:hover,
-#torrent-list tr.featured,
 #torrent-list tr:hover {
+    background: var(--inner-th-bg-color)
+}
+#torrent-list tr.featured {
     background: var(--inner-td-bg-color)
 }
 #sidebar-container td.embedded h2:hover {
@@ -1724,6 +1730,7 @@ body>table.main>tbody>tr>td.bottom>table.main[width="737"]:only-of-type:last-chi
     margin-bottom: 1rem;
     max-width: 100%;
     box-sizing: border-box;
+    font-size: 0.8125rem;
 }
 #news h2 {
     font-size: 1.125rem
@@ -2331,13 +2338,13 @@ div.dhtmlxcalendar_yahoolike .dxcaldays td,
 div.dhtmlxcalendar_yahoolike .dxcaldays_ie td,
 div.dhtmlxcalendar_yahoolike .dxcaldlabel td {
     box-sizing: border-box;
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
     font-family: var(--mono-font-stack);
     font-size: var(--font-size);
     text-align: center
 }
 div>div.dhtmlxcalendar_yahoolike {
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
     border: 1px solid var(--inner-table-border-color);
     font-family: var(--mono-font-stack);
     font-size: var(--font-size);
@@ -2601,7 +2608,7 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
     display: block
 }
 #torrent-list tr.featured:hover {
-    background: rgba(5, 5, 5, .66)
+    background: var(--inner-th-bg-color);
 }
 button[onclick^="hidetorrent"],
 button[onclick^="ignoreShow"],
@@ -3262,7 +3269,7 @@ img#showbanner {
     margin: .4rem;box-shadow:var(--bs);
 }
 ul.showlinks {
-    margin: .4rem;
+    margin: 1rem 0.5rem 0.5rem .5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -3525,7 +3532,7 @@ input#tagassociate {
     box-sizing: border-box;
     /* display: flex;
   flex-direction: column; */
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
     border-radius: var(--main-border-radius)
 }
 td.bottom>table[width="800"]+table.main+h2+table[width="100%"]:nth-last-child(2),
@@ -3653,7 +3660,10 @@ td.bottom>table[width="800"]+table.main+h2+table[width="100%"]>tbody>tr>td>p.sub
     border-bottom: 0;
     gap: 0 0.2rem;
     padding: 0 1rem;
-    margin: 0 !important
+    margin: 0 !important;
+    position: relative;
+    z-index: 1;
+    /* box-shadow: var(--bs); */
 }
 tr.logentry,
 tr.logentry:hover {
@@ -3710,13 +3720,14 @@ td.bottom>table[width="800"]+table.main+h2+table[width="100%"]>tbody>tr>td>p.sub
     overflow: hidden;
     min-height: 150px;
     min-width: 48rem;
-    max-width: 64rem
+    max-width: 64rem;
+    box-shadow: var(--bs);
 }
 .std-content>tbody>tr>td>table.main {
     border-radius: 0 0 var(--inner-table-border-radius) var(--inner-table-border-radius);
     background-color: var(--unread-comment-color);
     margin-bottom: .5rem;
-    border: 1px solid var(--highlighted-unread-comment-border-color);
+    border: 1px solid var(--highlighted-unread-comment-border-color);box-shadow:var(--bs);
     overflow: hidden;
     min-height: 150px;
     min-width: 48rem
@@ -3965,7 +3976,7 @@ td.bottom>p:first-child~table[cellpadding="3"]:first-of-type {
     padding: .2rem .5rem
 }
 #offerbody>tr:hover {
-    background-color: var(--inner-td-bg-color)
+    background-color: var(--inner-th-bg-color)
 }
 #offerbody>tr>td:nth-child(6)>b>a:only-of-type {
     color: var(--username-text-color);
@@ -5068,6 +5079,7 @@ button.rc__actions-wishlist {
     gap: 1rem;
     margin: auto;
     margin-top: 0;
+    justify-content:center
 }
 div.rc__toggle {
     line-height: 2.5rem;
@@ -5078,6 +5090,7 @@ div.rc__toggle {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
+    width: min-content;
     max-width: 100%;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -5372,6 +5385,9 @@ div#searchbox {
     flex-direction: column;
     background: inherit;
 }
+.list-description {
+    border: none;
+}
 div#searchbox #searchcriteria {
     background: var(--background1);box-shadow:var(--bs);
     padding: 1rem;
@@ -5379,6 +5395,7 @@ div#searchbox #searchcriteria {
     display: flex;
     flex-flow: column wrap;
     gap: 0.5rem;
+    border: none;
 }
 #searchcriteria_film {
     border-bottom: 1px solid var(--inner-table-border-color);
@@ -5664,6 +5681,7 @@ div#tv-episode-list {
     padding: 0.5rem;
     border-top: 0;
     border-radius: 0 0 var(--inner-table-border-radius) var(--inner-table-border-radius);
+    background: var(--inner-td-bg-color);
 }
 #showpage~* {
     display: contents;
@@ -5680,17 +5698,24 @@ div.contentelement:nth-child(3) .contentcontent img {
 }
 .contentcontent #showbanner {
     display: block;
-    width: 100%;
+    /* width: 100%; */
     margin: 0;
     image-rendering: optimizeQuality;
+}
+#showpage img[src*="chart.googleapis.com"] {
+    filter: invert(.9)
 }
 .contentcontent a {
     display: block;
 }
+#overview,
+#overview + .contentelement {
+    box-shadow: var(--bs);
+}
 #overview .contentcontent {
     text-align: left;
     line-height: normal;
-    font-size: calc(var(--font-size) * 12/11);
+    font-size: 0.8125rem;
     padding: 0.5rem;
     border: 1px solid var(--inner-table-border-color);
     border-top: 0;
@@ -6167,7 +6192,8 @@ div.film-list-container {
     grid-template-columns: 175px auto;
     gap: 0.5rem;
     overflow: hidden;
-    background: rgb(27, 27, 36);
+    background: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
 }
 div.info_row {
     border-bottom: 0;
