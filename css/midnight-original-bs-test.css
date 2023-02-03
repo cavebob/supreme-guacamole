@@ -2571,7 +2571,8 @@ a[href*="javascript:delBookmark"] {
     filter: brightness(90%)
 }
 a.js-wishlistadd,
-img.info__wishlist {
+img.info__wishlist
+a[title="Add this film to your wishlist"] {
     -webkit-mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
     mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
     background: var(--svg-gradient-bg-hover-color);
@@ -2579,11 +2580,17 @@ img.info__wishlist {
     height: 1rem;
     filter: brightness(90%)
 }
+.film-info a[title="Add this film to your wishlist"] img {
+    display: none;
+    margin-bottom: 0px;
+}
 img.info__wishlist {
     padding-left: 1rem;
 }
 a.js-wishlistdel,
-a[onclick*="delWishlist"] {
+a[onclick*="delWishlist"],
+a[title="Remove from wishlist"],
+a[title="Remove this film from your wishlist"] {
     background: var(--red);
     -webkit-mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
     mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
@@ -2593,7 +2600,9 @@ a[onclick*="delWishlist"] {
     cursor: pointer;
 }
 a[onclick*="delWishlist"],
-a[href*="javascript:unignoreshow"] {
+a[href*="javascript:unignoreshow"],
+a[title="Remove from wishlist"],
+a[title="Remove this film from your wishlist"] {
     display: inline-block;
     background: var(--red);
     -webkit-mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
@@ -6496,6 +6505,9 @@ td:nth-child(2).browse_td_name_cell .browse_imdb_poster {
     .browse_td_name_cell .browse_imdb_poster {
         left: auto;
         right: -211px
+    }
+    td:nth-child(2).browse_td_name_cell .browse_imdb_poster {
+        left: auto;
     }
 }
 .browse_td_name_cell .browse_imdb_poster img {
