@@ -1163,6 +1163,7 @@ a.alert-box:hover:not(.bottom>.main~.alert-box) {
     float: right;
     margin-left: auto;
     align-self: center;
+    cursor: pointer;
 }
 #table_open_requests>tbody:nth-child(2)>tr>td:last-child,
 #table_open_requests>tbody:nth-child(2)>tr>td:nth-child(10),
@@ -2166,7 +2167,10 @@ only screen and (min-resolution:1.5dppx) {
     width: auto !important;
 }
 .label.collapse {
-    cursor: default;
+    cursor: pointer;
+}
+.collapsable {
+    cursor: pointer;
 }
 .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
     margin: 0;
@@ -6794,8 +6798,6 @@ a[name]:not([href]) {
     display: block;
 }
 a[name]:not([href]), p.sub > a[name]:target {
-    /* padding-top: 150px;
-    margin-top: -150px; */
     pointer-events: none;
     scroll-margin-top: 9rem
 }
