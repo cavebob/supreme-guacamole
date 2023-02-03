@@ -65,6 +65,9 @@ td.bottom:nth-child(2)>table:nth-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td.
 * {
     padding: 0
 }
+/* body > table.main {
+    scroll-margin-top: 50rem
+} */
 a[href],
 li,
 td.bottom p[align=center]>a[href*="&page"]>b {
@@ -6791,7 +6794,8 @@ a[name]:not([href]) {
     display: block;
 }
 a[name]:not([href]), p.sub > a[name]:target {
-    padding-top: 120px;
-    margin-top: -120px;
+    /* padding-top: 150px;
+    margin-top: -150px; */
     pointer-events: none;
+    scroll-margin-top: 9rem
 }
