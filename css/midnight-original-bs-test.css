@@ -313,7 +313,6 @@ body>table.main:nth-child(3) {
     z-index: 59;
     top: 110px;
     margin-top: -8px;
-    margin-bottom: 0.5rem;
     font-size: 0.8125rem;
     font-weight: 700;
     border-radius: 0 0 var(--main-border-radius) var(--main-border-radius);
@@ -1662,11 +1661,16 @@ select[name=imdblt] {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    font-size: 0;
 }
-#sidebar-container td.embedded a[href] {
+#sidebar-container td.embedded a[href]:not(h2>a[href]) {
     padding: .5rem 0 !important;
     text-align: center;
     width: 100%;
+    font-size: var(--font-size)
+}
+#sidebar-container td.embedded > h2 {
+    padding: 0.5rem 0
 }
 #sidebar-container>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1)>table:nth-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1),
 #sidebar-container>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1)>table:nth-child(4)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1),
@@ -2169,7 +2173,9 @@ only screen and (min-resolution:1.5dppx) {
 .label.collapse {
     cursor: pointer;
 }
-.collapsable {
+.collapsable,
+.showseasons h2,
+.showseasons h3 {
     cursor: pointer;
 }
 .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
@@ -2642,7 +2648,8 @@ button[onclick^="location"]:hover {
     /* color: var(--link-text-color); */
     filter: brightness(110%);
     border: 1px solid var(--link-text-color);
-    display: block
+    display: block;
+    cursor: pointer
 }
 #torrent-list td>a[href*="/film/info"] {
     vertical-align: middle;
@@ -6179,7 +6186,7 @@ div.film-list-container {
     max-width: 100%;
     border-radius: var(--main-border-radius);
     padding: 1rem;
-    margin: auto;
+    margin: 0 auto 0 auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -6199,7 +6206,7 @@ div.film-list-container {
     grid-template-columns: 175px auto;
     gap: 0.5rem;
     overflow: hidden;
-    background: var(--inner-td-bg-color);
+    background: var(--background1);
     box-shadow: var(--bs);
 }
 div.info_row {
@@ -6481,6 +6488,9 @@ transition:all 0.25s ease;
     background-color: hsl(231, 14%, 12%);
     border-radius: var(--main-border-radius);
     border: 1px solid var(--highlighted-border-hover-color);
+}
+td:nth-child(2).browse_td_name_cell .browse_imdb_poster {
+    left: -270px;
 }
 @media screen and (max-width:1500px) {
     .browse_td_name_cell .browse_imdb_poster {
