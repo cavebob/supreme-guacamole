@@ -2571,7 +2571,8 @@ a[href*="javascript:delBookmark"] {
     filter: brightness(90%)
 }
 a.js-wishlistadd,
-img.info__wishlist
+img.info__wishlist,
+a[title="Add to wishlist"],
 a[title="Add this film to your wishlist"] {
     -webkit-mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
     mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
@@ -6827,6 +6828,5 @@ body > div.popup {
     position: absolute;
     background: var(--blue);
     color: var(--background0);
-    border: 1px solid var(--background0);
     filter: drop-shadow(1px 2px 5px black);
 }
