@@ -2516,7 +2516,8 @@ div.dhtmlxcalendar_yahoolike .dxcaldays_ie td {
 #torrent-list>tbody:nth-child(2)>tr[id^="t"]>td:nth-last-child(8)>b>a {
     vertical-align: middle
 }
-img.minicon {
+img.minicon,
+img[src*="page"][title*="wishlist"] {
     opacity: 0
 }
 a.js-bookmarkadd,
@@ -2530,7 +2531,6 @@ a[href*="javascript:delBookmark"],
 a[href*="javascript:addRss"] {
     margin-top: 3px;
     display: inline-block;
-    /* margin-right: 2px; */
     cursor: pointer;
     vertical-align: bottom;
     filter: brightness(90%);
@@ -2586,7 +2586,9 @@ a[title="Add this film to your wishlist"] {
     background: var(--svg-gradient-bg-hover-color);
     width: 1rem;
     height: 1rem;
-    filter: brightness(90%)
+    filter: brightness(90%);
+    display: inline-block;
+    vertical-align: middle;
 }
 .film-info a[title="Add this film to your wishlist"] img {
     display: none;
@@ -2618,8 +2620,11 @@ a[title="Remove this film from your wishlist"] {
     width: 1rem;
     height: 1rem;
     filter: brightness(90%);
-    vertical-align: bottom;
+    vertical-align: middle;
     cursor: pointer;
+}
+a[title*="wishlist"]:hover {
+    filter: brightness(1)
 }
 a[onclick*="delWishlist"]>img,
 a[href*="javascript:unignoreshow"]>img {
@@ -5953,6 +5958,7 @@ div.list-description {
     border-radius: var(--main-border-radius);
     gap: 0.5rem;
     max-width: 64rem;
+    border: 1px solid var(--transparent-border-color);
 }
 @media screen and (min-width: 1920px) {
     div.list-description {
