@@ -2710,6 +2710,9 @@ td.center span {
     float: right;
     color: var(--username-text-color)
 }
+#torrent-list td.center:last-child {
+    text-align: right;
+  }
 a[href*="userdetails.php?id="]:not(#sidebar-container a[href], a.sublink, #header a[href*="userdetails.php?"]:hover),
 a.altlink[href^="userdetails.php?id="],
 a[href*="userdetails.php?id="]:not(a.normal) * {
@@ -2754,18 +2757,18 @@ table#torrent-list tbody td:nth-last-child(4) {
     margin: 0 0 0 4px;
     color: var(--background0);
     font-size: 0.5rem;
-    font-weight: 500;
+    font-weight: 700;
     font-variant: small-caps;
     text-align: top;
-    filter: brightness(80%) drop-shadow(0 1px 3px var(--background0));
+    filter: brightness(90%) drop-shadow(0 1px 3px var(--background0));
     display: inline;
     background: rgba(255, 255, 255, .033);
     line-height: normal
 }
 /* .alert-box--pm, */
 .tag.moderate {
-    background-color: var(--red);
-    color: var(--background0)
+    color: var(--red);
+    background-color: var(--background0)
 }
 span.tag.new {
     margin-top: -1px;
@@ -3144,7 +3147,7 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
 }
 /*    */
 #details .grid {
-    margin: 0.5rem 0;
+    padding: 0.25rem;
     display: flex;
     flex-flow: row wrap;
     gap: 1rem;
@@ -3157,6 +3160,7 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
     width: 8.4rem;
     height: 12.5rem;
     object-fit: cover;
+    min-height: 200px;
 }
 .readpost a,
 .std-content a,
@@ -3164,7 +3168,6 @@ td.comment a[href] {
     word-break: break-all;
 }
 div.grid__50 {
-    /* display: flex; */
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -3174,15 +3177,38 @@ a.list-overview {
     box-sizing: border-box;
     border: 1px solid var(--inner-table-border-color);
     border-radius: var(--inner-table-border-radius);
-    background-color: var(--inner-td-bg-color);box-shadow:var(--bs);
+    box-shadow:var(--bs);
     overflow: hidden;
+    height: 218px;
+    position: relative;
 }
 div.list-overview__overlay {
-    background-color: var(--inner-th-bg-color);
+    background-color: var(--inner-td-bg-color);
     box-sizing: border-box;
     display: flex;
-    padding: 0.5rem 0.2rem;
-    border-top: 1px solid var(--inner-table-border-color);
+    padding: 0.5rem 0.15rem;
+    border-top: 1px solid transparent;
+    max-height: 36px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -moz-transition: all 0.25s ease-in;
+    -webkit-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+}
+a.list-overview:hover div.list-overview__overlay{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: max-content;
+    -moz-transition: all 0.25s ease-in;
+    -webkit-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+    max-height: 100%;
+    border-top: 1px solid var(--inner-table-border-color)
 }
 div.list-overview__text {
     align-content: stretch;
@@ -3193,6 +3219,9 @@ div.list-overview__text {
     font-weight: bold;
     color: var(--heading-color);
     width: 7.5rem;
+}
+a.list-overview:hover .list-overview__text {
+    filter: drop-shadow(0px 0px 4px black);
 }
 #showpage div.list-overview__text {
     width: auto;
@@ -3208,7 +3237,7 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
     background-color: var(--inner-td-bg-color);box-shadow:var(--bs);
     overflow: hidden
 }
-#details>tbody>tr:nth-child(3):not(:nth-last-child(12))>td>div.hideablecontent[style="display: block;"]:last-child {
+#details>tbody>tr:nth-child(3)>td>div.hideablecontent[style="display: block;"]:last-child {
     display: flex;
     border: 1px solid var(--inner-table-border-color);
     border-radius: var(--inner-table-border-radius);
@@ -6930,8 +6959,11 @@ body > div.popup {
     height: max-content;
     display: inline-block;
     width: max-content;
-    transition: .15s all;
-  }
+    -moz-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
 .spoiler::after {
     content: "";
     display: block;
@@ -6959,4 +6991,8 @@ td.comment,
 td.text {
     word-break: break-word;
 }
-
+td.bottom a.alert-box--news {
+    font-size: 0.8125rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8125rem;
+}
