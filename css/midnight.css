@@ -4455,6 +4455,9 @@ td.bottom>p:first-child>font>a {
     align-self: center;
     gap: 0.5rem
 }
+td.bottom > p:first-child > font > a {
+    box-shadow: 0;
+}
 td.bottom font[size="+1"] a:only-child {
     font-weight: bold;
     font-size: .6875rem !important;
