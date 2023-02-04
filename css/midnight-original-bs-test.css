@@ -6890,7 +6890,59 @@ body > div.popup {
     color: var(--background0);
     filter: drop-shadow(1px 2px 5px black);
 }
+.label_showhide {
+    font-weight: bold;
+}
+.label_showhide span {
+    padding: 0.0rem 0.25rem 0.15rem 0.25rem;
+    background: var(--background0);
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: var(--input-box-border-radius);
+    border: 1px solid var(--inner-table-border-color);
+    color: var(--link-text-color);
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 110%;
+    margin-bottom: 1px;
+    filter: brightness(0.9)
+}
+.label_showhide span:hover {
+    background: var(--svg-gradient-bg-hover-color);
+    color: var(--span-tag-text-color);
+    filter: brightness(1)
+}
+.spoiler {
+    filter: blur(5px);
+    height: max-content;
+    display: inline-block;
+    width: max-content;
+    transition: .15s all;
+  }
+.spoiler::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(5px);
+    filter: contrast(.9) saturate(.8);
+    transition: none;
+}
+.spoiler:hover {
+    filter: none;
+}
+.spoiler:hover::after {
+    display: none;
+}
+td.comment img,
+td.text img {
+    filter: drop-shadow(0px 0px 2px black)
+}
+td.comment,
+td.text {
+    word-break: break-word;
+}
 
-/* .embedded > h2 + #form tr > td{
-    border-bottom: 1px solid var(--inner-table-border-color)
-} */
