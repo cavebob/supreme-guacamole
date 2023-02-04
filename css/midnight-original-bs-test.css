@@ -6567,7 +6567,7 @@ transition:all 0.25s ease;
     display: none;
     filter: drop-shadow(0px 0px 20px #000);
     padding: 5px;
-    background-color: hsl(231, 14%, 12%);
+    background-color: hsl(231, 14%, 14%);
     border-radius: var(--main-border-radius);
     border: 1px solid var(--highlighted-border-hover-color);
 }
