@@ -485,7 +485,6 @@ input[type=text] {
 }
 ::placeholder {
     color: var(--link-text-color);
-    opacity: 1;
 }
 #header ::placeholder {
     opacity: .5
