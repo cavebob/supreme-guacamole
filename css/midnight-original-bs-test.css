@@ -6561,7 +6561,7 @@ transition:all 0.25s ease;
 .browse_td_name_cell .browse_imdb_poster {
     position: absolute;
     top: -125px;
-    left: -297px;
+    left: -302px;
     right: auto;
     z-index: 100;
     display: none;
