@@ -4066,25 +4066,60 @@ a#listsback {
 #header .curuser-stats:last-child>font[color="darkred"]:last-of-type {
     color: var(--completed-tag-text-color);
 }
-#profilesettings div#complex tbody {
+.embedded > h2 + #form {
+    background: var(--background1);
+    padding: 1rem;
+    width: max-content;
+    display: block;
+    /* max-width: 64rem; */
+    line-height: 1rem;
+    /* display: flex; */
+
+}
+.embedded > h2 + #form > tbody {
+    display: block;
+    box-sizing: border-box;
+    width: 100%
+}
+#profilesettings div#complex tbody,
+#matrix > tbody {
     display: flex;
     flex-flow: column wrap;
 }
-#profilesettings div#complex tbody tr {
+.embedded > h2 + #form > tbody > tr {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-end;
+    border-bottom: 1px solid var(--inner-table-border-color)
+}
+.embedded > h2 + #form > tbody > tr:last-child {
+    border-bottom: 0;
+}
+.embedded > h2 + #form > tbody > tr > td {
+    padding: .5rem .7rem;
+}
+.embedded > h2 + #form > tbody > tr td.rowhead {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 8rem;
+}
+#profilesettings div#complex tbody tr{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
     flex: 1 0 auto;
     column-gap: 0.1rem;
 }
-#profilesettings div#complex tr td {
+#profilesettings div#complex tr td,
+#form #matrix tr > td {
     flex: 1 1 auto;
     justify-items: center;
     align-self: center;
     padding: 0.5rem 0.1rem;
     width: 6.5rem;
 }
-#profilesettings div#complex tr td:first-child {
+#profilesettings div#complex tr td:first-child,
+#form #matrix tr td:first-child {
     flex: 1 0 auto;
     align-self: center;
     padding: 0.5rem 0.1rem;
@@ -4092,12 +4127,36 @@ a#listsback {
     display: flex;
     justify-content: center;
 }
-#profilesettings div#complex tr:first-child td {
+#profilesettings div#complex tr:first-child td,
+#form #matrix tr:first-child td {
     display: flex;
     justify-content: center;
 }
-#profilesettings tr td input {
+#form #matrix tr {
+    display: flex;
+    flex-flow: row nowrap;
+}
+#profilesettings tr td input,
+#matrix input,
+#matrix label * {
     vertical-align: middle;
+    display: inline-block;
+padding: 0 .5rem;
+flex: 1 1 auto;
+max-width: 90%;
+}
+#matrix label {
+    display: inline-block;
+    vertical-align: middle;
+
+    /* height: var(--input-box-height) */
+}
+/* #matrix br {
+    display: none;
+} */
+#form > tbody > tr:last-child td {
+    width: 100%;
+    flex: 100%
 }
 .list-add-description,
 .list-name,
@@ -6831,3 +6890,7 @@ body > div.popup {
     color: var(--background0);
     filter: drop-shadow(1px 2px 5px black);
 }
+
+/* .embedded > h2 + #form tr > td{
+    border-bottom: 1px solid var(--inner-table-border-color)
+} */
