@@ -481,7 +481,9 @@ input[type="text"][name="subject"],
     font-size: 0.8125rem
 }
 input[type=text] {
-    padding: 0 .5rem
+    padding: 0 .5rem;
+    -webkit-text-fill-color: var(--soft-text-color);
+    color: var(--soft-text-color)
 }
 .btn,
 .button,
