@@ -6561,18 +6561,18 @@ transition:all 0.25s ease;
 .browse_td_name_cell .browse_imdb_poster {
     position: absolute;
     top: -125px;
-    left: -307px;
+    left: -297px;
     right: auto;
     z-index: 100;
     display: none;
     filter: drop-shadow(0px 0px 20px #000);
-    padding: 10px;
+    padding: 5px;
     background-color: hsl(231, 14%, 12%);
     border-radius: var(--main-border-radius);
     border: 1px solid var(--highlighted-border-hover-color);
 }
 td:nth-child(2).browse_td_name_cell .browse_imdb_poster {
-    left: -270px;
+    left: -260px;
 }
 @media screen and (max-width:1500px) {
     .browse_td_name_cell .browse_imdb_poster {
@@ -6586,13 +6586,14 @@ td:nth-child(2).browse_td_name_cell .browse_imdb_poster {
 .browse_td_name_cell .browse_imdb_poster img {
     width: 190px;
     height: auto;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     margin: 0;
     filter: brightness(0.95);
     -moz-transition: all 0.25s ease;
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
 }
 .donated_wrapper {
     width: auto;
