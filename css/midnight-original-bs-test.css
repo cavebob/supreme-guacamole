@@ -482,8 +482,13 @@ input[type="text"][name="subject"],
 }
 input[type=text] {
     padding: 0 .5rem;
-    -webkit-text-fill-color: var(--soft-text-color);
-    color: var(--soft-text-color)
+}
+::placeholder {
+    color: var(--link-text-color);
+    opacity: 1;
+}
+#header ::placeholder {
+    opacity: .5
 }
 .btn,
 .button,
