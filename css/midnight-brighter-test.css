@@ -1,42 +1,42 @@
 :root {
-    --background0: hsl(240, 15%, 5%);  
-    --background1: hsl(231, 13%, 10%); 
-    --foreground: hsl(212, 30%, 78%);  /* text */
+    --background0: hsl(231, 14%, 8%);
+    --background1: hsl(231, 15%, 12%);
+    --foreground: hsl(212, 10%, 90%);
+    --heading-color: hsla(31, 100%, 65%, 0.843);
+    --span-tag-text-color: #000000;
+    --link-text-color: hsl(220, 100%, 80%);
+    --highlight-link-text-color: hsl(216, 100%, 100%);
+    --username-text-color: #ffcd70;
+    --completed-tag-text-color: #ffb86c;
+    --internal-tag-text-color: #ffcd50;
+    --blue: #51a0fb;
+    --green: hsl(135, 94%, 65%);
+    --red: #f85454;
+    --input-box-background: hsla(220, 30%, 30%, 0.15);
+    --transparent-border-color: transparent;
+    --inner-table-border-color: hsla(231, 20%, 40%, 0.3);
+    --inner-td-bg-color: hsla(231, 16%, 17%, 0.5);
+    --inner-th-bg-color: hsla(231, 16%, 20%, 0.75);
+    --sidebar-header-color: var(--inner-th-bg-color);
     --soft-text-color: hsl(207, 40%, 66%);
     --table-details-text-color: hsl(212, 30%, 65%);
-    --heading-color: hsla(31, 100%, 65%, 0.843);
-    --span-tag-text-color: #000000;  /* black for contrast */
-    --link-text-color: hsl(212, 55%, 65%);
-    --highlight-link-text-color: hsl(216, 90%, 88%);
-    --username-text-color: #ffcd70;  /* brighter yellow */
-    --completed-tag-text-color: #ffb86c;  /* orange */
-    --internal-tag-text-color: #ffcd50;  /* internal yellow */
-    --blue: #51a0fb;  /* blue - freeleech tags and ratio related */
-    --green: hsl(135, 94%, 65%);  /* green - seeding green and font[] color adjust */
-    --red: #f85454;  /* red - new tag, alert, inbox, deletebutton(remove wishlist) */
-    --input-box-background: hsla(212, 30%, 30%, 0.15);
-    --transparent-border-color: transparent;
-    --inner-table-border-color: rgba(57, 135, 199, 0.20);
-    --inner-td-bg-color: rgba(5, 5, 5, 0.33);
-    --inner-th-bg-color: rgba(2, 2, 5, 0.500);
-    --sidebar-header-color: rgba(2, 2, 2, 0.3);
     --inner-table-border-radius: 0.5rem;
     --highlighted-hover-border-color: var(--highlight-link-text-color);
     --filterdropshadow: 0;
-    --bs: 0px 2px 8px 0px rgba(0,0,0,0.25);
+    --bs: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
     --tag-border-radius: 0.25rem;
-    --input-box-border-radius: 0.25rem; /* 4px */
-    --quote-border-radius: 0.375rem; /* 6px */
-    --main-border-radius: 0.5rem; /* 8px */
+    --input-box-border-radius: 0.25rem;
+    --quote-border-radius: 0.375rem;
+    --main-border-radius: 0.5rem;
     --input-box-height: 1.5rem;
     --font-size: 0.6875rem;
     --top-menu-border-radius: 0.5rem;
     --svg-gradient-bg-hover-color: linear-gradient(135deg, hsl(195, 100%, 57%), hsl(225, 100%, 69%));
     --highlighted-border-hover-color: hsla(207, 56%, 60%, 0.5);
     --highlighted-input-border-focus-color: hsl(207, 44%, 49%);
-    --read-comment-color: rgba(0, 0, 0, 0.15);
-    --unread-comment-color: hsla(207, 56%, 50%, 0.07);
-    --highlighted-unread-comment-border-color: hsla(207, 60%, 60%, 0.35);
+    --read-comment-color: var(--inner-td-bg-color);
+    --unread-comment-color: hsla(231, 25%, 20%, 0.3);
+    --highlighted-unread-comment-border-color: hsla(231, 20%, 50%, 0.75);
     --default-avatar-color: rgba(51, 96, 133, .501);
     --scrollbar-bg-color: hsl(240, 15%, 7%);
     --scrollbar-fg-color: hsl(240, 20%, 20%);
@@ -44,7 +44,7 @@
     --selected-text-fg-color: #000000;
     --mono-font-stack: ui-monospace, SFMono-Regular, Menlo, Monaco, Inconsolata, "Fira Mono", Consolas, "Liberation Mono", "Courier New", monospace;
     --sans-font-stack: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
+}
 /* html {
   font-size: calc(13 / 11 * 100%)
 } */
@@ -65,9 +65,6 @@ td.bottom:nth-child(2)>table:nth-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td.
 * {
     padding: 0
 }
-/* body > table.main {
-    scroll-margin-top: 50rem
-} */
 a[href],
 li,
 td.bottom p[align=center]>a[href*="&page"]>b {
@@ -118,7 +115,7 @@ select:focus {
 }
 #showmore b:hover,
 #sitesearchsubmit.searchicon:hover,
-#torrent-list td > span.genres:hover,
+#torrent-list td:nth-child(3)>span.genres:hover,
 #torrent-list td>a[href^="https://hdbits.org/film/info"]:hover,
 .tag:hover,
 a.js-bookmarkadd:hover,
@@ -311,8 +308,7 @@ body>table.main:nth-child(3) {
     border: none;
     background: var(--background1);
     z-index: 59;
-    top: 110px;
-    margin-top: -8px;
+    top: 118px;
     font-size: 0.8125rem;
     font-weight: 700;
     border-radius: 0 0 var(--main-border-radius) var(--main-border-radius);
@@ -481,13 +477,7 @@ input[type="text"][name="subject"],
     font-size: 0.8125rem
 }
 input[type=text] {
-    padding: 0 .5rem;
-}
-::placeholder {
-    color: var(--link-text-color);
-}
-#header ::placeholder {
-    opacity: .5
+    padding: 0 .5rem
 }
 .btn,
 .button,
@@ -725,10 +715,10 @@ tr.tableb:nth-child(8)>td:nth-child(3)>br {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
-    margin-right: 0.3rem;
-    margin-top: 0.5rem;
-    /* margin-bottom: 0.4rem; */
+    align-items: flex-end;
+    margin-right: .5%;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
     overflow-wrap: break-word;
 }
 div.curuser-stats:nth-child(1) {
@@ -1117,7 +1107,7 @@ a.alert-box:hover:not(.bottom>.main~.alert-box) {
   transition: all ease-in-out .25s;
 } */
 .notification-overlay {
-    position: fixed;
+    position: absolute;
     z-index: 100;
     overflow-y: auto;
     top: 0;
@@ -1125,7 +1115,6 @@ a.alert-box:hover:not(.bottom>.main~.alert-box) {
     right: 0;
     width: 100%;
     height: 100%;
-    padding-top: 2rem;
     background-color: rgba(0, 0, 0, 0.515);
 }
 .notification-frame.js-notification-frame {
@@ -1168,7 +1157,6 @@ a.alert-box:hover:not(.bottom>.main~.alert-box) {
     float: right;
     margin-left: auto;
     align-self: center;
-    cursor: pointer;
 }
 #table_open_requests>tbody:nth-child(2)>tr>td:last-child,
 #table_open_requests>tbody:nth-child(2)>tr>td:nth-child(10),
@@ -1352,9 +1340,6 @@ td.bottom>table>tbody>tr>td[width="20%"] a b {
     min-width: 38rem;
     justify-content: space-evenly;
     box-shadow: none;
-}
-#searchbox:not(div#searchbox) {
-    box-shadow: var(--bs)
 }
 #searchbox>tbody:nth-child(1) {
     display: flex;
@@ -1667,16 +1652,11 @@ select[name=imdblt] {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    font-size: 0;
 }
-#sidebar-container td.embedded a[href]:not(h2>a[href]) {
-    padding: .4rem 0 !important;
+#sidebar-container td.embedded a[href] {
+    padding: .5rem 0 !important;
     text-align: center;
     width: 100%;
-    font-size: var(--font-size)
-}
-#sidebar-container td.embedded > h2 {
-    padding: 0.5rem 0
 }
 #sidebar-container>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1)>table:nth-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1),
 #sidebar-container>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1)>table:nth-child(4)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1),
@@ -1745,7 +1725,6 @@ body>table.main>tbody>tr>td.bottom>table.main[width="737"]:only-of-type:last-chi
     margin-bottom: 1rem;
     max-width: 100%;
     box-sizing: border-box;
-    font-size: 0.8125rem;
 }
 #news h2 {
     font-size: 1.125rem
@@ -2177,12 +2156,7 @@ only screen and (min-resolution:1.5dppx) {
     width: auto !important;
 }
 .label.collapse {
-    cursor: pointer;
-}
-.collapsable,
-.showseasons h2,
-.showseasons h3 {
-    cursor: pointer;
+    cursor: default;
 }
 .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
     margin: 0;
@@ -2513,11 +2487,10 @@ div.dhtmlxcalendar_yahoolike .dxcaldays_ie td {
     padding: .5em;
     border-top: 1px solid var(--inner-table-border-color)
 }
-#torrent-list>tbody:nth-child(2)>tr[id^="t"]>td:nth-last-child(8)>b>a {
+#torrent-list>tbody:nth-child(2)>tr[id^="t"]>td:nth-child(3)>b>a {
     vertical-align: middle
 }
-img.minicon,
-img[src*="page"][title*="wishlist"] {
+img.minicon {
     opacity: 0
 }
 a.js-bookmarkadd,
@@ -2531,6 +2504,7 @@ a[href*="javascript:delBookmark"],
 a[href*="javascript:addRss"] {
     margin-top: 3px;
     display: inline-block;
+    /* margin-right: 2px; */
     cursor: pointer;
     vertical-align: bottom;
     filter: brightness(90%);
@@ -2577,30 +2551,19 @@ a[href*="javascript:delBookmark"] {
     filter: brightness(90%)
 }
 a.js-wishlistadd,
-img.info__wishlist,
-a[title="Add to wishlist"],
-a[title="Add to wishlist"][onclick*="delWishlist"],
-a[title="Add this film to your wishlist"] {
+img.info__wishlist {
     -webkit-mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
     mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
     background: var(--svg-gradient-bg-hover-color);
     width: 1rem;
     height: 1rem;
-    filter: brightness(90%);
-    display: inline-block;
-    vertical-align: middle;
-}
-.film-info a[title="Add this film to your wishlist"] img {
-    display: none;
-    margin-bottom: 0px;
+    filter: brightness(90%)
 }
 img.info__wishlist {
     padding-left: 1rem;
 }
 a.js-wishlistdel,
-a[onclick*="delWishlist"],
-a[title="Remove from wishlist"],
-a[title="Remove this film from your wishlist"] {
+a[onclick*="delWishlist"] {
     background: var(--red);
     -webkit-mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
     mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
@@ -2610,9 +2573,7 @@ a[title="Remove this film from your wishlist"] {
     cursor: pointer;
 }
 a[onclick*="delWishlist"],
-a[href*="javascript:unignoreshow"],
-a[title="Remove from wishlist"],
-a[title="Remove this film from your wishlist"] {
+a[href*="javascript:unignoreshow"] {
     display: inline-block;
     background: var(--red);
     -webkit-mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
@@ -2620,11 +2581,8 @@ a[title="Remove this film from your wishlist"] {
     width: 1rem;
     height: 1rem;
     filter: brightness(90%);
-    vertical-align: middle;
+    vertical-align: bottom;
     cursor: pointer;
-}
-a[title*="wishlist"]:hover {
-    filter: brightness(1)
 }
 a[onclick*="delWishlist"]>img,
 a[href*="javascript:unignoreshow"]>img {
@@ -2644,7 +2602,7 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
     display: block
 }
 #torrent-list tr.featured:hover {
-    background: var(--inner-th-bg-color);
+    background: rgba(5, 5, 5, .66)
 }
 button[onclick^="hidetorrent"],
 button[onclick^="ignoreShow"],
@@ -2670,8 +2628,7 @@ button[onclick^="location"]:hover {
     /* color: var(--link-text-color); */
     filter: brightness(110%);
     border: 1px solid var(--link-text-color);
-    display: block;
-    cursor: pointer
+    display: block
 }
 #torrent-list td>a[href*="/film/info"] {
     vertical-align: middle;
@@ -2689,7 +2646,7 @@ button[onclick^="location"]:hover {
 #torrent-list td>a[href*="/film/info"]:hover {
     filter: brightness(110%)
 }
-#torrent-list td > span.genres {
+#torrent-list td:nth-child(3)>span.genres {
     color: transparent;
     filter: brightness(80%)
 }
@@ -2703,16 +2660,13 @@ td.center span {
     float: right;
     text-align: end
 }
-#torrent-list tbody tr td:nth-last-child(5) {
+#torrent-list tbody tr td:nth-child(6) {
     text-align: end
 }
 #torrent-list a:nth-child(1)[href*="userdetails.php?"] {
     float: right;
     color: var(--username-text-color)
 }
-#torrent-list td.center:last-child {
-    text-align: right;
-  }
 a[href*="userdetails.php?id="]:not(#sidebar-container a[href], a.sublink, #header a[href*="userdetails.php?"]:hover),
 a.altlink[href^="userdetails.php?id="],
 a[href*="userdetails.php?id="]:not(a.normal) * {
@@ -2737,12 +2691,12 @@ a.sublink[href*="uppedby"]:hover {
     margin-top: 0.5rem;
     padding: 0.1rem 1rem;
 }
-table#torrent-list tbody td:nth-last-child(4) {
+table#torrent-list tbody td:nth-child(7) {
     font-size: 0;
     color: transparent;
     text-align: center
 }
-#torrent-list td:nth-last-child(4)>a:nth-child(1) {
+#torrent-list td:nth-child(7)>a:nth-child(1) {
     font-size: var(--font-size);
     text-align: center
 }
@@ -2757,18 +2711,18 @@ table#torrent-list tbody td:nth-last-child(4) {
     margin: 0 0 0 4px;
     color: var(--background0);
     font-size: 0.5rem;
-    font-weight: 700;
+    font-weight: 500;
     font-variant: small-caps;
     text-align: top;
-    filter: brightness(90%) drop-shadow(0 1px 3px var(--background0));
+    filter: brightness(80%) drop-shadow(0 1px 3px var(--background0));
     display: inline;
     background: rgba(255, 255, 255, .033);
     line-height: normal
 }
 /* .alert-box--pm, */
 .tag.moderate {
-    color: var(--red);
-    background-color: var(--background0)
+    background-color: var(--red);
+    color: var(--background0)
 }
 span.tag.new {
     margin-top: -1px;
@@ -3147,7 +3101,7 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
 }
 /*    */
 #details .grid {
-    padding: 0.25rem;
+    margin: 0.5rem 0;
     display: flex;
     flex-flow: row wrap;
     gap: 1rem;
@@ -3160,7 +3114,6 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
     width: 8.4rem;
     height: 12.5rem;
     object-fit: cover;
-    min-height: 200px;
 }
 .readpost a,
 .std-content a,
@@ -3168,6 +3121,7 @@ td.comment a[href] {
     word-break: break-all;
 }
 div.grid__50 {
+    /* display: flex; */
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -3177,46 +3131,15 @@ a.list-overview {
     box-sizing: border-box;
     border: 1px solid var(--inner-table-border-color);
     border-radius: var(--inner-table-border-radius);
-    box-shadow:var(--bs);
+    background-color: var(--inner-td-bg-color);box-shadow:var(--bs);
     overflow: hidden;
-    height: 218px;
-    position: relative;
 }
-#showpage .contentcontent a.list-overview {
-    height: auto
-}
-
 div.list-overview__overlay {
-    background-color: var(--inner-td-bg-color);
+    background-color: var(--inner-th-bg-color);
     box-sizing: border-box;
     display: flex;
-    padding: 0.5rem 0.15rem;
-    border-top: 1px solid transparent;
-    max-height: 36px;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    backdrop-filter: blur(10px);
-    -moz-transition: all 0.25s ease-in;
-    -webkit-transition: all 0.25s ease-in;
-    -o-transition: all 0.25s ease-in;
-    transition: all 0.25s ease-in;
-}
-#showpage .contentcontent div.list-overview__overlay {
-    position: static;
-    margin-top: -10px;
-}
-a.list-overview:hover:not(#showpage *) div.list-overview__overlay{
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    height: max-content;
-    -moz-transition: all 0.25s ease-in;
-    -webkit-transition: all 0.25s ease-in;
-    -o-transition: all 0.25s ease-in;
-    transition: all 0.25s ease-in;
-    max-height: 100%;
-    border-top: 1px solid var(--inner-table-border-color)
+    padding: 0.5rem 0.2rem;
+    border-top: 1px solid var(--inner-table-border-color);
 }
 div.list-overview__text {
     align-content: stretch;
@@ -3227,9 +3150,6 @@ div.list-overview__text {
     font-weight: bold;
     color: var(--heading-color);
     width: 7.5rem;
-}
-a.list-overview:hover .list-overview__text {
-    filter: drop-shadow(0px 0px 4px black);
 }
 #showpage div.list-overview__text {
     width: auto;
@@ -3245,7 +3165,7 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
     background-color: var(--inner-td-bg-color);box-shadow:var(--bs);
     overflow: hidden
 }
-#details>tbody>tr:nth-child(3)>td>div.hideablecontent[style="display: block;"]:last-child {
+#details>tbody>tr:nth-child(3):not(:nth-last-child(12))>td>div.hideablecontent[style="display: block;"]:last-child {
     display: flex;
     border: 1px solid var(--inner-table-border-color);
     border-radius: var(--inner-table-border-radius);
@@ -3343,7 +3263,7 @@ img#showbanner {
     margin: .4rem;box-shadow:var(--bs);
 }
 ul.showlinks {
-    margin: 1rem 0.5rem 0.5rem .5rem;
+    margin: .4rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -4114,60 +4034,25 @@ a#listsback {
 #header .curuser-stats:last-child>font[color="darkred"]:last-of-type {
     color: var(--completed-tag-text-color);
 }
-.embedded > h2 + #form {
-    background: var(--background1);
-    padding: 1rem;
-    width: max-content;
-    display: block;
-    /* max-width: 64rem; */
-    line-height: 1rem;
-    /* display: flex; */
-
-}
-.embedded > h2 + #form > tbody {
-    display: block;
-    box-sizing: border-box;
-    width: 100%
-}
-#profilesettings div#complex tbody,
-#matrix > tbody {
+#profilesettings div#complex tbody {
     display: flex;
     flex-flow: column wrap;
 }
-.embedded > h2 + #form > tbody > tr {
+#profilesettings div#complex tbody tr {
     display: flex;
     flex-flow: row nowrap;
-    border-bottom: 1px solid var(--inner-table-border-color)
-}
-.embedded > h2 + #form > tbody > tr:last-child {
-    border-bottom: 0;
-}
-.embedded > h2 + #form > tbody > tr > td {
-    padding: .5rem .7rem;
-}
-.embedded > h2 + #form > tbody > tr td.rowhead {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 8rem;
-}
-#profilesettings div#complex tbody tr{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content: flex-end;
     flex: 1 0 auto;
     column-gap: 0.1rem;
 }
-#profilesettings div#complex tr td,
-#form #matrix tr > td {
+#profilesettings div#complex tr td {
     flex: 1 1 auto;
     justify-items: center;
     align-self: center;
     padding: 0.5rem 0.1rem;
     width: 6.5rem;
 }
-#profilesettings div#complex tr td:first-child,
-#form #matrix tr td:first-child {
+#profilesettings div#complex tr td:first-child {
     flex: 1 0 auto;
     align-self: center;
     padding: 0.5rem 0.1rem;
@@ -4175,36 +4060,12 @@ a#listsback {
     display: flex;
     justify-content: center;
 }
-#profilesettings div#complex tr:first-child td,
-#form #matrix tr:first-child td {
+#profilesettings div#complex tr:first-child td {
     display: flex;
     justify-content: center;
 }
-#form #matrix tr {
-    display: flex;
-    flex-flow: row nowrap;
-}
-#profilesettings tr td input,
-#matrix input,
-#matrix label * {
+#profilesettings tr td input {
     vertical-align: middle;
-    display: inline-block;
-padding: 0 .5rem;
-flex: 1 1 auto;
-max-width: 90%;
-}
-#matrix label {
-    display: inline-block;
-    vertical-align: middle;
-
-    /* height: var(--input-box-height) */
-}
-/* #matrix br {
-    display: none;
-} */
-#form > tbody > tr:last-child td {
-    width: 100%;
-    flex: 100%
 }
 .list-add-description,
 .list-name,
@@ -5812,7 +5673,6 @@ div#tv-episode-list {
     padding: 0.5rem;
     border-top: 0;
     border-radius: 0 0 var(--inner-table-border-radius) var(--inner-table-border-radius);
-    background: var(--inner-td-bg-color);
 }
 #showpage~* {
     display: contents;
@@ -5829,24 +5689,17 @@ div.contentelement:nth-child(3) .contentcontent img {
 }
 .contentcontent #showbanner {
     display: block;
-    /* width: 100%; */
+    width: 100%;
     margin: 0;
     image-rendering: optimizeQuality;
-}
-#showpage img[src*="chart.googleapis.com"] {
-    filter: invert(.9)
 }
 .contentcontent a {
     display: block;
 }
-#overview,
-#overview + .contentelement {
-    box-shadow: var(--bs);
-}
 #overview .contentcontent {
     text-align: left;
     line-height: normal;
-    font-size: 0.8125rem;
+    font-size: calc(var(--font-size) * 12/11);
     padding: 0.5rem;
     border: 1px solid var(--inner-table-border-color);
     border-top: 0;
@@ -5953,7 +5806,7 @@ a[href*="javascript:addRss"] {
     width: 1rem;
     height: 1rem;
     filter: brightness(90%);
-    /* vertical-align: middle; */
+    vertical-align: middle;
 }
 a.js-rssdel {
     margin: 0;
@@ -5995,7 +5848,6 @@ div.list-description {
     border-radius: var(--main-border-radius);
     gap: 0.5rem;
     max-width: 64rem;
-    border: 1px solid var(--transparent-border-color);
 }
 @media screen and (min-width: 1920px) {
     div.list-description {
@@ -6305,12 +6157,11 @@ div.film-list-container {
     max-width: 100%;
     border-radius: var(--main-border-radius);
     padding: 1rem;
-    margin: 0 auto 0 auto;
+    margin: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     gap: 1.5rem;
-    
 }
 .grid.info_row {
     flex: 1 1 auto;
@@ -6325,8 +6176,7 @@ div.film-list-container {
     grid-template-columns: 175px auto;
     gap: 0.5rem;
     overflow: hidden;
-    background: var(--background1);
-    box-shadow: var(--bs);
+    background: rgb(27, 27, 36);
 }
 div.info_row {
     border-bottom: 0;
@@ -6598,39 +6448,32 @@ transition:all 0.25s ease;
 .browse_td_name_cell .browse_imdb_poster {
     position: absolute;
     top: -125px;
-    left: -302px;
+    left: -307px;
     right: auto;
     z-index: 100;
     display: none;
     filter: drop-shadow(0px 0px 20px #000);
-    padding: 5px;
-    background-color: hsl(231, 14%, 14%);
+    padding: 10px;
+    background-color: hsl(231, 14%, 12%);
     border-radius: var(--main-border-radius);
     border: 1px solid var(--highlighted-border-hover-color);
-}
-td:nth-child(2).browse_td_name_cell .browse_imdb_poster {
-    left: -260px;
 }
 @media screen and (max-width:1500px) {
     .browse_td_name_cell .browse_imdb_poster {
         left: auto;
         right: -211px
     }
-    td:nth-child(2).browse_td_name_cell .browse_imdb_poster {
-        left: auto;
-    }
 }
 .browse_td_name_cell .browse_imdb_poster img {
     width: 190px;
     height: auto;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     margin: 0;
     filter: brightness(0.95);
     -moz-transition: all 0.25s ease;
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
-    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
 }
 .donated_wrapper {
     width: auto;
@@ -6926,81 +6769,4 @@ img[alt="Read"] {
     .curuser-stats:nth-child(3)>a[href*="mytorrents.php"] {
         order: -10;
     }
-}
-a[name]:not([href]) {
-    display: block;
-}
-a[name]:not([href]), p.sub > a[name]:target {
-    pointer-events: none;
-    scroll-margin-top: 10rem
-}
-body > div.popup {
-    position: absolute;
-    background: var(--blue);
-    color: var(--background0);
-    filter: drop-shadow(1px 2px 5px black);
-}
-.label_showhide {
-    font-weight: bold;
-}
-.label_showhide span {
-    padding: 0.0rem 0.25rem 0.15rem 0.25rem;
-    background: var(--background0);
-    box-sizing: border-box;
-    display: inline-block;
-    border-radius: var(--input-box-border-radius);
-    border: 1px solid var(--inner-table-border-color);
-    color: var(--link-text-color);
-    font-weight: bold;
-    font-variant: small-caps;
-    font-size: 110%;
-    margin-bottom: 1px;
-    filter: brightness(0.9)
-}
-.label_showhide span:hover {
-    background: var(--svg-gradient-bg-hover-color);
-    color: var(--span-tag-text-color);
-    filter: brightness(1)
-}
-.spoiler {
-    filter: blur(5px);
-    height: max-content;
-    display: inline-block;
-    width: max-content;
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-}
-.spoiler::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    backdrop-filter: blur(5px);
-    filter: contrast(.9) saturate(.8);
-    transition: none;
-}
-.spoiler:hover {
-    filter: none;
-}
-.spoiler:hover::after {
-    display: none;
-}
-td.comment img,
-td.text img {
-    filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.25));
-    border-radius: 4px;
-}
-td.comment,
-td.text {
-    word-break: break-word;
-}
-td.bottom a.alert-box--news {
-    font-size: 0.8125rem;
-    padding: 0.5rem 0.75rem;
-    font-size: 0.8125rem;
 }
