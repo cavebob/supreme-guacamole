@@ -3182,6 +3182,13 @@ a.list-overview {
     height: 218px;
     position: relative;
 }
+#showpage .contentcontent a.list-overview {
+    height: auto
+}
+#showwpage .contentcontent div.list-overview__overlay {
+    position: static;
+    margin-top: -10px;
+    }
 div.list-overview__overlay {
     background-color: var(--inner-td-bg-color);
     box-sizing: border-box;
@@ -3198,7 +3205,7 @@ div.list-overview__overlay {
     -o-transition: all 0.25s ease-in;
     transition: all 0.25s ease-in;
 }
-a.list-overview:hover div.list-overview__overlay{
+a.list-overview:hover:not(#showpage *) div.list-overview__overlay{
     position: absolute;
     bottom: 0px;
     width: 100%;
