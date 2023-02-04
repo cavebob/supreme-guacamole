@@ -2707,10 +2707,9 @@ td.center span {
     text-align: end
 }
 #torrent-list a:nth-child(1)[href*="userdetails.php?"] {
-    float: right;
     color: var(--username-text-color)
 }
-#torrent-list td.center:last-child {
+.bottom #torrent-list td.center:last-child {
     text-align: right;
   }
 a[href*="userdetails.php?id="]:not(#sidebar-container a[href], a.sublink, #header a[href*="userdetails.php?"]:hover),
