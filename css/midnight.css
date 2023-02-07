@@ -32,6 +32,8 @@
     --font-size: 0.6875rem;
     --top-menu-border-radius: 0.5rem;
     --svg-gradient-bg-hover-color: linear-gradient(135deg, hsl(195, 100%, 57%), hsl(225, 100%, 69%));
+    --logo-url: url("../../pic/midnight/logo/logo.svg");
+    --logo-gradient: linear-gradient(45turn, hsl(2, 72%, 70%), hsl(48, 75%, 75%));
     --highlighted-border-hover-color: hsla(207, 56%, 60%, 0.5);
     --highlighted-input-border-focus-color: hsl(207, 44%, 49%);
     --read-comment-color: rgba(0, 0, 0, 0.15);
@@ -112,7 +114,7 @@ select:focus {
 }
 #showmore b:hover,
 #sitesearchsubmit.searchicon:hover,
-#torrent-list td > span.genres:hover,
+#torrent-list td>span.genres:hover,
 #torrent-list td>a[href^="https://hdbits.org/film/info"]:hover,
 .tag:hover,
 a.js-bookmarkadd:hover,
@@ -276,7 +278,8 @@ body>table.main:nth-child(3) {
 #header {
     border-radius: var(--main-border-radius) var(--main-border-radius) 0 0;
     margin-bottom: 0 !important;
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     min-height: 80px;
     top: 1rem;
     z-index: 50
@@ -309,7 +312,7 @@ body>table.main:nth-child(3) {
     font-size: 0.8125rem;
     font-weight: 700;
     border-radius: 0 0 var(--main-border-radius) var(--main-border-radius);
-    filter: drop-shadow(0 8px 4px rgba(0,0,0,0.2))
+    filter: drop-shadow(0 8px 4px rgba(0, 0, 0, 0.2))
 }
 .menu tbody tr {
     top: 8vh;
@@ -537,7 +540,8 @@ input#sitesearchinput:focus,
 textarea:focus,
 input[type="text"]:focus {
     border: 1px solid var(--highlighted-input-border-focus-color);
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     color: var(--highlight-link-text-color);
     filter: brightness(100%);
     -moz-transition: all 0.25s ease;
@@ -602,7 +606,8 @@ input[type="text"]:focus {
     border-top-right-radius: 0;
 }
 .autocomplete-suggestions {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     color: var(--link-text-color);
     line-height: 1rem;
     border: 0 1px 1px 1px solid var(--inner-table-border-color);
@@ -654,9 +659,9 @@ div#logo {
     height: 3.65rem;
     width: 100%;
     margin: 1.175rem;
-    background: linear-gradient(45turn, hsl(2, 72%, 70%), hsl(48, 75%, 75%));
-    -webkit-mask: url("../pic/midnight/logo/logo.svg") left no-repeat;
-    mask: url("../pic/midnight/logo/logo.svg") left no-repeat;
+    background: var(--logo-gradient);
+    -webkit-mask: var(--logo-url) left no-repeat;
+    mask: var(--logo-url) left no-repeat;
     -webkit-mask-size: contain;
     mask-size: contain;
 }
@@ -1109,7 +1114,8 @@ a.alert-box:hover:not(.bottom>.main~.alert-box) {
 }
 .notification-frame.js-notification-frame {
     max-width: 48rem;
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     padding: .3rem .5rem;
     border: 1px solid var(--inner-table-border-color);
     filter: drop-shadow(0 0px 20px black) brightness(120%);
@@ -1198,7 +1204,8 @@ body>table.main>tbody>tr>td.bottom:nth-child(2)>table:nth-child(1)>tbody>tr:nth-
 html body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="1"]+h2+table[width="100%"][border="1"]>tbody>tr>td:only-child>p {
     font-size: 0.812rem;
     padding: 1rem;
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     text-align: start;
     width: auto;
 }
@@ -1216,7 +1223,8 @@ html body table.main td.bottom table.main td.embedded h2+table[width="100%"][bor
 html body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="1"]>tbody>tr>td:only-child>ul:only-child {
     display: flex;
     padding: 1rem;
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     border-radius: var(--main-border-radius);
     flex-flow: column wrap;
     justify-items: flex-start;
@@ -1263,7 +1271,8 @@ body table.main td.bottom table.main td.embedded h2+table[width="100%"][border="
 ul#tabs,
 td.bottom:nth-child(2)>script+table[width="800"]:nth-child(2)>tbody:nth-child(1)>tr:nth-child(1),
 td.bottom:nth-child(2)>h1+script+table[width="800"]:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1) {
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     overflow: hidden;
     border-radius: var(--top-menu-border-radius);
     width: 100%;
@@ -1286,7 +1295,8 @@ td.bottom:nth-child(2)>h1+script+table[width="800"]:nth-child(3)>tbody:nth-child
 }
 td.bottom>table[width="500"]>tbody>tr>td[width="16%"][align="center"]:first-child:nth-last-child(2),
 td.bottom>table[width="500"]>tbody>tr>td[width="16%"][align="center"]:last-child:nth-child(2) {
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     width: 20%;
     font-size: 0.8125rem;
 }
@@ -1606,7 +1616,8 @@ select[name=imdblt] {
     top: calc(118px + 25px + 1rem);
     height: min-content;
     position: sticky;
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     flex: 1 100px
 }
 #sidebar-container>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(1)>td.embedded {
@@ -1626,7 +1637,8 @@ select[name=imdblt] {
 }
 #sidebar-container td.embedded h2+table {
     border: 1px solid var(--inner-table-border-color);
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     border-top: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -1653,7 +1665,7 @@ select[name=imdblt] {
     width: 100%;
     font-size: var(--font-size)
 }
-#sidebar-container td.embedded > h2 {
+#sidebar-container td.embedded>h2 {
     padding: 0.5rem 0
 }
 #sidebar-container>table:nth-child(1)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1)>table:nth-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1),
@@ -1715,7 +1727,8 @@ body>table.main>tbody>tr>td.bottom>table.main[width="737"]:only-of-type:last-chi
 #news {
     display: flex;
     flex-direction: column;
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     border: 1px solid var(--transparent-border-color);
     border-radius: var(--main-border-radius);
     height: max-content;
@@ -1807,7 +1820,8 @@ input[type="radio"] {
     margin: -2px .2rem 0
 }
 body>table.main>tbody>tr>td.bottom>table.main:only-of-type:last-child:nth-child(2)>tbody:only-child>tr:only-child>td.embedded:only-child>h2:nth-child(2) {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     border-radius: var(--main-border-radius) var(--main-border-radius) 0 0;
     height: 100%;
     text-align: center;
@@ -1817,7 +1831,8 @@ body>table.main>tbody>tr>td.bottom>table.main:only-of-type:last-child:nth-child(
     border-bottom: 1px solid var(--inner-table-border-color);
 }
 body>table.main>tbody>tr>td.bottom>table.main:only-of-type:last-child:nth-child(2)>tbody:only-child>tr:only-child>td.embedded:only-child>h2:nth-child(4) {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     border-radius: var(--main-border-radius) var(--main-border-radius) 0 0;
     height: 100%;
     text-align: center;
@@ -1832,7 +1847,8 @@ body>table.main>tbody>tr>td.bottom>table.main:only-of-type:last-child:nth-child(
     justify-content: center;
     line-height: 1rem;
     padding: .5rem;
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     border-radius: 0 0 var(--main-border-radius) var(--main-border-radius);
     filter: var(--filterdropshadow);
     flex: 1 1 68%;
@@ -1843,7 +1859,8 @@ body>table.main>tbody>tr>td.bottom>table.main:only-of-type:last-child:nth-child(
     justify-content: center;
     line-height: 1rem;
     padding: .5rem;
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     align-content: center;
     border-radius: 0 0 var(--main-border-radius) var(--main-border-radius);
     filter: var(--filterdropshadow);
@@ -1891,7 +1908,8 @@ td.bottom:nth-child(2)>h1+script+table[width="800"]:nth-child(3)>tbody:nth-child
     white-space: nowrap;
     align-items: center;
     width: 100%;
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
 }
 td.bottom>table[width="500"]>tbody>tr:only-child {
     justify-content: space-around;
@@ -2103,7 +2121,8 @@ only screen and (min-resolution:1.5dppx) {
     position: relative;
     margin: 0;
     padding: 1px 0 2px;
-    background-color: var(--inner-td-bg-color);box-shadow:var(--bs);
+    background-color: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
     box-shadow: none;
     background-image: none;
     background-size: 0;
@@ -2118,7 +2137,8 @@ only screen and (min-resolution:1.5dppx) {
     text-decoration: none
 }
 .tag-content:hover {
-    background-color: var(--inner-td-bg-color);box-shadow:var(--bs);
+    background-color: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
     text-decoration: none;
     border: 1px solid var(--link-text-color);
     filter: brightness(120%)
@@ -2244,7 +2264,8 @@ div.chosen-container .search-choice {
     width: auto;
     height: auto;
     border: 1px solid var(--inner-table-border-color);
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     background-image: none;
     cursor: text;
     border-radius: var(--input-box-border-radius);
@@ -2253,7 +2274,8 @@ div.chosen-container .search-choice {
 }
 .chosen-container-active .chosen-choices {
     border: 1px solid var(--highlighted-input-border-focus-color);
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     box-shadow: none;
     border-radius: var(--input-box-border-radius)
 }
@@ -2262,7 +2284,8 @@ div.chosen-container .search-choice {
     margin: 2px;
     padding: 2px 16px 3px 5px;
     line-height: .6875rem;
-    border: 1px solid var(--background1);box-shadow:var(--bs);
+    border: 1px solid var(--background1);
+    box-shadow: var(--bs);
     max-width: 100%;
     border-radius: 0;
     font-size: 0.625rem;
@@ -2433,7 +2456,8 @@ div.dhtmlxcalendar_yahoolike .dxcaldays>tbody>tr>td.hover,
 div.dhtmlxcalendar_yahoolike .dxcaldays>tbody>tr>td.selected {
     border: 1px solid #4682b4;
     background-color: #4682b4;
-    color: var(--background1);box-shadow:var(--bs);
+    color: var(--background1);
+    box-shadow: var(--bs);
     opacity: 1;
     font-weight: 500;
     box-sizing: border-box
@@ -2575,6 +2599,7 @@ img.info__wishlist {
 }
 a.js-wishlistdel,
 a[onclick*="delWishlist"],
+a[onclick*="removeFromWishlist"],
 a[title="Remove from wishlist"],
 a[title="Remove this film from your wishlist"] {
     background: var(--red);
@@ -2585,6 +2610,7 @@ a[title="Remove this film from your wishlist"] {
     filter: brightness(90%);
     cursor: pointer;
 }
+a[onclick*="removeFromWishlist"],
 a[onclick*="delWishlist"],
 a[href*="javascript:unignoreshow"],
 a[title="Remove from wishlist"],
@@ -2665,7 +2691,7 @@ button[onclick^="location"]:hover {
 #torrent-list td>a[href*="/film/info"]:hover {
     filter: brightness(110%)
 }
-#torrent-list td > span.genres {
+#torrent-list td>span.genres {
     color: transparent;
     filter: brightness(80%)
 }
@@ -2687,7 +2713,7 @@ td.center span {
 }
 .bottom #torrent-list td.center:last-child {
     text-align: right;
-  }
+}
 a[href*="userdetails.php?id="]:not(#sidebar-container a[href], a.sublink, #header a[href*="userdetails.php?"]:hover),
 a.altlink[href^="userdetails.php?id="],
 a[href*="userdetails.php?id="]:not(a.normal) * {
@@ -2862,7 +2888,8 @@ tr>td>div[id].label {
     padding: 0 1rem;
     text-align: center;
     border-radius: var(--inner-table-border-radius);
-    background: var(--inner-td-bg-color);box-shadow:var(--bs);
+    background: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
     display: flex;
     align-items: center;
     border: 1px solid var(--inner-table-border-color)
@@ -2907,7 +2934,8 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
     line-height: 1rem;
 }
 .lottery_table2>tbody>tr:nth-child(2)>td>div[id^=c].hideablecontent {
-    background-color: var(--inner-td-bg-color);box-shadow:var(--bs);
+    background-color: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
     border-radius: var(--inner-table-border-radius);
     border: 1px solid var(--inner-table-border-color);
 }
@@ -3059,7 +3087,8 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
     margin-top: -12px;
     font-weight: 700;
     color: var(--heading-color);
-    background-color: var(--inner-td-bg-color);box-shadow:var(--bs);
+    background-color: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
     border-bottom-left-radius: var(--main-border-radius);
     border-bottom-right-radius: var(--main-border-radius);
     align-items: center;
@@ -3136,7 +3165,7 @@ a.list-overview {
     box-sizing: border-box;
     border: 1px solid var(--inner-table-border-color);
     border-radius: var(--inner-table-border-radius);
-    box-shadow:var(--bs);
+    box-shadow: var(--bs);
     overflow: hidden;
     height: 218px;
     position: relative;
@@ -3144,7 +3173,6 @@ a.list-overview {
 #showpage .contentcontent a.list-overview {
     height: auto
 }
-
 div.list-overview__overlay {
     background-color: var(--inner-td-bg-color);
     box-sizing: border-box;
@@ -3165,7 +3193,7 @@ div.list-overview__overlay {
     position: static;
     margin-top: -10px;
 }
-a.list-overview:hover:not(#showpage *) div.list-overview__overlay{
+a.list-overview:hover:not(#showpage *) div.list-overview__overlay {
     position: absolute;
     bottom: 0px;
     width: 100%;
@@ -3200,19 +3228,22 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
     display: flex;
     border: 1px solid var(--inner-table-border-color);
     border-radius: var(--inner-table-border-radius);
-    background-color: var(--inner-td-bg-color);box-shadow:var(--bs);
+    background-color: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
     overflow: hidden
 }
 #details>tbody>tr:nth-child(3)>td>div.hideablecontent[style="display: block;"]:last-child {
     display: flex;
     border: 1px solid var(--inner-table-border-color);
     border-radius: var(--inner-table-border-radius);
-    background-color: var(--inner-td-bg-color);box-shadow:var(--bs);
+    background-color: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
     padding: 0.5rem;
 }
 div.film-info {
     padding: .6875rem;
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     border-radius: var(--main-border-radius)
 }
 .lottery_table2 table.fourcell>tbody>tr,
@@ -3243,6 +3274,7 @@ table.contentlayout.fourcell>tbody>tr>td {
 p.sig,
 table.tablesorter.table_other_copies>tbody>tr>td,
 #tags.tablesorter>tbody>tr>td,
+#wishlist-items>tr>td,
 td.bottom form[method=get][action=""][style="margin-bottom:20px;"]+table[cellpadding="5"]>tbody>tr>td {
     border-top: 1px solid var(--inner-table-border-color)
 }
@@ -3264,7 +3296,8 @@ td.heading {
     padding: 0 .5rem;
     border: 1px solid var(--inner-table-border-color);
     border-radius: var(--inner-table-border-radius);
-    background-color: var(--inner-td-bg-color);box-shadow:var(--bs);
+    background-color: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
 }
 img[src*="pic/flag"] {
     height: 18px;
@@ -3298,7 +3331,8 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
 img#showbanner {
     object-fit: cover;
     border-radius: 0.5rem;
-    margin: .4rem;box-shadow:var(--bs);
+    margin: .4rem;
+    box-shadow: var(--bs);
 }
 ul.showlinks {
     margin: 1rem 0.5rem 0.5rem .5rem;
@@ -3337,7 +3371,8 @@ ul.showlinks>li>a[href*="anidb.net"] {
     display: block;
 }
 table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth-child(5)~table[width="930"][cellpadding="5"] {
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     width: auto !important;
     max-width: 64rem;
     padding: 1rem
@@ -3346,7 +3381,8 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
     text-align: center;
     cursor: pointer
 }
-table.tablesorter.table_other_copies th {
+table.tablesorter.table_other_copies th,
+#wishlist.tablesorter th {
     padding: 0.5em;
 }
 table.tablesorter.table_other_copies>tbody>tr>td:last-child,
@@ -3384,7 +3420,8 @@ table.tablesorter.table_other_copies>tbody>tr {
 .tablesorter.table_other_copies,
 #tags.tablesorter,
 table.padding2 {
-    background-color: var(--inner-td-bg-color);box-shadow:var(--bs);
+    background-color: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
     border: 1px solid var(--inner-table-border-color);
     line-height: 1rem;
     overflow: clip
@@ -3392,7 +3429,8 @@ table.padding2 {
 #details>tbody>tr>td>table:not(:first-child):not([class]) {
     border: 1px solid var(--inner-table-border-color);
     /* border-radius: var(--inner-table-border-radius); */
-    background-color: var(--inner-td-bg-color);box-shadow:var(--bs);
+    background-color: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
     line-height: 1rem;
     overflow: clip
 }
@@ -3413,6 +3451,11 @@ table.padding2 {
 }
 table.padding2 td {
     padding: 0.15rem 0.5rem;
+    border-top: 1px solid var(--inner-table-border-color);
+}
+#wishlist-items td {
+    padding: 0.15rem 0.5rem;
+    background: var(--inner-td-bg-color);
     border-top: 1px solid var(--inner-table-border-color);
 }
 #table_details_seeders td,
@@ -3457,7 +3500,8 @@ table.padding2 tr:first-child>td {
     filter: brightness(50%)
 }
 .bottom>h1+strong~p~#torrent-list tbody tr td.center:last-child,
-.lottery_table.tablesorter.table_encodes>tbody>tr>td:last-child {
+.lottery_table.tablesorter.table_encodes>tbody>tr>td:last-child,
+#wishlist-items td:last-child {
     font-family: var(--mono-font-stack);
 }
 #table_details_seeders tr td:first-child>em,
@@ -3492,6 +3536,13 @@ table.padding2 th {
     background-color: var(--inner-th-bg-color);
     background-clip: border-box;
 }
+#wishlist thead th.aleft.header {
+    border-top: 1px solid var(--inner-table-border-color);
+    background-color: var(--inner-th-bg-color);
+    /* padding: 0.2rem 0.5rem; */
+    text-align: center;
+    cursor: pointer;
+}
 #table_invitees tr:hover,
 #table_incomplete tr:hover,
 #table_completed tr:hover,
@@ -3507,8 +3558,54 @@ table.padding2 th {
     background-color: var(--inner-th-bg-color);
     color: var(--foreground);
 }
+#wishlist-items tr:last-child td:first-child {
+    border-bottom-left-radius: var(--inner-table-border-radius);
+}
+#wishlist-items tr:last-child td:last-child {
+    border-bottom-right-radius: var(--inner-table-border-radius);
+}
+#wishlist #wishlist-items td {
+    vertical-align: middle;
+    padding: 0.25rem .75rem;
+}
+#wishlist-items tr {
+    background-color: inherit !important;
+    /* filter: saturate(0.5) contrast(2) hue-rotate(50deg) */
+}
+#wishlist-items>tr[style^="background-color: rgb(85,"] td a {
+    /* background-color: inherit !important; */
+    color: var(--green);
+    filter: brightness(1.1)
+}
+#wishlist-items>tr[style^="background-color: rgb(173,"] td a {
+    /* background-color: inherit !important; */
+    color: var(--red)
+}
+#wishlist-items tr:hover {
+    background: var(--inner-th-bg-color) !important
+        /* filter: saturate(0.5) contrast(2) hue-rotate(50deg) */
+}
+#wishlist-form {
+    display: flex;
+    gap: 0.25rem;
+    margin: .5rem;
+}
+.helptext {
+    padding: 1rem;
+    background: var(--background1);
+    line-height: 1rem;
+    width: 50%;
+    max-width: 64rem;
+    min-width: 24rem;
+    display: flex;
+    gap: 1rem;
+    flex-flow: row wrap;
+    text-align: start;
+    border-radius: var(--main-border-radius)
+}
 #tags.tablesorter {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     padding: .7rem;
     max-width: 64rem;
     border: 0;
@@ -3571,7 +3668,8 @@ td.bottom>h1+table[width="660"][cellpadding="4"] {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     border-radius: var(--main-border-radius);
     padding: 1rem;
 }
@@ -3643,7 +3741,8 @@ td.bottom>h1+table[width="660"][cellpadding="4"] tr:nth-child(4):last-child td f
 }
 td.bottom>h1+form[action="inbox.php"][method="post"],
 #list-add>.form-input {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     padding: 1rem;
     border-radius: var(--main-border-radius);
     max-width: 64rem;
@@ -3755,7 +3854,8 @@ td.bottom>table[width="800"]+table.main+h2+table[width="100%"]>tbody>tr>td>p.sub
     border-radius: 0 0 var(--inner-table-border-radius) var(--inner-table-border-radius);
     background-color: var(--unread-comment-color);
     margin-bottom: .5rem;
-    border: 1px solid var(--highlighted-unread-comment-border-color);box-shadow:var(--bs);
+    border: 1px solid var(--highlighted-unread-comment-border-color);
+    box-shadow: var(--bs);
     overflow: hidden;
     min-height: 150px;
     min-width: 48rem
@@ -3852,7 +3952,8 @@ body>table.main>tbody>tr>td.bottom>table[width="800"][cellpadding="10"]:first-ch
     background: initial;
 }
 a.index[href*="comments/add?"] {
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     border: 1px solid var(--inner-table-border-color);
     border-radius: var(--input-box-border-radius);
     font-weight: bold;
@@ -3875,7 +3976,8 @@ td.bottom form[method="get"][action=""][style="margin-bottom:20px;"]+table[cellp
 td.bottom:nth-child(2)>table:nth-last-child(10),
 td.bottom:nth-child(2)>table[cellpadding="5"]:nth-last-child(9),
 #offerstable {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     padding: 1rem
 }
 /* ################################# */
@@ -3885,7 +3987,8 @@ body>table.main>tbody>tr>td.bottom>table[width="800"][cellpadding="10"]:first-ch
 body>table.main>tbody>tr>td.bottom>table[width="800"][cellpadding="10"]:first-child:first-of-type+h1:only-of-type+table[cellspacing="0"][cellpadding="5"][border="1"]:nth-of-type(2):nth-last-child(4):last-of-type,
 body>table.main>tbody>tr>td.bottom>table[width="800"][cellpadding="10"]:first-child:first-of-type+h1:only-of-type+p[align=center]:first-of-type+table[cellspacing="0"][cellpadding="5"][border="1"]:nth-of-type(2):nth-last-child(5),
 body>table.main>tbody>tr>td.bottom>table[width="800"][cellpadding="10"]:first-child:first-of-type+h1:only-of-type+table[cellspacing="0"][cellpadding="5"][border="1"]:nth-of-type(2):nth-last-child(2):last-of-type {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     padding: 1rem
 }
 /* ################################# */
@@ -3991,7 +4094,8 @@ td.bottom>p:target font>a {
     background: #000
 }
 td.bottom>p:first-child~table[cellpadding="3"]:first-of-type {
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     padding: .5rem;
     min-width: 16rem
 }
@@ -4052,7 +4156,8 @@ td.heading {
 a#listsback {
     font-weight: bold;
     font-size: 0.8125rem;
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     padding: 0.4rem 0.8rem;
     border-radius: var(--main-border-radius)
 }
@@ -4068,41 +4173,41 @@ a#listsback {
 #header .curuser-stats:last-child>font[color="darkred"]:last-of-type {
     color: var(--completed-tag-text-color);
 }
-.embedded > h2 + #form {
+.embedded>h2+#form {
     background: var(--background1);
     padding: 1rem;
     width: max-content;
     display: block;
     line-height: 1rem;
 }
-.embedded > h2 + #form > tbody {
+.embedded>h2+#form>tbody {
     display: block;
     box-sizing: border-box;
     width: 100%
 }
 #profilesettings div#complex tbody,
-#matrix > tbody {
+#matrix>tbody {
     display: flex;
     flex-flow: column wrap;
 }
-.embedded > h2 + #form > tbody > tr {
+.embedded>h2+#form>tbody>tr {
     display: flex;
     flex-flow: row nowrap;
     border-bottom: 1px solid var(--inner-table-border-color)
 }
-.embedded > h2 + #form > tbody > tr:last-child {
+.embedded>h2+#form>tbody>tr:last-child {
     border-bottom: 0;
 }
-.embedded > h2 + #form > tbody > tr > td {
+.embedded>h2+#form>tbody>tr>td {
     padding: .5rem .7rem;
 }
-.embedded > h2 + #form > tbody > tr td.rowhead {
+.embedded>h2+#form>tbody>tr td.rowhead {
     display: flex;
     align-items: center;
     width: 100%;
     max-width: 8rem;
 }
-#profilesettings div#complex tbody tr{
+#profilesettings div#complex tbody tr {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -4110,7 +4215,7 @@ a#listsback {
     column-gap: 0.1rem;
 }
 #profilesettings div#complex tr td,
-#form #matrix tr > td {
+#form #matrix tr>td {
     flex: 1 1 auto;
     justify-items: center;
     align-self: center;
@@ -4140,15 +4245,15 @@ a#listsback {
 #matrix label * {
     vertical-align: middle;
     display: inline-block;
-padding: 0 .5rem;
-flex: 1 1 auto;
-max-width: 90%;
+    padding: 0 .5rem;
+    flex: 1 1 auto;
+    max-width: 90%;
 }
 #matrix label {
     display: inline-block;
     vertical-align: middle;
 }
-#form > tbody > tr:last-child td {
+#form>tbody>tr:last-child td {
     width: 100%;
     flex: 100%
 }
@@ -4183,7 +4288,8 @@ td[bgcolor="#F4F4F0"] {
 }
 td.bottom:nth-child(2)>table.main:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>td.embedded:nth-child(1),
 td.bottom:nth-child(2)>table.main:nth-of-type(2)>tbody:nth-child(1)>tr:nth-child(1)>td.embedded:nth-child(1) {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     filter: var(--filterdropshadow);
     padding: 1rem;
     border-radius: var(--main-border-radius);
@@ -4196,7 +4302,8 @@ td.bottom:nth-child(2)>table.main:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1
     border-bottom: 0
 }
 form[action="dox.php"]>table {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     padding: .5rem
 }
 /* ######################## */
@@ -4248,7 +4355,8 @@ form[name="editupload"]>table,
 form[action="delete.php"]>table,
 form[action="dox.php?action=edit"]>table,
 form[action*="/forums/editpost"]>table {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     max-width: 64rem;
     padding: 1rem;
     box-sizing: border-box;
@@ -4265,7 +4373,8 @@ p.invite_notice {
 }
 p.invite_notice,
 form>p {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     border-radius: var(--input-box-border-radius);
     padding: .3rem 1rem;
     font-size: .6875rem !important;
@@ -4277,7 +4386,8 @@ form>p {
     line-height: 1rem;
 }
 td.bottom>form[name="comment"]~table.main {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     max-width: 64rem;
     padding: 1rem;
     box-sizing: border-box;
@@ -4286,7 +4396,8 @@ td.bottom>form[name="comment"]~table.main {
     filter: var(--filterdropshadow);
 }
 td.bottom>.tableb {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     line-height: 1rem;
     box-sizing: border-box
 }
@@ -4300,7 +4411,8 @@ td.bottom>.tableb li {
     list-style: disc inside
 }
 td.embedded>form[action="inbox.php"] {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     line-height: 1.5rem;
     box-sizing: border-box
 }
@@ -4385,7 +4497,8 @@ td.bottom>font,
 td.bottom>form>p,
 td.bottom>p,
 td.bottom>p:first-child>font>a {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     border-radius: var(--input-box-border-radius);
     padding: .3rem 1rem;
     font-size: .6875rem !important;
@@ -4399,7 +4512,7 @@ td.bottom>p:first-child>font>a {
     align-self: center;
     gap: 0.5rem
 }
-td.bottom > p:first-child > font > a {
+td.bottom>p:first-child>font>a {
     box-shadow: 0;
 }
 td.bottom font[size="+1"] a:only-child {
@@ -4457,7 +4570,8 @@ body>table.main tbody>tr>td.bottom:nth-child(2)>table[width="800"][cellspacing="
 div.lottery_forms,
 td.bottom>form[action="dox.php"]~table.main:nth-of-type(3):last-child,
 td.embedded>div[style="width: 930px; margin: 0px auto;"]>div.center_comments:not(.center_comments:last-child) {
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     border-radius: var(--main-border-radius);
     padding: .7rem;
     max-width: 64rem
@@ -4633,7 +4747,8 @@ body>table.main>tbody>tr>td.bottom:nth-child(2)>table[cellpadding="5"]:nth-child
     display: flex;
     padding: 1rem;
     text-align: left;
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     border-radius: var(--main-border-radius);
     background-clip: border-box;
     line-height: 1rem;
@@ -4671,7 +4786,8 @@ div.div_showhide {
     display: none;
     padding: .5rem;
     border: 1px solid var(--inner-table-border-color);
-    background: var(--inner-td-bg-color);box-shadow:var(--bs);
+    background: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
     max-width: 64rem;
     border-radius: var(--main-border-radius)
 }
@@ -4704,7 +4820,8 @@ td[style="border: 1px black dashed"] {
     border: 1px solid var(--inner-table-border-color) !important;
     padding: .5rem;
     border-radius: var(--quote-border-radius);
-    background-color: var(--inner-td-bg-color);box-shadow:var(--bs);
+    background-color: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
     max-width: 90vw
 }
 pre {
@@ -4733,7 +4850,8 @@ div[style="width: 900px; text-align: left"]>div[style="font-size: 24px; margin-b
 div[style="width: 900px; text-align: left"]>table#torrent-list+div[style="font-size: 24px;"] {
     display: block;
     text-align: center;
-    background-color: var(--inner-td-bg-color);box-shadow:var(--bs);
+    background-color: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
     border: 1px solid var(--inner-table-border-color);
     border-radius: var(--main-border-radius) var(--main-border-radius) 0 0;
     font-size: 1rem !important;
@@ -4745,7 +4863,8 @@ div[style="width: 900px; text-align: left"]>table#torrent-list {
     width: auto !important;
 }
 div[style="width: 900px; text-align: left"]>a[href*="/lists/view"] {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     display: block;
     border-top: 1px solid var(--inner-table-border-color);
     padding: 0.25rem 0.5rem;
@@ -4776,7 +4895,8 @@ body table.main td.bottom table.main td.embedded>h1[style="margin:0px"]:not(h1[c
 }
 body>table.main tbody>tr>td.bottom:nth-child(2)>table[width="800"][cellspacing="0"][cellpadding="10"][border="1"][align="center"]+table.main:nth-of-type(2):last-child:nth-last-child(1)>tbody:nth-child(1)>tr:nth-child(1)>td.embedded:nth-child(1)>h2:not(#details h2) {
     margin-top: 0.5rem;
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     font-size: 0.75rem;
     border-radius: var(--inner-table-border-radius);
     text-align: center;
@@ -4804,7 +4924,8 @@ body>table.main tbody>tr>td.bottom:nth-child(2)>table[width="800"][cellspacing="
 }
 body>table.main tbody>tr>td.bottom:nth-child(2)>table[width="800"][cellspacing="0"][cellpadding="10"][border="1"][align="center"]+table.main:nth-of-type(2):last-child:nth-last-child(1)>tbody:nth-child(1)>tr:nth-child(1)>td.embedded:nth-child(1)>h2+table[width="100%"][cellpadding="10"][border="1"] {
     border-radius: var(--main-border-radius);
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     /* width: 40rem; */
     padding: 0.5rem;
     line-height: 1.1rem;
@@ -4838,7 +4959,8 @@ td.bottom:nth-child(2)>table.main:nth-of-type(2):nth-last-child(2)>tbody:nth-chi
 td.bottom:nth-child(2)>table.main:nth-of-type(2):nth-last-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td.embedded:nth-child(1)>h2:not(td.embedded > p:first-child+h2:only-of-type) {
     border-radius: var(--main-border-radius) var(--main-border-radius) 0 0;
     border: 1px solid var(--inner-table-border-color);
-    background: var(--inner-td-bg-color);box-shadow:var(--bs);
+    background: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
 }
 td.bottom:nth-child(2)>table.main:nth-of-type(2):nth-last-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td.embedded:nth-child(1)>table[width="100%"]+h2:not(h2:first-child),
 td.bottom:nth-child(2)>table.main:nth-of-type(2):nth-last-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td.embedded:nth-child(1)>a[name="uploadrules"]+h2 {
@@ -5029,7 +5151,8 @@ form[action*="/forums/post"] .message div#displayarea.previewbox {
     font-size: 0.8125rem
 }
 .rc.js-rc {
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     border-radius: var(--main-border-radius);
     border: 1px solid var(--inner-table-border-color);
     overflow: hidden;
@@ -5041,7 +5164,8 @@ form[action*="/forums/post"] .message div#displayarea.previewbox {
     border-bottom: 1px solid var(--inner-table-border-color);
 }
 .rc__container.js-rc-container {
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
 }
 .rc__toggle.js-rc-toggle {
     background: var(--inner-th-bg-color);
@@ -5074,14 +5198,15 @@ a.tv_morelink:active {
 img.rc__film__poster {
     border-radius: 0.5rem;
     object-fit: fill;
-    box-shadow:var(--bs);
+    box-shadow: var(--bs);
 }
 div.rc__rating::before {
     content: 'IMDb: ';
 }
 div.rc__rating {
     padding: 2px 4px;
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     box-sizing: border-box;
     color: var(--completed-tag-text-color);
     font-size: 0.625rem;
@@ -5118,7 +5243,8 @@ div.rc__downloads {
     padding: 2px 4px;
     border-radius: 0.25rem;
     border: 1px solid var(--inner-table-border-color);
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     color: var(--link-text-color);
     font-size: 0.8125rem;
     opacity: 1;
@@ -5202,7 +5328,8 @@ div.rc__toggle {
 }
 /* buddylist */
 td.bottom>table.main:nth-of-type(2)+p:empty+table.main[width="750"] {
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     padding: 1rem;
     border-radius: var(--main-border-radius);
 }
@@ -5225,7 +5352,8 @@ td.bottom>table.main:nth-of-type(2)+p:empty+table.main[width="750"]>tbody>tr>td.
     border: 1px solid var(--inner-table-border-color);
     border-top: 0;
     border-radius: 0 0 var(--inner-table-border-radius) var(--inner-table-border-radius);
-    background: var(--inner-td-bg-color);box-shadow:var(--bs);
+    background: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
     margin-bottom: 0.7rem;
 }
 td.bottom>table.main:nth-of-type(2)+p:empty+table.main[width="750"]>tbody>tr>td.embedded>table>tbody>tr>td {
@@ -5309,7 +5437,8 @@ td[style="padding: 10px;background-color: #ECE9D8;"] {
     background: inherit !important;
 }
 td.bottom>form[action^="/forums/search"]~table[cellpadding="5"][border="1"]:nth-child(6) {
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     padding: 1rem;
     border-radius: var(--main-border-radius);
 }
@@ -5325,7 +5454,8 @@ td.bottom>form[action^="/forums/search"]~table[cellpadding="5"][border="1"]:nth-
 td.bottom>form[action^="/forums/search"]~table[cellpadding="5"][border="1"]:nth-child(6)>tbody>tr:nth-child(2n)>td {
     border-top: 1px solid var(--inner-table-border-color);
     border-bottom: 1px solid var(--inner-table-border-color);
-    background: var(--inner-td-bg-color);box-shadow:var(--bs);
+    background: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
 }
 td.bottom>form[action^="/forums/search"]~table[cellpadding="5"][border="1"]:nth-child(6) th:first-child,
 td.bottom>form[action^="/forums/search"]~table[cellpadding="5"][border="1"]:nth-child(6)>tbody>tr:nth-child(2n)>td:first-child {
@@ -5378,7 +5508,8 @@ td.text {
 }
 #sidebar-container+.bottom>.main[width="750"]:only-child>tbody>tr>.embedded:only-child>h2:only-of-type:first-child+table[width="100%"]:only-of-type:last-child>tbody>tr>td.text:only-child {
     border-radius: var(--main-border-radius);
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     padding: 1rem;
     width: fit-content;
     display: block;
@@ -5417,7 +5548,8 @@ a.alert-box:focus {
 }
 body>table.main>tbody>tr>td.bottom>h1.center+p+table[width="750"],
 body>table.main>tbody>tr>td.bottom>p+table[width="750"]+p:empty+p+table[width="750"] {
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     box-sizing: border-box;
     padding: 1rem;
     width: auto;
@@ -5466,7 +5598,8 @@ div#searchbox {
     border: none;
 }
 div#searchbox #searchcriteria {
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     padding: 1rem;
     border-radius: var(--main-border-radius);
     display: flex;
@@ -5509,7 +5642,8 @@ div.searchgenres input {
 }
 div.statbox {
     box-sizing: border-box;
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     border: 0;
     padding: 0;
     max-width: 52rem;
@@ -5552,7 +5686,8 @@ a.tv_morelink {
     padding: 0;
     font-size: 0.6875rem;
     font-weight: 700;
-    background-color: var(--inner-td-bg-color);box-shadow:var(--bs);
+    background-color: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
     text-transform: uppercase;
     color: var(--link-text-color);
     bottom: auto;
@@ -5573,7 +5708,8 @@ a.tv_morelink {
 }
 .overlay-popupui>.button {
     visibility: hidden;
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     position: relative;
     float: right;
     display: flex;
@@ -5605,7 +5741,8 @@ div.statposter_views {
     padding: 2px 5px;
     border-radius: 0.25rem;
     border: 1px solid var(--inner-table-border-color);
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     color: var(--link-text-color);
     font-size: 0.9rem;
     opacity: 1;
@@ -5626,7 +5763,8 @@ div.statbox_banners>div:first-child {
 #tv-show-list img,
 .rc.js-rc img:not(img.rc__film__poster) {
     object-fit: contain;
-    filter: brightness(90%) contrast(100%);box-shadow:var(--bs);
+    filter: brightness(90%) contrast(100%);
+    box-shadow: var(--bs);
 }
 div .bannertext {
     font-size: 2rem;
@@ -5634,7 +5772,8 @@ div .bannertext {
 }
 @media only screen and (max-width:64rem) {
     div.statbox {
-        background: var(--background1);box-shadow:var(--bs);
+        background: var(--background1);
+        box-shadow: var(--bs);
         padding: 0;
         max-width: 95vw;
         width: 100%;
@@ -5684,7 +5823,8 @@ div#tv-episode-list {
     padding: 0.25rem 0.25rem;
     border: 1px solid var(--inner-table-border-color);
     border-radius: var(--inner-table-border-radius) var(--inner-table-border-radius) 0 0;
-    background: var(--inner-td-bg-color);box-shadow:var(--bs);
+    background: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
 }
 .show-season .season-torrents,
 .season-packs:last-child {
@@ -5726,7 +5866,8 @@ div#tv-episode-list {
     font-weight: 700;
 }
 #showpage {
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     box-sizing: border-box;
     padding: 1rem;
     border-radius: var(--main-border-radius);
@@ -5785,7 +5926,7 @@ div.contentelement:nth-child(3) .contentcontent img {
     display: block;
 }
 #overview,
-#overview + .contentelement {
+#overview+.contentelement {
     box-shadow: var(--bs);
 }
 #overview .contentcontent {
@@ -5822,7 +5963,7 @@ ul.showseasons>li {
     overflow: hidden;
     order: 0;
     flex: 48%;
-    box-shadow:var(--bs);
+    box-shadow: var(--bs);
     background-color: var(--inner-td-bg-color)
 }
 #showpage ul.showseasons>li h2 {
@@ -5932,7 +6073,8 @@ div.list-description {
     flex: 100%;
 }
 div.list-description {
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     box-sizing: border-box;
     padding: 1rem;
     border-radius: var(--main-border-radius);
@@ -5968,7 +6110,8 @@ div.item-body {
     overflow: hidden;
     text-align: left;
     border: 1px solid var(--inner-table-border-color);
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
 }
 .item.tvdb .item-body {
     flex-flow: row wrap;
@@ -6211,7 +6354,8 @@ div.film-list-sorters {
 }
 div.film-list-sorters>a {
     border: 1px solid var(--inner-table-border-color);
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     text-transform: uppercase;
     font-size: 0.8125rem;
     font-weight: bold;
@@ -6243,7 +6387,6 @@ div.film-list-container {
     flex-flow: row wrap;
     justify-content: center;
     gap: 1.5rem;
-    
 }
 .grid.info_row {
     flex: 1 1 auto;
@@ -6360,7 +6503,8 @@ td.embedded>div[align=center]:only-child {
     justify-content: center;
 }
 td.embedded>div[align=center]:only-child>form {
-    background: var(--background1);box-shadow:var(--bs);
+    background: var(--background1);
+    box-shadow: var(--bs);
     box-sizing: border-box;
     padding: 1rem;
     border-radius: var(--main-border-radius);
@@ -6384,7 +6528,8 @@ td.embedded>div[align=center]:only-child>form td.heading {
     padding: 1rem;
     gap: 1rem;
     box-sizing: border-box;
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     border-radius: var(--main-border-radius);
     justify-content: center;
     align-content: center;
@@ -6449,7 +6594,7 @@ td:nth-child(2).browse_td_name_cell .browse_imdb_poster {
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
-    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
 }
 .donated_wrapper {
     width: auto;
@@ -6519,7 +6664,8 @@ td:nth-child(2).browse_td_name_cell .browse_imdb_poster {
     width: auto;
 }
 #sidebar-container+td.bottom>table.main[width="450"]>tbody>tr>td.embedded>div>h1~table[class] {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     padding: 1rem;
 }
 #sidebar-container+td.bottom>table.main[width="450"]>tbody>tr>td.embedded>div>h1~table[class]>tbody>tr>td.embedded>h2:only-of-type:nth-last-child(2) {
@@ -6539,7 +6685,8 @@ div[align="center"] .message td.rowhead {
 }
 /* Staff page */
 .embedded>font[size="+3"]+h2+table table[width="725"] {
-    background-color: var(--background1);box-shadow:var(--bs);
+    background-color: var(--background1);
+    box-shadow: var(--bs);
     padding: 1rem;
 }
 .embedded>font[size="+3"]+h2+table table[width="725"] hr {
@@ -6747,11 +6894,12 @@ img[alt="Read"] {
 a[name]:not([href]) {
     display: block;
 }
-a[name]:not([href]), p.sub > a[name]:target {
+a[name]:not([href]),
+p.sub>a[name]:target {
     pointer-events: none;
     scroll-margin-top: 10rem
 }
-body > div.popup {
+body>div.popup {
     position: absolute;
     background: var(--blue);
     color: var(--background0);
@@ -6809,7 +6957,7 @@ body > div.popup {
 }
 td.comment img,
 td.text img {
-    filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.25));
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
     border-radius: 4px;
 }
 td.comment,
