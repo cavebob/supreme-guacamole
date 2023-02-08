@@ -32,7 +32,7 @@
     --font-size: 0.6875rem;
     --top-menu-border-radius: 0.5rem;
     --svg-gradient-bg-hover-color: linear-gradient(135deg, hsl(195, 100%, 57%), hsl(225, 100%, 69%));
-    --logo-url: url("../../pic/midnight/logo/logo.svg");
+    --logo-url: url("../pic/midnight/logo/logo.svg");
     --logo-gradient: linear-gradient(45turn, hsl(2, 72%, 70%), hsl(48, 75%, 75%));
     --highlighted-border-hover-color: hsla(207, 56%, 60%, 0.5);
     --highlighted-input-border-focus-color: hsl(207, 44%, 49%);
