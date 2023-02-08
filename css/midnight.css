@@ -1,19 +1,19 @@
 :root {
-    --background0: hsl(240, 15%, 5%);  
-    --background1: hsl(231, 13%, 10%); 
-    --foreground: hsl(212, 30%, 78%);  /* text */
+    --background0: hsl(240, 15%, 5%);
+    --background1: hsl(231, 13%, 10%);
+    --foreground: hsl(212, 30%, 78%);    /* text */
     --soft-text-color: hsl(207, 40%, 66%);
     --table-details-text-color: hsl(212, 30%, 65%);
     --heading-color: hsla(31, 100%, 65%, 0.843);
-    --span-tag-text-color: #000000;  /* black for contrast */
+    --span-tag-text-color: #000000;    /* black for contrast */
     --link-text-color: hsl(212, 55%, 65%);
     --highlight-link-text-color: hsl(216, 90%, 88%);
-    --username-text-color: #ffcd70;  /* brighter yellow */
-    --completed-tag-text-color: #ffb86c;  /* orange */
-    --internal-tag-text-color: #ffcd50;  /* internal yellow */
-    --blue: #51a0fb;  /* blue - freeleech tags and ratio related */
-    --green: hsl(135, 94%, 65%);  /* green - seeding green and font[] color adjust */
-    --red: #f85454;  /* red - new tag, alert, inbox, deletebutton(remove wishlist) */
+    --username-text-color: #ffcd70;    /* brighter yellow */
+    --completed-tag-text-color: #ffb86c;    /* orange */
+    --internal-tag-text-color: #ffcd50;    /* internal yellow */
+    --blue: #51a0fb;    /* blue - freeleech tags and ratio related */
+    --green: hsl(135, 94%, 65%);    /* green - seeding green and font[] color adjust */
+    --red: #f85454;    /* red - new tag, alert, inbox, deletebutton(remove wishlist) */
     --input-box-background: hsla(212, 30%, 30%, 0.15);
     --transparent-border-color: transparent;
     --inner-table-border-color: rgba(57, 135, 199, 0.20);
@@ -23,11 +23,11 @@
     --inner-table-border-radius: 0.5rem;
     --highlighted-hover-border-color: var(--highlight-link-text-color);
     --filterdropshadow: 0;
-    --bs: 0px 2px 8px 0px rgba(0,0,0,0.25);
+    --bs: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
     --tag-border-radius: 0.25rem;
-    --input-box-border-radius: 0.25rem; /* 4px */
-    --quote-border-radius: 0.375rem; /* 6px */
-    --main-border-radius: 0.5rem; /* 8px */
+    --input-box-border-radius: 0.25rem;    /* 4px */
+    --quote-border-radius: 0.375rem;    /* 6px */
+    --main-border-radius: 0.5rem;    /* 8px */
     --input-box-height: 1.5rem;
     --font-size: 0.6875rem;
     --top-menu-border-radius: 0.5rem;
@@ -46,7 +46,7 @@
     --selected-text-fg-color: #000000;
     --mono-font-stack: ui-monospace, SFMono-Regular, Menlo, Monaco, Inconsolata, "Fira Mono", Consolas, "Liberation Mono", "Courier New", monospace;
     --sans-font-stack: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
+}
 *,
 body {
     color: var(--foreground)
@@ -6928,16 +6928,26 @@ body>div.popup {
     filter: brightness(1)
 }
 .spoiler {
-    filter: blur(5px);
-    height: max-content;
-    display: inline-block;
-    width: max-content;
+    filter: blur(4px);
     -moz-transition: all 0.25s ease;
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
 }
-.spoiler::after {
+.spoiler a[href*="img"] {
+    display: inline-block;
+    height: max-content;
+    width: max-content;
+    overflow: hidden;
+    transform: scale(.97);
+    position: relative;
+}
+.spoiler a[href*="img"] img {
+    transform: scale(1.03);
+}
+.spoiler a[href*="img"]:after {
     content: "";
     display: block;
     position: absolute;
@@ -6945,15 +6955,21 @@ body>div.popup {
     bottom: 0;
     left: 0;
     right: 0;
-    backdrop-filter: blur(5px);
-    filter: contrast(.9) saturate(.8);
-    transition: none;
+    backdrop-filter: blur(30px);
 }
-.spoiler:hover {
+.spoiler:hover,
+.spoiler:hover a[href*="img"]:after,
+.spoiler:hover a[href*="img"],
+.spoiler:hover a[href*="img"] img,
+.spoiler:focus,
+.spoiler:active {
     filter: none;
-}
-.spoiler:hover::after {
-    display: none;
+    backdrop-filter: none;
+    transform: scale(1);
+    -moz-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: filter, backdrop-filter 0.25s ease;
 }
 td.comment img,
 td.text img {
