@@ -136,6 +136,7 @@ a[href*="javascript:addRss"]:hover,
 }
 .tag {
     font-family: Tahoma, Arial, sans-serif;
+    cursor: default;
 }
 body {
     font-family: var(--sans-font-stack);
@@ -2501,7 +2502,7 @@ div.dhtmlxcalendar_yahoolike .dxcaldays_ie td {
 }
 #torrent-list {
     box-sizing: border-box;
-    margin: .5em
+    /* margin: .5em */
 }
 #torrent-list>thead:nth-child(1)>tr:nth-child(1)>th {
     box-sizing: border-box;
@@ -3000,7 +3001,9 @@ textarea {
 }
 #details>tbody:nth-child(1)>tr:nth-child(2)>td>div.hideablecontent>table.contentlayout>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(2)>h1,
 .film-info>table.contentlayout>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(2)>h1 {
-    margin: 0.5rem 1.5rem 0rem 1rem;
+    font-size: 1.25rem;
+    margin: 0.75rem 1.5rem 0.5rem 1rem;
+    line-height: 1;
 }
 .lottery_table2 div.hideablecontent>table.contentlayout>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(2)>h1,
 table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth-child(5)~table[width="930"][cellpadding="5"] div.hideablecontent>table.contentlayout>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(2)>h1 {
@@ -3012,7 +3015,7 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
 .film-info>table.contentlayout>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(2)>h1>a[href*="imdb.com/title"],
 .lottery_table2 div.hideablecontent>table.contentlayout>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(2)>h1>a[href*="imdb.com/title"],
 table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth-child(5)~table[width="930"][cellpadding="5"] div.hideablecontent>table.contentlayout>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(2)>h1>a[href*="imdb.com/title"] {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     filter: brightness(100%)
 }
 #details>tbody:nth-child(1)>tr:nth-child(2)>td>div.hideablecontent>table.contentlayout>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(2)>h3,
@@ -3036,13 +3039,38 @@ a[href*="imdb.com/name/nm"] img[src*="imdb.png"] {
 table.contentlayout>tbody:nth-child(1)>tr>td#plotcell,
 table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth-child(5)~table[width="930"][cellpadding="5"] .contentlayout>tbody:nth-child(1)>tr>td#plotcell {
     font-size: 13px;
-    padding-left: 1.5rem;
+    padding: 0 1.5rem;
+
+}
+#plotcell .content td {
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+#plotcell:hover .content td {
+overflow-y: scroll;
+}
+.contentlayout td {
+    vertical-align: top;
 }
 #imdbinfo {
     font-size: 13px;
     width: max-content;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     max-width: 400px;
+}
+#imdbinfo tr:nth-child(4) > td {
+    font-size: 10px;
+}
+#imdbinfo tr:nth-child(4) > td a {
+    font-size: 0.8125rem;
+}
+#cast {
+    margin: 0.25rem 1rem 0.75rem 1rem;
 }
 #cast>tbody:nth-child(1)>tr:nth-child(1) {
     display: flex;
@@ -3051,16 +3079,19 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
     width: min-content;
     height: min-content;
     gap: 1rem;
-    margin: 0.2rem 1.5rem 0 1.5rem;
 }
 #cast>tbody:nth-child(1)>tr:nth-child(1)>td {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    position: relative;
+    height: 105px;
 }
 #cast>tbody:nth-child(1)>tr:nth-child(1)>td>a:nth-child(3) {
-    place-self: center flex-end
+    display:block;
+    position: absolute;
+    bottom: -10px;
 }
 /*    */
 .cast {
@@ -3077,29 +3108,85 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
     column-gap: 1rem;
     justify-content: center;
 }
-#cast>tbody:nth-child(1)>tr:nth-child(1)>td>a:nth-child(2),
-.cast td.cast__name {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+#cast>tbody:nth-child(1)>tr:nth-child(1)>td>a:nth-child(2) {
+    position: absolute;
+    bottom: 0px;
     min-height: 32px;
+    max-height: 32px;
+    /* height: 100%; */
     width: 64px;
-    margin-top: -12px;
     font-weight: 700;
     color: var(--heading-color);
     background-color: var(--inner-td-bg-color);
     box-shadow: var(--bs);
     border-bottom-left-radius: var(--main-border-radius);
     border-bottom-right-radius: var(--main-border-radius);
-    align-items: center;
     text-align: center;
     border: 1px solid var(--inner-table-border-color);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(8px);
     box-sizing: border-box;
-    text-overflow: ellipsis;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    vertical-align: middle;
     padding: 0px 1px;
 }
+.cast td.cast__name {
+    min-height: 32px;
+    /* max-height: 32px; */
+    margin-top: -8px;
+    /* height: 100%; */
+    width: 64px;
+    font-weight: 700;
+    color: var(--heading-color);
+    background-color: var(--inner-td-bg-color);
+    box-shadow: var(--bs);
+    border-bottom-left-radius: var(--main-border-radius);
+    border-bottom-right-radius: var(--main-border-radius);
+    text-align: center;
+    border: 1px solid var(--inner-table-border-color);
+    backdrop-filter: blur(8px);
+    box-sizing: border-box;
+    overflow: hidden;
+    vertical-align: middle;
+    word-break:normal;
+    overflow-wrap: auto;
+    padding: 0px 2px;
+}
+#cast>tbody:nth-child(1)>tr:nth-child(1)>td:hover a:nth-child(2){   
+    white-space: wrap;
+    display: block;
+    -webkit-line-clamp: initial;
+    -webkit-box-orient: vertical;
+    z-index: 1;
+    height: max-content;
+    max-height: 100%;
+    -moz-transition: all 0.25s ease-in;
+    -webkit-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+}
+/* #cast>tbody:nth-child(1)>tr:nth-child(1)>td:hover a:nth-child(3) {
+    z-index: 0;
+    display: block;
+    margin-bottom: -10px;
+    -moz-transition: all 0.25s ease-in;
+    -webkit-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
+    transition: margin-bottom 0.1s ease-in;
+    position: absolute;
+    bottom: 0px;
+} */
+/* #cast a[href*="imdb.com/name/nm"] img[src*="imdb.png"] {
+    display: block;
+    content: url('../pic/midnight/icon/imdb.svg');
+    height: 10px;
+    width: 64px;
+    border-radius: 8px;
+  } */
 .cast td.cast__name>a {
     width: 100%;
     color: var(--heading-color);
@@ -3108,11 +3195,11 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
 .film-info>table.contentlayout>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(2)>h1>a[href*="imdb.com/title"],
 .lottery_table2 div.hideablecontent>table.contentlayout>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(2)>h1>a[href*="imdb.com/title"],
 table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth-child(5)~table[width="930"][cellpadding="5"] div.hideablecontent>table.contentlayout>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(2)>h1>a[href*="imdb.com/title"] {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
 }
 #cast>tbody:nth-child(1)>tr:nth-child(1)>td {
     align-content: center;
-    justify-content: end;
+    /* justify-content: end; */
 }
 #cast img,
 .cast img {
@@ -3803,7 +3890,8 @@ tr.logentry:hover {
 .std-content>tbody:nth-child(1)>tr:nth-child(1)>td>table:nth-child(3n-1)>tbody>tr,
 .std-content>tbody:nth-child(1)>tr:nth-child(1)>td>table:nth-last-child(2)>tbody>tr {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center;
 }
 body td.comment>p.sub,
 td[style="border: 1px black dashed"]>p.sub {
@@ -4837,6 +4925,13 @@ pre {
     text-align: right;
     font-size: .6275rem
 }
+.bottom > div[style="width: 900px; text-align: left"] {
+    width: 100% !important;
+    max-width: 64rem;
+    gap: 1rem;
+    display: flex;
+    flex-flow: column;
+}
 div[style="width: 900px; text-align: left"]>div[style="font-size: 24px;"] {
     display: none;
 }
@@ -4859,9 +4954,9 @@ div[style="width: 900px; text-align: left"]>table#torrent-list+div[style="font-s
     max-width: 100%;
     border-bottom: 0;
 }
-div[style="width: 900px; text-align: left"]>table#torrent-list {
+/* div[style="width: 900px; text-align: left"]>table#torrent-list {
     width: auto !important;
-}
+} */
 div[style="width: 900px; text-align: left"]>a[href*="/lists/view"] {
     background-color: var(--background1);
     box-shadow: var(--bs);
