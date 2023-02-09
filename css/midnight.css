@@ -6443,11 +6443,11 @@ div.film-list-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(38rem, 1fr));
     gap: 1.75rem;
-    justify-content: space-around;
+    justify-items: center;
     align-items: center;
     box-sizing: border-box;
     width: 100%;
-    max-width: 100%;
+    max-width: initial;
     border-radius: var(--main-border-radius);
 }
 .grid.info_row {
@@ -6469,13 +6469,14 @@ div.info_row {
 }
 div.info__img {
     width: 182px;
-    height: 100%;
-    object-fit: cover;
+    height: 268px;
     grid-area: img;
 }
 div.info__img img {
     width: 100%;
-    /* height: calc(175px * 1.5) */
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 div.info__text {
     width: auto !important;
