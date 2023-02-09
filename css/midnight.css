@@ -720,7 +720,6 @@ tr.tableb:nth-child(8)>td:nth-child(3)>br {
     align-items: flex-start;
     margin-right: 0.3rem;
     margin-top: 0.5rem;
-    /* margin-bottom: 0.4rem; */
     overflow-wrap: break-word;
 }
 div.curuser-stats:nth-child(1) {
@@ -2502,7 +2501,6 @@ div.dhtmlxcalendar_yahoolike .dxcaldays_ie td {
 }
 #torrent-list {
     box-sizing: border-box;
-    /* margin: .5em */
 }
 #torrent-list>thead:nth-child(1)>tr:nth-child(1)>th {
     box-sizing: border-box;
@@ -2670,7 +2668,6 @@ button[onclick^="ignoreShow"]:hover,
 button[onclick^="location"]:hover {
     filter: brightness(100%);
     background-color: rgba(0, 0, 0, .7);
-    /* color: var(--link-text-color); */
     filter: brightness(110%);
     border: 1px solid var(--link-text-color);
     display: block;
@@ -2855,7 +2852,6 @@ body .main>tbody>tr>td.bottom>h1.internal::after {
 #details {
     border-radius: var(--main-border-radius);
     max-width: 64rem;
-    /* margin-top: .5rem */
     width: 100% !important
 }
 #details>tbody,
@@ -3022,7 +3018,9 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
 .film-info>table.contentlayout>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(2)>h3,
 .lottery_table2 div.hideablecontent>table.contentlayout>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(2)>h3,
 table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth-child(5)~table[width="930"][cellpadding="5"] div.hideablecontent>table.contentlayout>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(2)>h3 {
-    margin: -.25rem 1.5rem 0
+    margin: -.35rem 1.5rem 0;
+    filter: brightness(0.6);
+    font-size: 0.75rem;
 }
 #imdbinfo th {
     width: 4.4rem
@@ -3093,7 +3091,6 @@ overflow-y: scroll;
     position: absolute;
     bottom: -10px;
 }
-/*    */
 .cast {
     display: flex;
     flex-flow: column wrap;
@@ -3113,7 +3110,6 @@ overflow-y: scroll;
     bottom: 0px;
     min-height: 32px;
     max-height: 32px;
-    /* height: 100%; */
     width: 64px;
     font-weight: 700;
     color: var(--heading-color);
@@ -3136,9 +3132,7 @@ overflow-y: scroll;
 }
 .cast td.cast__name {
     min-height: 32px;
-    /* max-height: 32px; */
     margin-top: -8px;
-    /* height: 100%; */
     width: 64px;
     font-weight: 700;
     color: var(--heading-color);
@@ -3169,24 +3163,6 @@ overflow-y: scroll;
     -o-transition: all 0.25s ease-in;
     transition: all 0.25s ease-in;
 }
-/* #cast>tbody:nth-child(1)>tr:nth-child(1)>td:hover a:nth-child(3) {
-    z-index: 0;
-    display: block;
-    margin-bottom: -10px;
-    -moz-transition: all 0.25s ease-in;
-    -webkit-transition: all 0.25s ease-in;
-    -o-transition: all 0.25s ease-in;
-    transition: margin-bottom 0.1s ease-in;
-    position: absolute;
-    bottom: 0px;
-} */
-/* #cast a[href*="imdb.com/name/nm"] img[src*="imdb.png"] {
-    display: block;
-    content: url('../pic/midnight/icon/imdb.svg');
-    height: 10px;
-    width: 64px;
-    border-radius: 8px;
-  } */
 .cast td.cast__name>a {
     width: 100%;
     color: var(--heading-color);
@@ -3199,7 +3175,6 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
 }
 #cast>tbody:nth-child(1)>tr:nth-child(1)>td {
     align-content: center;
-    /* justify-content: end; */
 }
 #cast img,
 .cast img {
@@ -3220,7 +3195,6 @@ table.main>tbody>tr>td.bottom:nth-child(2)>h1[style="display:inline-block;"]:nth
 .cast td[class=""] {
     width: 64px;
 }
-/*    */
 #details .grid {
     padding: 0.25rem;
     display: flex;
@@ -3515,7 +3489,6 @@ table.padding2 {
 }
 #details>tbody>tr>td>table:not(:first-child):not([class]) {
     border: 1px solid var(--inner-table-border-color);
-    /* border-radius: var(--inner-table-border-radius); */
     background-color: var(--inner-td-bg-color);
     box-shadow: var(--bs);
     line-height: 1rem;
@@ -3626,7 +3599,6 @@ table.padding2 th {
 #wishlist thead th.aleft.header {
     border-top: 1px solid var(--inner-table-border-color);
     background-color: var(--inner-th-bg-color);
-    /* padding: 0.2rem 0.5rem; */
     text-align: center;
     cursor: pointer;
 }
@@ -3657,20 +3629,16 @@ table.padding2 th {
 }
 #wishlist-items tr {
     background-color: inherit !important;
-    /* filter: saturate(0.5) contrast(2) hue-rotate(50deg) */
 }
 #wishlist-items>tr[style^="background-color: rgb(85,"] td a {
-    /* background-color: inherit !important; */
     color: var(--green);
     filter: brightness(1.1)
 }
 #wishlist-items>tr[style^="background-color: rgb(173,"] td a {
-    /* background-color: inherit !important; */
     color: var(--red)
 }
 #wishlist-items tr:hover {
     background: var(--inner-th-bg-color) !important
-        /* filter: saturate(0.5) contrast(2) hue-rotate(50deg) */
 }
 #wishlist-form {
     display: flex;
@@ -3947,6 +3915,9 @@ td.bottom>table[width="800"]+table.main+h2+table[width="100%"]>tbody>tr>td>p.sub
     overflow: hidden;
     min-height: 150px;
     min-width: 48rem
+}
+.std-content > tbody > tr > td > table.main .comment {
+    color: hsl(212, 30%, 85%);
 }
 #profilesettings input,
 #profilesettings select,
@@ -4954,9 +4925,6 @@ div[style="width: 900px; text-align: left"]>table#torrent-list+div[style="font-s
     max-width: 100%;
     border-bottom: 0;
 }
-/* div[style="width: 900px; text-align: left"]>table#torrent-list {
-    width: auto !important;
-} */
 div[style="width: 900px; text-align: left"]>a[href*="/lists/view"] {
     background-color: var(--background1);
     box-shadow: var(--bs);
@@ -5021,7 +4989,6 @@ body>table.main tbody>tr>td.bottom:nth-child(2)>table[width="800"][cellspacing="
     border-radius: var(--main-border-radius);
     background: var(--background1);
     box-shadow: var(--bs);
-    /* width: 40rem; */
     padding: 0.5rem;
     line-height: 1.1rem;
     width: auto;
@@ -6441,11 +6408,11 @@ td.cast__name {
 div.film-list-sorters {
     text-align: center;
     font-size: 1rem;
-    flex: 100%;
-    margin: 0 100%;
-    display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
+    grid-column: 1 / -1;
+    display: flex;
 }
 div.film-list-sorters>a {
     border: 1px solid var(--inner-table-border-color);
@@ -6473,28 +6440,25 @@ div.film-list-container * {
     box-sizing: border-box;
 }
 div.film-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(38rem, 1fr));
+    gap: 1.75rem;
+    justify-content: space-around;
+    align-items: center;
     box-sizing: border-box;
+    width: 100%;
     max-width: 100%;
     border-radius: var(--main-border-radius);
-    padding: 1rem;
-    margin: 0 auto 0 auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 1.5rem;
 }
 .grid.info_row {
-    flex: 1 1 auto;
-    min-width: 32rem;
-    max-width: 40rem;
-    width: 50%;
+    max-width: 46rem;
     border: 1px solid var(--inner-table-border-color);
     border-radius: var(--inner-table-border-radius);
     display: grid;
     grid-template-areas: "img text"
         "img cast";
-    grid-template-columns: 175px auto;
-    gap: 0.5rem;
+    grid-template-columns: 182px auto;
+    gap: .25rem .75rem;
     overflow: hidden;
     background: var(--background1);
     box-shadow: var(--bs);
@@ -6504,34 +6468,39 @@ div.info_row {
     padding: 0;
 }
 div.info__img {
-    width: 175px;
+    width: 182px;
+    height: 100%;
     object-fit: cover;
     grid-area: img;
 }
 div.info__img img {
     width: 100%;
-    height: calc(175px * 1.5)
+    /* height: calc(175px * 1.5) */
 }
 div.info__text {
     width: auto !important;
     display: flex;
     flex-flow: row wrap;
-    gap: 0.5rem;
-    row-gap: 0.25rem;
+    gap: 0.5rem .5rem;
     padding-left: 0;
     text-align: left;
     grid-area: text;
-    align-items: flex-start
+    align-items: flex-start;
+    align-self: first baseline;
+}
+.info__text *:not(.info__title) {
+    place-self: center;
+}
+.info__text .info__plot {
+    place-self: top;
 }
 a.info__title {
     width: 100%;
     font-size: 1.25rem;
     padding: 0.5rem 0;
     background: var(--inner-th-bg-color);
-    margin-left: -.5rem;
-    padding-left: .5rem;
-    text-indent: 0.25rem;
-    ;
+    margin-left: -.75rem;
+    text-indent: 0.75rem;
     flex: 100%;
 }
 span.info__title-nodownloads {
@@ -6539,11 +6508,11 @@ span.info__title-nodownloads {
     font-size: 1.25rem;
     padding: 0.5rem 0;
     background: var(--inner-th-bg-color);
-    margin-left: -.5rem;
-    padding-left: .5rem;
+    margin-left: -.75rem;
+    text-indent: 0.75rem;
     flex: 100%;
     color: inherit;
-    filter: grayscale(100%) brightness(50%);
+    filter: brightness(50%);
 }
 img.info__wishlist {
     margin: 0;
@@ -6569,18 +6538,27 @@ span.info__genres {
 span.info__director {
     display: block;
     margin-top: 0;
-    flex: 100%
+    /* flex: 100% */
 }
 span.info__plot {
     display: block;
     margin-top: 0;
     min-height: auto;
+    flex: 100%;
+    font-size: .75rem;
+    margin-right: 0.5rem;
 }
 div.grid__item.info__cast {
     width: 100%;
     margin-top: 0;
     grid-area: cast;
-    align-self: center;
+    align-self: last baseline;
+    margin-bottom: 0.75rem;
+}
+.grid__item.info__cast tr {
+    column-gap: 1.125rem;
+    margin-left:.2rem;
+    justify-content: left;
 }
 td.embedded>div[align=center]:only-child>h1:first-child {
     display: flex;
@@ -7075,8 +7053,13 @@ td.comment,
 td.text {
     word-break: break-word;
 }
-td.bottom a.alert-box--news {
+td.bottom a.alert-box--news,
+td.bottom a.alert-box--pm {
     font-size: 0.8125rem;
     padding: 0.5rem 0.75rem;
-    font-size: 0.8125rem;
+    font-weight: bold;
+}
+td.bottom a.alert-box--pm {
+    border-radius: var(--main-border-radius);
+    border: 1px solid var(--blue);
 }
