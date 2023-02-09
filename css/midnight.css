@@ -3,6 +3,7 @@
     --background1: hsl(231, 13%, 10%);
     --foreground: hsl(212, 30%, 78%);    /* text */
     --soft-text-color: hsl(207, 40%, 66%);
+    --unread-text-color: hsl(212, 30%, 88%);
     --table-details-text-color: hsl(212, 30%, 65%);
     --heading-color: hsla(31, 100%, 65%, 0.843);
     --span-tag-text-color: #000000;    /* black for contrast */
@@ -3917,7 +3918,7 @@ td.bottom>table[width="800"]+table.main+h2+table[width="100%"]>tbody>tr>td>p.sub
     min-width: 48rem
 }
 .std-content > tbody > tr > td > table.main .comment {
-    color: hsl(212, 30%, 85%);
+    color: var(--unread-text-color);
 }
 #profilesettings input,
 #profilesettings select,
