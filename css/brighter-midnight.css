@@ -1,5 +1,5 @@
 :root {
-	--background0: hsl(231, 12%, 8%);
+	--background0: hsl(231, 13%, 8%);
 	--background1: hsl(231, 15%, 12%);
 	--foreground: hsl(212, 30%, 88%);
 	--soft-text-color: hsl(207, 40%, 66%);
@@ -18,7 +18,7 @@
 	--input-box-background: hsla(212, 30%, 30%, 0.15);
 	--transparent-border-color: transparent;
 	--inner-table-border-color: hsla(231, 20%, 40%, 0.3);
-	--inner-td-bg-color: hsla(231, 16%, 17%, 0.3);
+	--inner-td-bg-color: hsla(231, 16%, 17%, 0.5);
 	--inner-th-bg-color: hsla(231, 16%, 20%, 0.75);
 	--sidebar-header-color: rgba(2, 2, 2, 0.3);
 	--inner-table-border-radius: 0.5rem;
@@ -37,7 +37,7 @@
     --logo-gradient: linear-gradient(45turn, hsl(2, 72%, 70%), hsl(48, 75%, 75%));
 	--highlighted-border-hover-color: hsla(207, 56%, 60%, 0.5);
 	--highlighted-input-border-focus-color: hsl(207, 44%, 49%);
-	--read-comment-color: hsla(231, 16%, 17%, 0.3);
+	--read-comment-color: hsla(231, 16%, 17%, 0.5);
 	--unread-comment-color: hsla(231, 16%, 20%, .75);
 	--highlighted-unread-comment-border-color: hsl(231, 40%, 66%);
 	--default-avatar-color: rgba(51, 96, 133, .501);
@@ -48,6 +48,16 @@
 	--mono-font-stack: ui-monospace, SFMono-Regular, Menlo, Monaco, Inconsolata, "Fira Mono", Consolas, "Liberation Mono", "Courier New", monospace;
 	--sans-font-stack: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+/* #torrent-list tr.featured > td:not(td[id], td[class]) > b:before {
+    content: "";
+    background: var(--logo-gradient);
+    mask: url("noun-featured-2858532.svg") center no-repeat;
+    mask-size: 2rem 2.5rem;
+    width: 2rem;
+    height: 2rem;
+    float: left;
+    margin-top: 4px
+} */
 *,
 body {
     color: var(--foreground)
@@ -2224,7 +2234,7 @@ div.chosen-container .search-choice {
     display: block;
     width: 11px;
     height: 11px;
-    background: url("https://i.hdbits.org/CWeZPVc.png") -42px 0 no-repeat;
+    background: url("../pic/midnight/chosen-sprite.png") -42px 0 no-repeat;
     transform: scale(.9);
     filter: grayscale(10%) brightness(30%) sepia(100%) hue-rotate(-190deg) saturate(700%) contrast(.5);
     padding: 5px

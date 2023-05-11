@@ -12,7 +12,7 @@
     --username-text-color: #ffcd70;    /* brighter yellow */
     --completed-tag-text-color: #ffb86c;    /* orange */
     --internal-tag-text-color: #ffcd50;    /* internal yellow */
-    --blue: #51a0fb;    /* blue - freeleech tags and ratio related */
+    --blue: hsl(212, 94%, 65%);    /* blue - freeleech tags and ratio related */
     --green: hsl(135, 94%, 65%);    /* green - seeding green and font[] color adjust */
     --red: #f85454;    /* red - new tag, alert, inbox, deletebutton(remove wishlist) */
     --input-box-background: hsla(212, 30%, 30%, 0.15);
@@ -2224,7 +2224,7 @@ div.chosen-container .search-choice {
     display: block;
     width: 11px;
     height: 11px;
-    background: url("https://i.hdbits.org/CWeZPVc.png") -42px 0 no-repeat;
+    background: url("../pic/midnight/chosen-sprite.png") -42px 0 no-repeat;
     transform: scale(.9);
     filter: grayscale(10%) brightness(30%) sepia(100%) hue-rotate(-190deg) saturate(700%) contrast(.5);
     padding: 5px
