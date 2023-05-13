@@ -1758,7 +1758,7 @@ table.main:nth-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1)>table
 table.main:nth-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1)>table:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1),
 table.main:nth-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1)>table:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1)>table:nth-child(1),
 table.main:nth-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1)>table:nth-child(5),
-table.main:nth-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1)>table:nth-child(5)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1) {
+table.main:nth-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1)>table:nth-child(5)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1):not(td[style="border: 1px black dashed"]) {
     border: 0 !important
 }
 #news h1 {
@@ -2714,7 +2714,7 @@ td.center span {
     float: right;
     text-align: end
 }
-#torrent-list tbody tr td:nth-last-child(5) {
+#torrent-list tbody tr td.center {
     text-align: end
 }
 #torrent-list a:nth-child(1)[href*="userdetails.php?"] {
@@ -2747,12 +2747,12 @@ a.sublink[href*="uppedby"]:hover {
     margin-top: 0.5rem;
     padding: 0.1rem 1rem;
 }
-table#torrent-list tbody td:nth-last-child(4) {
+table#torrent-list tbody td.center + td.center + td.center {
     font-size: 0;
     color: transparent;
     text-align: center
 }
-#torrent-list td:nth-last-child(4)>a:nth-child(1) {
+#torrent-list td.center + td.center + td.center > a:nth-child(1) {
     font-size: var(--font-size);
     text-align: center
 }
