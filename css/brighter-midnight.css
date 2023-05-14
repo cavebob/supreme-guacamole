@@ -1,15 +1,15 @@
 :root {
 	--background0: hsl(231, 13%, 8%);
-	--background1: hsl(231, 15%, 12%);
+	--background1: #1a1b23;
 	--foreground: hsl(212, 30%, 88%);
 	--soft-text-color: hsl(207, 40%, 66%);
     --unread-text-color: hsl(212, 30%, 95%);
 	--table-details-text-color: hsl(212, 30%, 65%);
 	--heading-color: hsla(31, 100%, 65%, 0.843);
 	--span-tag-text-color: #000000;
-	--link-text-color: hsl(212, 55%, 65%);
-	--highlight-link-text-color: hsl(216, 90%, 88%);
-	--username-text-color: #ffcd70;
+	--link-text-color: hsl(230, 90%, 85%); /* #a8b3eb;/* hsl(212, 55%, 65%);*/
+	--highlight-link-text-color: hsl(230, 100%, 92%);/* hsl(216, 90%, 88%);*/
+	--username-text-color: hsl(39, 100%, 75%);
 	--completed-tag-text-color: #ffb86c;
 	--internal-tag-text-color: #ffcd50;
 	--blue: #51a0fb;
@@ -48,16 +48,6 @@
 	--mono-font-stack: ui-monospace, SFMono-Regular, Menlo, Monaco, Inconsolata, "Fira Mono", Consolas, "Liberation Mono", "Courier New", monospace;
 	--sans-font-stack: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* #torrent-list tr.featured > td:not(td[id], td[class]) > b:before {
-    content: "";
-    background: var(--logo-gradient);
-    mask: url("noun-featured-2858532.svg") center no-repeat;
-    mask-size: 2rem 2.5rem;
-    width: 2rem;
-    height: 2rem;
-    float: left;
-    margin-top: 4px
-} */
 *,
 body {
     color: var(--foreground)
@@ -2822,7 +2812,7 @@ span.tag.tag_incomplete {
 #torrent-list a[title^="50%"]::after {
     color: var(--blue);
     font-size: 0.625rem;
-    font-weight: 100;
+    font-weight: 300;
     text-align: end;
     filter: brightness(90%);
 }
@@ -3564,7 +3554,7 @@ table.padding2 tr:first-child>td {
     text-align: left;
     white-space: nowrap;
 }
-#torrent-list tbody tr td.center:last-child>em:only-child,
+#torrent-list tbody tr td.center>em:only-child,
 #table_details_seeders td em,
 #table_details_leechers td em {
     color: var(--soft-text-color);
@@ -3574,6 +3564,12 @@ table.padding2 tr:first-child>td {
 .lottery_table.tablesorter.table_encodes>tbody>tr>td:last-child,
 #wishlist-items td:last-child {
     font-family: var(--mono-font-stack);
+}
+.bottom>h1+strong~p~#torrent-list tbody tr td.center:last-child { 
+    width: min-content;
+    white-space: break-space;
+    margin-left: auto;
+    margin-right: auto;
 }
 #table_details_seeders tr td:first-child>em,
 #table_details_leechers tr td:first-child>em {

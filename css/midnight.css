@@ -3565,6 +3565,12 @@ table.padding2 tr:first-child>td {
 #wishlist-items td:last-child {
     font-family: var(--mono-font-stack);
 }
+.bottom>h1+strong~p~#torrent-list tbody tr td.center:last-child { 
+    width: min-content;
+    white-space: break-space;
+    margin-left: auto;
+    margin-right: auto;
+}
 #table_details_seeders tr td:first-child>em,
 #table_details_leechers tr td:first-child>em {
     text-align: left;
