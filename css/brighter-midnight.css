@@ -4360,13 +4360,13 @@ td[bgcolor="#F4F4F0"] {
 td.bottom:nth-child(2)>table.main:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>td.embedded:nth-child(1),
 td.bottom:nth-child(2)>table.main:nth-of-type(2)>tbody:nth-child(1)>tr:nth-child(1)>td.embedded:nth-child(1) {
     background-color: var(--background1);
-    box-shadow: var(--bs);
+    /* box-shadow: var(--bs); */
     filter: var(--filterdropshadow);
     padding: 1rem;
     border-radius: var(--main-border-radius);
     max-width: 64rem;
     box-sizing: border-box;
-    box-shadow: var(--bs)
+    /* box-shadow: var(--bs) */
 }
 td.bottom:nth-child(2)>table.main:nth-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td.embedded:only-child>table[width="100%"][cellspacing="0"]:nth-last-child(2)>tbody:nth-child(1)>tr:last-child>td,
 td.bottom:nth-child(2)>table.main:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>td:nth-child(1)>table:nth-child(1)>tbody:nth-child(1)>tr:last-child>td {
