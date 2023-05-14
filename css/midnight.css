@@ -5485,7 +5485,7 @@ td.bottom>table.main:nth-of-type(2)+p:empty+table.main[width="750"]>tbody>tr>td.
 td.bottom>table.main:nth-of-type(2)+p:empty+table.main[width="750"]>tbody>tr>td.embedded>table>tbody>tr>td table[style^="padding: 0px"]>tbody>tr>td.bottom table.main>tbody>tr[valign="top"]>td[width="75"]+td:last-child {
     border-left: 1px solid var(--inner-table-border-color);
 }
-td[style="padding: 10px;background-color: #ECE9D8;"] {
+td[style="padding: 10px;background-color: #ECE9D8"] {
     background: var(--inner-td-bg-color) !important;
 }
 td.bottom>form[action^="/forums/search"]~table[cellpadding="5"][border="1"]:nth-child(6) {
