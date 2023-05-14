@@ -20,7 +20,7 @@
 	--inner-table-border-color: hsla(231, 20%, 40%, 0.3);
 	--inner-td-bg-color: hsla(231, 16%, 17%, 0.5);
 	--inner-th-bg-color: hsla(231, 16%, 20%, 0.75);
-	--sidebar-header-color: rgba(2, 2, 2, 0.3);
+	--sidebar-header-color: var(--inner-th-bg-color);
 	--inner-table-border-radius: 0.5rem;
 	--highlighted-hover-border-color: var(--highlight-link-text-color);
 	--filterdropshadow: 0;
@@ -1084,7 +1084,7 @@ a.alert-box:hover:not(.bottom>.main~.alert-box) {
 .alert-box--notifications {
     display: flex;
     align-items: center;
-    background-color: #16171c;
+    background-color: var(--inner-td-bg-color);
     color: var(--link-text-color);
     font-weight: 700;
     font-size: .6875rem;
@@ -1115,7 +1115,7 @@ a.alert-box:hover:not(.bottom>.main~.alert-box) {
 }
 .notification-frame.js-notification-frame {
     max-width: 48rem;
-    background-color: var(--background1);
+    background-color: var(--background0);
     box-shadow: var(--bs);
     padding: .3rem .5rem;
     border: 1px solid var(--inner-table-border-color);
@@ -1125,10 +1125,12 @@ a.alert-box:hover:not(.bottom>.main~.alert-box) {
     width: max-content;
 }
 .notification,
+.popup {
+    background-color: var(--inner-td-bg-color)
+}
 .notification:hover,
-.popup,
 .popup:hover {
-    background-color: #0c0c10
+    background-color: var(--inner-th-bg-color)
 }
 .notification-frame .notification__body,
 .notification-frame a,
