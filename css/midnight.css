@@ -5486,7 +5486,7 @@ td.bottom>table.main:nth-of-type(2)+p:empty+table.main[width="750"]>tbody>tr>td.
     border-left: 1px solid var(--inner-table-border-color);
 }
 td[style="padding: 10px;background-color: #ECE9D8;"] {
-    background: inherit !important;
+    background: var(--inner-td-bg-color) !important;
 }
 td.bottom>form[action^="/forums/search"]~table[cellpadding="5"][border="1"]:nth-child(6) {
     background: var(--background1);

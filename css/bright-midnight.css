@@ -5508,7 +5508,7 @@ td.bottom>table.main:nth-of-type(2)+p:empty+table.main[width="750"]>tbody>tr>td.
     border-left: 1px solid var(--inner-table-border-color);
 }
 td[style="padding: 10px;background-color: #ECE9D8;"] {
-    background: inherit !important;
+    background: var(--inner-td-bg-color) !important;
 }
 td.bottom>form[action^="/forums/search"]~table[cellpadding="5"][border="1"]:nth-child(6) {
     background: var(--background1);
@@ -6219,7 +6219,7 @@ div.item.tvdb>.item-body>.rank {
     flex: 1 0 5%;
     color: var(--heading-color);
     order: 1;
-    background: hsla(227, 15%, 12%, 0.33);
+    background: var(--inner-th-bg-color);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 div.item.imdb {
@@ -6276,11 +6276,11 @@ div.item.tvdb>.item-body>div.description>.item-title {
     font-weight: bold;
     font-size: 1.25rem;
     padding: 1rem;
-    background: hsl(240, 14%, 6%);
+    background: var(--inner-th-bg-color);
 }
 .item.tvdb>.item-body div.comment {
     padding: 3px 5px;
-    background-color: hsl(240, 17%, 8%);
+    background-color: var(--inner-th-bg-color);
     border: 0;
     border-left: 2px solid #4d86b3;
     font-style: italic;
@@ -6357,7 +6357,7 @@ div.movie-rating {
     top: 0;
     list-style: none;
     padding: 1rem;
-    background: hsl(240, 14%, 6%);
+    background: var(--inner-th-bg-color);
 }
 div.item-description {
     font-size: 0.8125rem;
@@ -6385,7 +6385,7 @@ div.list-links>a {
     left: 170px;
     bottom: 5px;
     padding: 3px 5px;
-    background-color: hsl(240, 17%, 8%);
+    background-color: var(--inner-th-bg-color);
     border: 0;
     border-left: 2px solid #4d86b3;
     margin-left: 0.5rem;
