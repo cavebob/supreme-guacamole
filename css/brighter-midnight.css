@@ -5,16 +5,16 @@
 	--soft-text-color: hsl(207, 40%, 66%);
     --unread-text-color: hsl(212, 30%, 95%);
 	--table-details-text-color: hsl(212, 30%, 65%);
-	--heading-color: hsla(31, 100%, 65%, 0.843);
+	--heading-color: hsla(25, 100%, 70%, 1);
 	--span-tag-text-color: #000000;
 	--link-text-color: hsl(230, 90%, 85%); /* #a8b3eb;/* hsl(212, 55%, 65%);*/
 	--highlight-link-text-color: hsl(230, 100%, 92%);/* hsl(216, 90%, 88%);*/
 	--username-text-color: hsl(39, 100%, 75%);
-	--completed-tag-text-color: #ffb86c;
-	--internal-tag-text-color: #ffcd50;
+	--completed-tag-text-color: hsl(30, 80%, 72%);
+	--internal-tag-text-color: hsl(50, 100%, 75%);
 	--blue: #51a0fb;
 	--green: hsl(135, 94%, 65%);
-	--red: #f85454;
+	--red: hsl(0, 92%, 65%);
 	--input-box-background: hsla(212, 30%, 30%, 0.15);
 	--transparent-border-color: transparent;
 	--inner-table-border-color: hsla(231, 20%, 40%, 0.3);
