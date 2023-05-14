@@ -2237,7 +2237,7 @@ div.chosen-container .search-choice {
     border-top: 1px solid var(--inner-table-border-color)
 }
 .chosen-container-multi .chosen-choices li.search-choice:hover {
-    background-color: hsla(0, 92.1%, 65.1%, 0.3);
+    background-color: hsla(0, 100%, 20%, 0.3);
     border: 1px solid var(--red);
 }
 .chosen-container-multi .chosen-choices {
