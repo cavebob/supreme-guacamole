@@ -2122,7 +2122,7 @@ only screen and (min-resolution:1.5dppx) {
     position: relative;
     margin: 0;
     padding: 1px 0 2px;
-    background-color: var(--inner-td-bg-color);
+    background-color: var(--inner-th-bg-color);
     box-shadow: var(--bs);
     box-shadow: none;
     background-image: none;
@@ -2142,7 +2142,7 @@ only screen and (min-resolution:1.5dppx) {
     box-shadow: var(--bs);
     text-decoration: none;
     border: 1px solid var(--link-text-color);
-    filter: brightness(120%)
+    /* filter: brightness(120%) */
 }
 #tagassociate {
     width: 228px;
@@ -2287,19 +2287,20 @@ div.chosen-container .search-choice {
     margin: 2px;
     padding: 2px 5px 2px 5px;
     /* line-height: .6875rem; */
-    border: 1px solid var(--background1);
+    border: 1px solid var(--inner-table-border-color);
     box-shadow: var(--bs);
     max-width: 100%;
     border-radius: 0;
-    font-size: 0.625rem;
-    font-weight: 500;
+    /* font-size: 0.625rem;
+    font-weight: 500; */
     background-image: 0;
     background-size: 0;
     background-repeat: 0;
     background-clip: border-box;
     box-shadow: none;
     cursor: default;
-    border-radius: var(--input-box-border-radius)
+    border-radius: var(--input-box-border-radius);
+    background-color: var(--inner-th-bg-color);
 }
 .chosen-container .chosen-results {
     display: flex;
