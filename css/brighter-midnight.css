@@ -25,6 +25,15 @@
 	--highlighted-hover-border-color: var(--highlight-link-text-color);
 	--filterdropshadow: 0;
 	--bs: 0px 2px 8px 0px rgba(0,0,0,0.25);
+    --bs-dp02: 	0px 2px 2px 0px hsla(0,0%,0%,0.14), 
+	0px 3px 1px -2px hsla(0,0%,0%,0.12), 
+	0px 1px 5px 0px hsla(0,0%,0%,0.2);
+    --bs-dp03: 0px 3px 4px 0px hsla(0,0%,0%,0.14), 
+    0px 3px 3px -2px hsla(0,0%,0%,0.12), 
+    0px 1px 8px 0px hsla(0,0%,0%,0.2);
+    --bs-dp04: 		0px 4px 5px 0px hsla(0,0%,0%,0.14), 
+    0px 1px 10px 0px hsla(0,0%,0%,0.12), 
+    0px 2px 4px -1px hsla(0,0%,0%,0.2);
 	--tag-border-radius: 0.25rem;
 	--input-box-border-radius: 0.25rem;
 	--quote-border-radius: 0.375rem;
@@ -32,7 +41,7 @@
 	--input-box-height: 1.5rem;
 	--font-size: 0.6875rem;
 	--top-menu-border-radius: 0.5rem;
-	--svg-gradient-bg-hover-color: linear-gradient(135deg, hsl(195, 100%, 75%), hsl(245, 100%, 75%));
+	--svg-gradient-bg-hover-color: hsla(230,90%,80%); /*linear-gradient(135deg, hsl(195, 100%, 75%), hsl(245, 100%, 75%));*/
     --logo-url: url("../pic/midnight/logo/logo.svg");
     --logo-gradient: linear-gradient(45turn, hsl(2, 100%, 80%), hsl(48, 100%, 75%));
 	--highlighted-border-hover-color: hsla(207, 56%, 60%, 0.5);
@@ -1057,7 +1066,7 @@ a.alert-box--news {
     background: var(--background0);
     color: var(--red);
     font-weight: 700;
-    font-size: 0;
+    font-size: var(--font-size);
     height: 1.25rem;
     padding: 0 0.4rem;
     border: 1px solid;
@@ -5238,14 +5247,14 @@ form[action*="/forums/post"] .message div#displayarea.previewbox {
     border-bottom: 1px solid var(--inner-table-border-color);
 }
 .rc__container.js-rc-container {
-    background: var(--background1);
-    box-shadow: var(--bs);
+    background: var(--inner-td-bg-color);
+    /* box-shadow: var(--bs); */
 }
 .rc__toggle.js-rc-toggle {
     background: var(--inner-th-bg-color);
-    filter: brightness(110%) contrast(110%);
+    filter: brightness(110%) /*contrast(100%)*/;
     font-size: 0.6875rem;
-    color: steelblue;
+    color: var(--link-text-color);
     font-weight: 700;
     text-transform: uppercase;
     border-top: 1px solid var(--inner-table-border-color);
@@ -5269,10 +5278,21 @@ a.tv_morelink:active {
     filter: brightness(120%);
     transition: all .25s cubic-bezier(.25, .46, .45, .94);
 }
+div.rc__film {
+    display: inline-flex;
+    /* box-sizing: border-box; */
+    /* margin: 10px; */
+    /* padding: 0px; */
+}
 img.rc__film__poster {
     border-radius: 0.5rem;
-    object-fit: fill;
-    box-shadow: var(--bs);
+    /* object-fit: fill; */
+    box-shadow: var(--bs-dp04);
+    width: 190px;
+    height: 268px;
+    margin: auto;
+    transform: scale(1);
+    transition: transform 0.25s ease;
 }
 div.rc__rating::before {
     content: 'IMDb: ';
@@ -5294,23 +5314,36 @@ div.rc__rating {
     align-self: flex-end;
 }
 a.rc__overlay {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-height: 320px;
+    max-width: 220px;
+    align-items: stretch;
+    padding: 0.4rem;
+    height: auto;
     background-color: rgba(10, 10, 18, 0.63);
     box-sizing: border-box;
     border-radius: 0.5rem;
     overflow: hidden;
-    border: 1px solid var(--highlighted-border-hover-color);
-    box-shadow: inset 0px 0px 5px 3px #00000044;
+    border: 1px solid hsla(220, 100%, 85%, 0.25);
+    box-shadow: var(--bs-dp03);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(.17,.84,.44,1);
 }
 div.rc__film:hover .rc__overlay {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    max-height: 300px;
-    max-width: 200px;
-    align-items: stretch;
-    padding: 0.4rem;
-    height: auto;
     backdrop-filter: blur(15px);
+    opacity: 1;
+}
+.rc__film:hover img.rc__film__poster {
+	border-radius: 0.5rem;
+    transform: scale(1.15);
+    transition: transform 0.25s ease;
 }
 div.rc__downloads {
     position: initial;
@@ -7077,3 +7110,32 @@ td.bottom a.alert-box--pm {
     border-radius: var(--main-border-radius);
     border: 1px solid var(--blue);
 }
+/* browse2 #film */ 
+/* #pagerbottom, #pagertop {
+    display: flex;
+    flex-flow: row wrap;
+    width: 10rem;
+    padding: .5rem;
+    font-size: 13px !important;
+    max-height: 100px;
+    overflow: scroll;
+    scrollbar-width: auto;
+    background-color: var(--background1);
+    border-radius: var(--inner-table-border-radius);
+}
+.pagerel {
+    padding: 3px 0;
+    width: 33%;
+    align-self: center;
+    border-radius: var(--input-box-border-radius);
+}
+.pagerel:hover {
+    background-color: var(--svg-gradient-bg-hover-color);
+    font-weight: bold;
+    color: black;
+}
+#pagertop > b {
+    width: 33%;
+    align-self: center;
+  } */
+/* */
