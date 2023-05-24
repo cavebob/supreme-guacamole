@@ -41,7 +41,7 @@
 	--input-box-height: 1.5rem;
 	--font-size: 0.6875rem;
 	--top-menu-border-radius: 0.5rem;
-	--svg-gradient-bg-hover-color: hsla(230,90%,80%); /*linear-gradient(135deg, hsl(195, 100%, 75%), hsl(245, 100%, 75%));*/
+	--svg-gradient-bg-hover-color: #9eadfa; /*linear-gradient(135deg, hsl(195, 100%, 75%), hsl(245, 100%, 75%));*/
     --logo-url: url("../pic/midnight/logo/logo.svg");
     --logo-gradient: linear-gradient(45turn, hsl(2, 100%, 80%), hsl(48, 100%, 75%));
 	--highlighted-border-hover-color: hsla(207, 56%, 60%, 0.5);
@@ -824,9 +824,9 @@ div.curuser-stats:nth-child(1)>b:nth-child(1)>a[href*="userdetails.php?"]:hover 
 }
 .inbox,
 .inboxnew {
-    -webkit-mask: url("../pic/midnight/icon/mail.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/mail.svg") center no-repeat;
-    height: 1.5rem;
+    -webkit-mask: url("../pic/midnight/icon/n/envelope.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/envelope.svg") center no-repeat;
+    height: 24px;
     align-self: center;
 }
 div.curuser-stats:nth-child(1)>a[href*="my.php"],
@@ -837,7 +837,9 @@ div.curuser-stats:nth-child(1)>a[href*="logout.php"] {
     background: var(--svg-gradient-bg-hover-color);
     border-radius: var(--input-box-border-radius);
     width: 2.1875rem;
-    filter: brightness(80%);
+    height: 24px;
+    margin: 2px 0;
+    /* filter: brightness(80%); */
     -moz-transition: all 0.25s ease;
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
@@ -964,13 +966,13 @@ div.curuser-stats:nth-child(1)>a[href*="my.php"]::before {
     content: "";
     display: flex;
     background: var(--svg-gradient-bg-hover-color);
-    -webkit-mask: url("../pic/midnight/icon/profile.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/profile.svg") center no-repeat;
-    -webkit-mask-size: 70%;
-    mask-size: 70%;
+    -webkit-mask: url("../pic/midnight/icon/n/user-circle.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/user-circle.svg") center no-repeat;
+    /* -webkit-mask-size: 70%;
+    mask-size: 70%; */
     width: 2.1875rem;
-    height: 1.25rem;
-    filter: brightness(85%);
+    height: 24px;
+    /* filter: brightness(85%); */
     -moz-transition: all 0.25s ease;
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
@@ -980,13 +982,13 @@ div.curuser-stats:nth-child(1)>a[href*="logout.php"]::before {
     content: "";
     display: flex;
     background: var(--svg-gradient-bg-hover-color);
-    -webkit-mask: url("../pic/midnight/icon/logout.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/logout.svg") center no-repeat;
-    -webkit-mask-size: 55%;
-    mask-size: 55%;
+    -webkit-mask: url("../pic/midnight/icon/n/sign-out-alt.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/sign-out-alt.svg") center no-repeat;
+    /* -webkit-mask-size: 55%;
+    mask-size: 55%; */
     width: 2.1875rem;
-    height: 1.25rem;
-    filter: brightness(85%);
+    height: 24px;
+    /* filter: brightness(85%); */
     -moz-transition: all 0.25s ease;
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
@@ -1036,12 +1038,12 @@ img[src*="starbig.gif"] {
 }
 .buddylist {
     background: var(--svg-gradient-bg-hover-color);
-    -webkit-mask: url("../pic/midnight/icon/friends.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/friends.svg") center no-repeat;
+    -webkit-mask: url("../pic/midnight/icon/n/users-alt.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/users-alt.svg") center no-repeat;
     width: 2.1875rem;
-    height: 1.25rem;
+    height: 24px;
     border-radius: var(--input-box-border-radius);
-    filter: brightness(85%);
+    /* filter: brightness(85%); */
     -moz-transition: all 0.25s ease;
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
@@ -1049,12 +1051,12 @@ img[src*="starbig.gif"] {
 }
 .mytorrents {
     background: var(--svg-gradient-bg-hover-color);
-    -webkit-mask: url("../pic/midnight/icon/mytorrents.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/mytorrents.svg") center no-repeat;
+    -webkit-mask: url("../pic/midnight/icon/n/list-ul.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/list-ul.svg") center no-repeat;
     width: 2.1875rem;
-    height: 1.25rem;
+    height: 24px;
     border-radius: var(--input-box-border-radius);
-    filter: brightness(85%);
+    /* filter: brightness(85%); */
     -moz-transition: all 0.25s ease;
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
@@ -1260,11 +1262,10 @@ html body table.main td.bottom table.main td.embedded h2+table[width="100%"][bor
     display: inline-flex;
     margin: 0;
     background: var(--svg-gradient-bg-hover-color);
-    -webkit-mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
+    -webkit-mask: url("../pic/midnight/icon/n/rss.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/rss.svg") center no-repeat;
     max-width: 1rem;
     height: 1rem;
-    filter: brightness(90%);
     vertical-align: middle;
     padding-left: 2rem;
     margin-left: -1rem;
@@ -2543,67 +2544,114 @@ a.js-wishlistadd,
 a.js-wishlistdel,
 a[href*="javascript:delBookmark"],
 a[href*="javascript:addRss"] {
-    margin-top: 3px;
+    margin-top: 2px;
     display: inline-block;
     cursor: pointer;
     vertical-align: bottom;
-    filter: brightness(90%);
 }
 a.js-download {
     background: var(--svg-gradient-bg-hover-color);
-    -webkit-mask: url("../pic/midnight/icon/download.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/download.svg") center no-repeat;
-    width: 1rem;
-    height: 1rem;
-    filter: brightness(90%)
+    -webkit-mask: url("../pic/midnight/icon/n/save.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/save.svg") center no-repeat;
+    -webkit-mask-size: 21px;
+    mask-size: 21px;
+    width: 1.25rem;
+    height: 1.25rem;
+    
+    /* margin: -1px; */
+
 }
+/* a.js-download:hover {
+    transform: scale(1.09);
+    transition: transform 0.15s ease;
+} */
 a.js-rssadd {
     background: var(--svg-gradient-bg-hover-color);
-    -webkit-mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
-    width: 1rem;
-    height: 1rem;
-    filter: brightness(90%);
+    -webkit-mask: url("../pic/midnight/icon/n/icon-rss.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/icon-rss.svg") center no-repeat;
+    -webkit-mask-size: 21px;
+    mask-size: 21px;
+    width: 1.25rem;
+    height: 1.25rem;
+    /* margin: -1px; */
 }
 a.js-rssdel {
     background: var(--red);
-    -webkit-mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
-    width: 1rem;
-    height: 1rem;
-    filter: brightness(90%);
+    -webkit-mask: url("../pic/midnight/icon/n/icon-rss.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/rss.svg") center no-repeat;
+    -webkit-mask-size: 21px;
+    mask-size: 21px;
+    width: 1.25rem;
+    height: 1.25rem;
+    /* margin: -1px; */
+}
+a[href*="javascript:addRss"] {
+    display: inline-block;
+    margin: 0;
+    background: var(--svg-gradient-bg-hover-color);
+    -webkit-mask: url("../pic/midnight/icon/n/icon-rss.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/icon-rss.svg") center no-repeat;
+    -webkit-mask-size: 21px;
+    mask-size: 21px;
+    /* margin: -1px; */
+    margin-left: 1px;
+    /* margin-right: -1px; */
+    width: 1.25rem;
+    height: 1.25rem;
+ 
+}
+a.js-rssdel {
+    margin: 0;
+    background: var(--red);
+    -webkit-mask: url("../pic/midnight/icon/n/icon-rss.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/rss.svg") center no-repeat;
+    -webkit-mask-size: 21px;
+    mask-size: 21px;
+    width: 1.25rem;
+    height: 1.25rem;
+    /* margin: -1px; */
 }
 a.js-bookmarkadd {
     background: var(--svg-gradient-bg-hover-color);
-    -webkit-mask: url("../pic/midnight/icon/bookmark.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/bookmark.svg") center no-repeat;
-    width: 1rem;
-    height: 1rem;
-    filter: brightness(90%)
+    -webkit-mask: url("../pic/midnight/icon/n/bookmark-resized-14x19.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/bookmark-resized-14x19.svg") center no-repeat;
+    -webkit-mask-size: 21px;
+    mask-size: 21px;
+    width: 1.25rem;
+    height: 1.25rem;
+    /* margin: -1px; */
 }
 a.js-bookmarkdel,
 a[href*="javascript:delBookmark"] {
     background: var(--red);
-    -webkit-mask: url("../pic/midnight/icon/bookmark.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/bookmark.svg") center no-repeat;
-    width: 1rem;
-    height: 1rem;
-    filter: brightness(90%)
+    -webkit-mask: url("../pic/midnight/icon/n/bookmark-resized-14x19.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/bookmark-resized-14x19.svg") center no-repeat;
+    -webkit-mask-size: 21px;
+    mask-size: 21px;
+    width: 1.25rem;
+    height: 1.25rem;
+    /* margin: -1px; */
 }
 a.js-wishlistadd,
 img.info__wishlist,
 a[title="Add to wishlist"],
 a[title="Add to wishlist"][onclick*="delWishlist"],
 a[title="Add this film to your wishlist"] {
-    -webkit-mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
+    -webkit-mask: url("../pic/midnight/icon/n/wishlist-24x24-test-2.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/wishlist-24x24-test-2.svg") center no-repeat;
+    -webkit-mask-size: 21px;
     background: var(--svg-gradient-bg-hover-color);
-    width: 1rem;
-    height: 1rem;
-    filter: brightness(90%);
-    display: inline-block;
+    mask-size: 21px;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0;
+    /* shape-rendering: crispEdges;
+    shape-rendering: optimizeSpeed; */
+    /* image-rendering: -moz-crisp-edges; */
+    /* display: inline-block; */
     vertical-align: middle;
 }
+
 .film-info a[title="Add this film to your wishlist"] img {
     display: none;
     margin-bottom: 0px;
@@ -2617,11 +2665,13 @@ a[onclick*="removeFromWishlist"],
 a[title="Remove from wishlist"],
 a[title="Remove this film from your wishlist"] {
     background: var(--red);
-    -webkit-mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
+    -webkit-mask: url("../pic/midnight/icon/n/wishlist-24x24-test-2.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/wishlist-24x24-test-2.svg") center no-repeat;
+    -webkit-mask-size: 21px;
+    mask-size: 21px;
     width: 1rem;
     height: 1rem;
-    filter: brightness(90%);
+    /* margin: -1px; */
     cursor: pointer;
 }
 a[onclick*="removeFromWishlist"],
@@ -2631,17 +2681,22 @@ a[title="Remove from wishlist"],
 a[title="Remove this film from your wishlist"] {
     display: inline-block;
     background: var(--red);
-    -webkit-mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
+    -webkit-mask: url("../pic/midnight/icon/n/wishlist-24x24-test-2.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/wishlist-24x24-test-2.svg") center no-repeat;
+    -webkit-mask-size: 21px;
+    mask-size: 21px;
     width: 1rem;
     height: 1rem;
-    filter: brightness(90%);
+    /* margin: -1px; */
     vertical-align: middle;
     cursor: pointer;
 }
-a[title*="wishlist"]:hover {
-    filter: brightness(1)
+img.minicon {
+    display: none;
 }
+/* a[title*="wishlist"]:hover {
+    filter: brightness(1)
+} */
 a[onclick*="delWishlist"]>img,
 a[href*="javascript:unignoreshow"]>img {
     display: none;
@@ -5133,33 +5188,76 @@ img[src*="warnedbig.gif"][alt="Warned"] {
 .unlockednew {
     width: 30px;
     height: 30px;
-    background: url("../pic/midnight/unlockednew.png") center no-repeat;
+    background-color: var(--svg-gradient-bg-hover-color);
+    -webkit-mask: url("../pic/midnight/icon/n/envelope.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/envelope.svg") center no-repeat;
+    -webkit-mask-size: 32px;
+    mask-size: 32px;
 }
 .unlocked {
     width: 30px;
     height: 30px;
-    background: url("../pic/midnight/unlocked.png") center no-repeat;
+    background-color: hsl(230, 15%, 50%);
+    -webkit-mask: url("../pic/midnight/icon/n/envelope.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/envelope.svg") center no-repeat;
+    -webkit-mask-size: 32px;
+    mask-size: 32px;
 }
 .lockednew {
     width: 30px;
     height: 30px;
-    background: url("../pic/midnight/lockednew.png") center no-repeat;
+    background-color: var(--svg-gradient-bg-hover-color);
+    -webkit-mask: url("../pic/midnight/icon/n/alt/envelope-lock.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/alt/envelope-lock.svg") center no-repeat;
+    -webkit-mask-size: 32px;
+    mask-size: 32px;
 }
 .locked {
     width: 30px;
     height: 30px;
-    background: url("../pic/midnight/locked.png") center no-repeat;
+    background-color: hsl(230, 15%, 50%);
+    -webkit-mask: url("../pic/midnight/icon/n/envelope-lock.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/envelope-lock.svg") center no-repeat;
+    -webkit-mask-size: 32px;
+    mask-size: 32px;
 }
-.hasposted::after {
-    content: url("../pic/midnight/hasposted.png");
+.unlockednew.hasposted {
+    /* content: url("../pic/midnight/hasposted.png");
     display: block;
     height: 8px;
     width: 8px;
     scale: 0.8;
     top: 5px;
     left: 10.5px;
-    position: relative;
-    filter: brightness(90%) invert(0.1)
+    position: relative; */
+    /* filter: brightness(90%) invert(0.5);
+    z-index:10; */
+    width: 30px;
+    height: 30px;
+    background-color: var(--svg-gradient-bg-hover-color);
+    -webkit-mask: url("../pic/midnight/icon/n/envelope-star.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/envelope-star.svg") center no-repeat;
+    -webkit-mask-size: 32px;
+    mask-size: 32px;
+}
+.unlocked.hasposted {
+    /* content: url("../pic/midnight/hasposted.png");
+    display: block;
+    height: 8px;
+    width: 8px;
+    scale: 0.8;
+    top: 5px;
+    left: 10.5px;
+    position: relative; */
+    /* filter: brightness(90%) invert(0.5);
+    z-index:10; */
+    width: 30px;
+    height: 30px;
+    background-color: hsl(230, 15%, 50%);
+    -webkit-mask: url("../pic/midnight/icon/n/envelope-star.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/envelope-star.svg") center no-repeat;
+    -webkit-mask-size: 32px;
+    mask-size: 32px;
 }
 img[src*="/top.gif"][alt="Top"] {
     right: 0;
@@ -5178,15 +5276,16 @@ img[src*="/icon_latest_reply.gif"][alt="Last post"] {
     display: inline-block;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: url("../pic/midnight/golatest.png") center no-repeat;
-    width: 13px;
-    height: 10px;
-    padding-left: 13px;
-    filter: brightness(70%);
+    background: url("../pic/midnight/icon/n/arrow-to-right.svg") center no-repeat;
+    background-size: 18px 20px;
+    width: 20px;
+    height: 12px;
+    padding-left: 20px;
+    /* filter: brightness(70%); */
     padding-top: 1px;
     padding-bottom: 1px;
     margin-bottom: 1px;
-    vertical-align: bottom;
+    vertical-align: middle;
 }
 img[src*="/icon_latest_reply.gif"][alt="Last post"]:hover,
 img[src*="/top.gif"][alt="Top"]:hover {
@@ -5366,7 +5465,7 @@ div.rc__plot {
     width: 100%;
     height: 70%;
     padding: 0.5rem;
-    overflow: scroll;
+    overflow-y: auto;
 }
 button.rc__actions-ignore,
 button.rc__actions-wishlist {
@@ -6114,7 +6213,7 @@ li.notorrents h2 {
     margin: 0;
     background: var(--svg-gradient-bg-hover-color);
     -webkit-mask: url("../pic/midnight/icon/download.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/download.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/download-alt.svg") center no-repeat;
     width: 1rem;
     height: 1rem;
     filter: brightness(90%)
@@ -6137,25 +6236,7 @@ li.notorrents h2 {
 .season-watched:hover {
     filter: brightness(120%)
 }
-a[href*="javascript:addRss"] {
-    display: inline-block;
-    margin: 0;
-    background: var(--svg-gradient-bg-hover-color);
-    -webkit-mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
-    width: 1rem;
-    height: 1rem;
-    filter: brightness(90%);
-}
-a.js-rssdel {
-    margin: 0;
-    background: var(--red);
-    -webkit-mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
-    width: 1rem;
-    height: 1rem;
-    filter: brightness(90%);
-}
+
 div#list-container {
     display: flex;
     flex-flow: row wrap;
