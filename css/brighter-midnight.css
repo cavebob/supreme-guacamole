@@ -2948,11 +2948,11 @@ a.index.js-download {
 }
 #details>tbody:nth-child(1)>tr:nth-child(1)>td>a[id^="rss"] {
     background: var(--svg-gradient-bg-hover-color);
-    -webkit-mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
+    -webkit-mask: url("../pic/midnight/icon/n/icon-rss.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/icon-rss.svg") center no-repeat;
     width: 1rem;
     height: 1rem;
-    filter: brightness(90%);
+    /* filter: brightness(90%); */
     margin-right: 3px
 }
 a.index.js-download {
