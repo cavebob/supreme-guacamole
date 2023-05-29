@@ -41,7 +41,7 @@
 	--input-box-height: 1.5rem;
 	--font-size: 0.6875rem;
 	--top-menu-border-radius: 0.5rem;
-	--svg-gradient-bg-hover-color: #9eadfa; /*linear-gradient(135deg, hsl(195, 100%, 75%), hsl(245, 100%, 75%));*/
+	--svg-gradient-bg-hover-color: linear-gradient(#9eadfa,#9eadfa);/*linear-gradient(135deg, hsl(195, 100%, 75%), hsl(245, 100%, 75%));*/
     --logo-url: url("../pic/midnight/logo/logo.svg");
     --logo-gradient: linear-gradient(45turn, hsl(2, 100%, 80%), hsl(48, 100%, 75%));
 	--highlighted-border-hover-color: hsla(207, 56%, 60%, 0.5);
@@ -1866,6 +1866,9 @@ body>table.main>tbody>tr>td.bottom>table.main:only-of-type:last-child:nth-child(
     filter: var(--filterdropshadow);
     flex: 1 1 68%;
     order: 3;
+}
+#news ~ * img {
+    max-width: 100%;
 }
 body>table.main>tbody>tr>td.bottom>table.main:only-of-type:last-child:nth-child(2)>tbody:only-child>tr:only-child>td.embedded:only-child>table:nth-child(5) {
     display: flex;
@@ -5392,6 +5395,22 @@ img.rc__film__poster {
     margin: auto;
     transform: scale(1);
     transition: transform 0.25s ease;
+}
+div.rc__film__poster-placeholder {
+    display: block;
+    width: 190px;
+    height: 268px;
+    padding: 1rem .25rem;
+	text-align: center;
+	white-space: normal;
+	font-size: 20px;
+	text-decoration: none !important;
+	background-color: var(--background0);
+	color: inherit !important;
+    border-radius: var(--main-border-radius);
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    margin: auto;
 }
 div.rc__rating::before {
     content: 'IMDb: ';
