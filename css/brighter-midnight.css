@@ -2560,14 +2560,7 @@ a.js-download {
     mask-size: 21px;
     width: 1.25rem;
     height: 1.25rem;
-    
-    /* margin: -1px; */
-
 }
-/* a.js-download:hover {
-    transform: scale(1.09);
-    transition: transform 0.15s ease;
-} */
 a.js-rssadd {
     background: var(--svg-gradient-bg-hover-color);
     -webkit-mask: url("../pic/midnight/icon/n/icon-rss.svg") center no-repeat;
@@ -2576,17 +2569,15 @@ a.js-rssadd {
     mask-size: 21px;
     width: 1.25rem;
     height: 1.25rem;
-    /* margin: -1px; */
 }
 a.js-rssdel {
     background: var(--red);
     -webkit-mask: url("../pic/midnight/icon/n/icon-rss.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/n/rss.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/icon-rss.svg") center no-repeat;
     -webkit-mask-size: 21px;
     mask-size: 21px;
     width: 1.25rem;
     height: 1.25rem;
-    /* margin: -1px; */
 }
 a[href*="javascript:addRss"] {
     display: inline-block;
@@ -2596,9 +2587,7 @@ a[href*="javascript:addRss"] {
     mask: url("../pic/midnight/icon/n/icon-rss.svg") center no-repeat;
     -webkit-mask-size: 21px;
     mask-size: 21px;
-    /* margin: -1px; */
     margin-left: 1px;
-    /* margin-right: -1px; */
     width: 1.25rem;
     height: 1.25rem;
  
@@ -2612,7 +2601,6 @@ a.js-rssdel {
     mask-size: 21px;
     width: 1.25rem;
     height: 1.25rem;
-    /* margin: -1px; */
 }
 a.js-bookmarkadd {
     background: var(--svg-gradient-bg-hover-color);
@@ -2622,7 +2610,6 @@ a.js-bookmarkadd {
     mask-size: 21px;
     width: 1.25rem;
     height: 1.25rem;
-    /* margin: -1px; */
 }
 a.js-bookmarkdel,
 a[href*="javascript:delBookmark"] {
@@ -2633,7 +2620,6 @@ a[href*="javascript:delBookmark"] {
     mask-size: 21px;
     width: 1.25rem;
     height: 1.25rem;
-    /* margin: -1px; */
 }
 a.js-wishlistadd,
 img.info__wishlist,
@@ -2648,10 +2634,6 @@ a[title="Add this film to your wishlist"] {
     width: 1.25rem;
     height: 1.25rem;
     margin: 0;
-    /* shape-rendering: crispEdges;
-    shape-rendering: optimizeSpeed; */
-    /* image-rendering: -moz-crisp-edges; */
-    /* display: inline-block; */
     vertical-align: middle;
 }
 
@@ -2674,7 +2656,6 @@ a[title="Remove this film from your wishlist"] {
     mask-size: 21px;
     width: 1rem;
     height: 1rem;
-    /* margin: -1px; */
     cursor: pointer;
 }
 a[onclick*="removeFromWishlist"],
@@ -2690,16 +2671,12 @@ a[title="Remove this film from your wishlist"] {
     mask-size: 21px;
     width: 1rem;
     height: 1rem;
-    /* margin: -1px; */
     vertical-align: middle;
     cursor: pointer;
 }
 img.minicon {
     display: none;
 }
-/* a[title*="wishlist"]:hover {
-    filter: brightness(1)
-} */
 a[onclick*="delWishlist"]>img,
 a[href*="javascript:unignoreshow"]>img {
     display: none;
@@ -3417,6 +3394,9 @@ td.bottom form[method=get][action=""][style="margin-bottom:20px;"]+table[cellpad
 .sources_table td:last-child,
 td.heading {
     white-space: nowrap
+}
+#profilesettings input[name="custom_css"] ~ .small > em {
+    user-select: none;
 }
 .contentlayout.fourcell .content tbody>tr {
     display: flex;
