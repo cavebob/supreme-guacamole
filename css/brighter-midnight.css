@@ -5171,7 +5171,7 @@ img[src*="warnedbig.gif"][alt="Warned"] {
 .unlockednew {
     width: 30px;
     height: 30px;
-    background-color: var(--svg-gradient-bg-hover-color);
+    background: var(--svg-gradient-bg-hover-color);
     -webkit-mask: url("../pic/midnight/icon/n/envelope.svg") center no-repeat;
     mask: url("../pic/midnight/icon/n/envelope.svg") center no-repeat;
     -webkit-mask-size: 32px;
@@ -5180,7 +5180,7 @@ img[src*="warnedbig.gif"][alt="Warned"] {
 .unlocked {
     width: 30px;
     height: 30px;
-    background-color: hsl(230, 15%, 50%);
+    background: hsl(230, 15%, 50%);
     -webkit-mask: url("../pic/midnight/icon/n/envelope.svg") center no-repeat;
     mask: url("../pic/midnight/icon/n/envelope.svg") center no-repeat;
     -webkit-mask-size: 32px;
@@ -5189,16 +5189,16 @@ img[src*="warnedbig.gif"][alt="Warned"] {
 .lockednew {
     width: 30px;
     height: 30px;
-    background-color: var(--svg-gradient-bg-hover-color);
-    -webkit-mask: url("../pic/midnight/icon/n/alt/envelope-lock.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/n/alt/envelope-lock.svg") center no-repeat;
+    background: var(--svg-gradient-bg-hover-color);
+    -webkit-mask: url("../pic/midnight/icon/n/envelope-lock.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/envelope-lock.svg") center no-repeat;
     -webkit-mask-size: 32px;
     mask-size: 32px;
 }
 .locked {
     width: 30px;
     height: 30px;
-    background-color: hsl(230, 15%, 50%);
+    background: hsl(230, 15%, 50%);
     -webkit-mask: url("../pic/midnight/icon/n/envelope-lock.svg") center no-repeat;
     mask: url("../pic/midnight/icon/n/envelope-lock.svg") center no-repeat;
     -webkit-mask-size: 32px;
@@ -5217,7 +5217,7 @@ img[src*="warnedbig.gif"][alt="Warned"] {
     z-index:10; */
     width: 30px;
     height: 30px;
-    background-color: var(--svg-gradient-bg-hover-color);
+    background: var(--svg-gradient-bg-hover-color);
     -webkit-mask: url("../pic/midnight/icon/n/envelope-star.svg") center no-repeat;
     mask: url("../pic/midnight/icon/n/envelope-star.svg") center no-repeat;
     -webkit-mask-size: 32px;
@@ -5236,7 +5236,7 @@ img[src*="warnedbig.gif"][alt="Warned"] {
     z-index:10; */
     width: 30px;
     height: 30px;
-    background-color: hsl(230, 15%, 50%);
+    background: hsl(230, 15%, 50%);
     -webkit-mask: url("../pic/midnight/icon/n/envelope-star.svg") center no-repeat;
     mask: url("../pic/midnight/icon/n/envelope-star.svg") center no-repeat;
     -webkit-mask-size: 32px;
