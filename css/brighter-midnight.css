@@ -564,8 +564,12 @@ input[type="text"]:focus {
     display: inline-block;
     padding: 12px;
     margin-left: -1.5rem;
-    background: url("../pic/midnight/loupe.png") center no-repeat;
-    filter: brightness(70%);
+    background: var(--svg-gradient-bg-hover-color);
+    -webkit-mask: url("../pic/midnight/icon/n/search.svg") center no-repeat;
+    mask: url("../pic/midnight/icon/n/search.svg") center no-repeat;
+    -webkit-mask-size: 19px;
+    mask-size: 19px;
+    filter: brightness(90%);
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: var(--input-box-border-radius)
@@ -6269,6 +6273,7 @@ div.list-description {
     gap: 0.5rem;
     max-width: 64rem;
     border: 1px solid var(--transparent-border-color);
+    font-size: .8125rem;
 }
 @media screen and (min-width: 1920px) {
     div.list-description {
