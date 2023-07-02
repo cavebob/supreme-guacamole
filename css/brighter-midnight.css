@@ -5172,90 +5172,57 @@ img[src*="warnedbig.gif"][alt="Warned"] {
     mask: url("../pic/midnight/icon/warned.svg") center no-repeat;
     background: rgb(200, 50, 50);
 }
-.unlockednew {
-    width: 30px;
-    height: 30px;
-    background: var(--svg-gradient-bg-hover-color);
-    -webkit-mask: url("../pic/midnight/icon/envelope.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/envelope.svg") center no-repeat;
-    -webkit-mask-size: 32px;
-    mask-size: 32px;
-}
+.locked,
 .unlocked {
-    width: 30px;
-    height: 30px;
-    background: hsl(230, 15%, 50%);
-    -webkit-mask: url("../pic/midnight/icon/envelope.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/envelope.svg") center no-repeat;
-    -webkit-mask-size: 32px;
-    mask-size: 32px;
+  background: hsl(230, 15%, 50%);
 }
+.lockednew,
+.unlockednew {
+  background: var(--svg-gradient-bg-hover-color);
+}
+.locked,
+.lockednew,
+.unlocked,
+.unlockednew {
+  width: 30px;
+  height: 30px;
+  -webkit-mask-size: 32px;
+  mask-size: 32px;
+}
+.unlocked,
+.unlockednew {
+  -webkit-mask: url("../pic/midnight/icon/envelope.svg") center no-repeat;
+  mask: url("../pic/midnight/icon/envelope.svg") center no-repeat;
+}
+.locked,
 .lockednew {
-    width: 30px;
-    height: 30px;
-    background: var(--svg-gradient-bg-hover-color);
-    -webkit-mask: url("../pic/midnight/icon/envelope-lock.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/envelope-lock.svg") center no-repeat;
-    -webkit-mask-size: 32px;
-    mask-size: 32px;
+  -webkit-mask: url("../pic/midnight/icon/envelope-lock.svg") center no-repeat;
+  mask: url("../pic/midnight/icon/envelope-lock.svg") center no-repeat;
+  margin-top: -3px;
 }
-.locked {
-    width: 30px;
-    height: 30px;
-    background: hsl(230, 15%, 50%);
-    -webkit-mask: url("../pic/midnight/icon/envelope-lock.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/envelope-lock.svg") center no-repeat;
-    -webkit-mask-size: 32px;
-    mask-size: 32px;
+.unlocked.hasposted,
+.unlockednew.hasposted {
+  -webkit-mask: url("../pic/midnight/icon/envelope-star.svg") center no-repeat;
+  mask: url("../pic/midnight/icon/envelope-star.svg") center no-repeat;
+  margin-top: -3px;
+}
+.locked.hasposted::after,
+.unlocked.hasposted::after {
+  display: block;
+  content: "";
+  width: 1rem;
+  background: hsl(230, 50%, 80%);
+  top: 3px;
+  right: -15px;
+  position: relative;
 }
 .locked.hasposted::after {
-    display: block;
-    content: "";
-    width: 1rem;
-    height: 18px;
-    background: var(--svg-gradient-bg-hover-color);
-    top: 3px;
-    right: -15px;
-    position: relative;
-  }
-.unlockednew.hasposted {
-    /* content: url("../pic/midnight/hasposted.png");
-    display: block;
-    height: 8px;
-    width: 8px;
-    scale: 0.8;
-    top: 5px;
-    left: 10.5px;
-    position: relative; */
-    /* filter: brightness(90%) invert(0.5);
-    z-index:10; */
-    width: 30px;
-    height: 30px;
-    background: var(--svg-gradient-bg-hover-color);
-    -webkit-mask: url("../pic/midnight/icon/envelope-star.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/envelope-star.svg") center no-repeat;
-    -webkit-mask-size: 32px;
-    mask-size: 32px;
+  height: 18px;
 }
-.unlocked.hasposted {
-    /* content: url("../pic/midnight/hasposted.png");
-    display: block;
-    height: 8px;
-    width: 8px;
-    scale: 0.8;
-    top: 5px;
-    left: 10.5px;
-    position: relative; */
-    /* filter: brightness(90%) invert(0.5);
-    z-index:10; */
-    width: 30px;
-    height: 30px;
-    background: hsl(230, 15%, 50%);
-    -webkit-mask: url("../pic/midnight/icon/envelope-star.svg") center no-repeat;
-    mask: url("../pic/midnight/icon/envelope-star.svg") center no-repeat;
-    -webkit-mask-size: 32px;
-    mask-size: 32px;
+.unlocked.hasposted::after {
+  height: 15px;
 }
+
 img[src*="/top.gif"][alt="Top"] {
     right: 0;
     filter: brightness(90%) grayscale(0.5);
@@ -5278,7 +5245,6 @@ img[src*="/icon_latest_reply.gif"][alt="Last post"] {
     width: 20px;
     height: 12px;
     padding-left: 20px;
-    /* filter: brightness(70%); */
     padding-top: 1px;
     padding-bottom: 1px;
     margin-bottom: 1px;
