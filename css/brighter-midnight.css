@@ -5207,7 +5207,9 @@ img[src*="warnedbig.gif"][alt="Warned"] {
   margin-top: -3px;
 }
 .locked.hasposted::after,
-.unlocked.hasposted::after {
+.lockednew.hasposted::after,
+.unlocked.hasposted::after,
+.unlockednew.hasposted::after {
   display: block;
   content: "";
   width: 1rem;
@@ -5216,10 +5218,12 @@ img[src*="warnedbig.gif"][alt="Warned"] {
   right: -15px;
   position: relative;
 }
-.locked.hasposted::after {
+.locked.hasposted::after,
+.lockednew.hasposted::after {
   height: 18px;
 }
-.unlocked.hasposted::after {
+.unlocked.hasposted::after,
+.unlockednew.hasposted::after {
   height: 15px;
 }
 
