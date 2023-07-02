@@ -5208,6 +5208,16 @@ img[src*="warnedbig.gif"][alt="Warned"] {
     -webkit-mask-size: 32px;
     mask-size: 32px;
 }
+.locked.hasposted::after {
+    display: block;
+    content: "";
+    width: 1rem;
+    height: 18px;
+    background: var(--svg-gradient-bg-hover-color);
+    top: 3px;
+    right: -15px;
+    position: relative;
+  }
 .unlockednew.hasposted {
     /* content: url("../pic/midnight/hasposted.png");
     display: block;
