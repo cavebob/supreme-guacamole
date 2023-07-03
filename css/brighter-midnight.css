@@ -1409,6 +1409,10 @@ tr#moresearch3[style="display: table-row;"],
     min-width: 125px;
     text-align: right;
 } 
+#moresearch3 .catlink {
+    margin-left: .25rem;
+    vertical-align: 1px;
+  }
 tr#moresearch2 {
     box-sizing: border-box;
     padding: .5em 1rem
