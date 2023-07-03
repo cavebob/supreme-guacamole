@@ -7059,3 +7059,19 @@ td.bottom a.alert-box--pm {
     border-radius: var(--main-border-radius);
     border: 1px solid var(--blue);
 }
+.torrent-title {
+    flex-flow: row wrap;
+    justify-content: center;
+}
+[class*="exclusive"] {
+    color: hsl(240, 100%, 82%);
+    filter: brightness(1);
+    align-self: center;
+    box-sizing: border-box;
+    bottom: 0 !important;
+}
+.torrent-title~.h3_exclusive {
+    flex-basis: 100%;
+    color: hsl(240, 100%, 82%);
+    font-size: 13px;
+}
