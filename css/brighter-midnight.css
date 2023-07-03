@@ -2841,20 +2841,6 @@ html>body>table.main>tbody>tr>td.bottom:nth-child(2)>h1.internal:not(#footer) {
     color: var(--internal-tag-text-color);
     margin-bottom: -1.8rem
 }
-body .main>tbody>tr>td.bottom>h1.internal::after {
-    display: inline-block;
-    content: "INTERNAL";
-    color: var(--internal-tag-text-color);
-    padding: .063rem .25rem;
-    border: 1px solid var(--inner-table-border-color);
-    border-radius: var(--tag-border-radius);
-    margin: -3px 0 0 .25rem;
-    font-size: 0.5rem;
-    font-weight: 500;
-    font-variant: small-caps;
-    background: rgba(255, 255, 255, .033);
-    vertical-align: middle;
-}
 #details {
     border-radius: var(--main-border-radius);
     max-width: 64rem;
@@ -7082,17 +7068,23 @@ td.bottom a.alert-box--pm {
     border: 1px solid var(--blue);
 }
 .torrent-title {
+    display: flex;
     flex-flow: row wrap;
     justify-content: center;
+}
+.torrent-title > h1 {
+    padding: .7rem 0rem !important;
+}
+.torrent-title > .tag {
+    align-self: center;
+    box-sizing: border-box;
+    bottom: 0 !important;
+    font-size: 85%;
 }
 [class*="exclusive"] {
     color: hsl(240, 100%, 82%);
     filter: brightness(1);
-    align-self: center;
-    box-sizing: border-box;
-    bottom: 0 !important;
 }
 .torrent-title~.h3_exclusive {
-    color: hsl(240, 100%, 82%);
-    font-size: 13px;
+    font-size: .8125rem;
 }
