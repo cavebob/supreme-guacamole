@@ -1382,13 +1382,10 @@ html body table.main tbody tr td.bottom div#resultsarea p {
 #moresearch3 {
     border-top: 1px solid var(--inner-table-border-color);
     padding: .5em 1em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex: 1 1 auto
 }
-tr#moresearch3[style="display: table-row;"] {
-    display: flex !important
+tr#moresearch3[style="display: table-row;"],
+#moresearch3 > td:first-child {
+    width: 100%
 }
 #moresearch1,
 #moresearch2,
@@ -1403,65 +1400,14 @@ tr#moresearch3[style="display: table-row;"] {
 }
 #moresearch3 table.bottom tbody:nth-child(1) {
     padding: 0 !important;
-    display: grid;
-    align-items: center;
-    grid-template-areas: "cat . . ."
-                         "catoptions catoptions catoptions catoptions"
-                         "codec . . ."
-                         "codecoptions codecoptions codecoptions codecoptions"
-                         "med . . ."
-                         "medoptions medoptions medoptions medoptions"
-                         "origin origin . ."
-                         "originoptions originoptions . .";
-}
-#moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(2),
-#moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(4),
-#moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(6),
-#moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(8) {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    height: 100%;
-    gap: .125rem .75rem;
-}
-#moresearch3 table.bottom>tbody>tr:nth-child(7) > td:first-child {
-    width: 55%;
 }
 #moresearch3 .bottom[style="padding-bottom: 2px;padding-left: 7px"] {
-    padding: 0px !important;
-}
-#moresearch3 a.catlink {
-    vertical-align: 2px;
-    margin-left: .25rem
-}
-#moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(1) {
-    grid-area: cat;
-}
-#moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(2) {
-    grid-area: catoptions;
-}
-#moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(3) {
-    grid-area: codec;
-}
-#moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(4) {
-    grid-area: codecoptions;
-}
-#moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(5) {
-    grid-area: med;
-}
-#moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(6) {
-    grid-area: medoptions;
-}
-#moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(7) {
-    grid-area: origin;
-}
-#moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(8) {
-    grid-area: originoptions;
+    padding-bottom: 0px !important;
+    padding-left: 6px !important;
 }
 #moresearch3>td:nth-child(2) {
-    min-width: 120px;
+    min-width: 125px;
     text-align: right;
-    flex: 1;
 }
 tr#moresearch2 {
     box-sizing: border-box;
