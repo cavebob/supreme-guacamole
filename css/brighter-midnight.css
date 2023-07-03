@@ -1057,7 +1057,7 @@ a.alert-box--news {
     background: var(--background0);
     color: var(--red);
     font-weight: 700;
-    font-size: 0;
+    font-size: var(--font-size);
     height: 1.25rem;
     padding: 0 0.4rem;
     border: 1px solid;
@@ -3443,6 +3443,10 @@ td.bottom > .torrent-title ~ table[width="930"][cellpadding="5"] {
     width: auto !important;
     max-width: 64rem;
     padding: 1rem
+}
+.torrent-title ~ table[width="930"][cellpadding="5"] img,
+#news ~ * img {
+    max-width: 100%
 }
 #details th.header {
     text-align: center;
