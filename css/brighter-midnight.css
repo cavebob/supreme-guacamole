@@ -1382,10 +1382,10 @@ html body table.main tbody tr td.bottom div#resultsarea p {
 #moresearch3 {
     border-top: 1px solid var(--inner-table-border-color);
     padding: .5em 1em;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     align-items: center;
-    flex: 1 1 auto
+    flex: 1 1 auto */
 }
 tr#moresearch3[style="display: table-row;"] {
     display: flex !important
