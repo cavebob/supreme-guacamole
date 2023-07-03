@@ -1382,7 +1382,6 @@ html body table.main tbody tr td.bottom div#resultsarea p {
     padding: .5em 1em;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     flex: 1 1 auto
 }
@@ -1404,59 +1403,63 @@ tr#moresearch3[style="display: table-row;"] {
     padding: 0 !important;
     display: grid;
     align-items: center;
-    justify-content: center;
-    grid-template-areas: "cat catoptions catoptions catoptions" "codec codecoptions codecoptions codecoptions" "med medoptions origin originoptions";
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-    grid-gap: 0.1em
+    grid-template-areas: "cat . . ."
+                         "catoptions catoptions catoptions catoptions"
+                         "codec . . ."
+                         "codecoptions codecoptions codecoptions codecoptions"
+                         "med . . ."
+                         "medoptions medoptions medoptions medoptions"
+                         "origin origin . ."
+                         "originoptions originoptions . .";
+}
+#moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(2),
+#moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(4),
+#moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(6),
+#moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(8) {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 100%;
+    gap: .125rem .75rem;
+}
+#moresearch3 table.bottom>tbody>tr:nth-child(7) > td:first-child {
+    width: 55%;
+}
+#moresearch3 .bottom[style="padding-bottom: 2px;padding-left: 7px"] {
+    padding: 0px !important;
+}
+#moresearch3 a.catlink {
+    vertical-align: 2px;
+    margin-left: .25rem
 }
 #moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(1) {
     grid-area: cat;
-    align-self: center;
-    justify-self: end
 }
 #moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(2) {
     grid-area: catoptions;
-    align-self: center
-}
-#moresearch3 a.catlink {
-    vertical-align: 3px;
-    margin-left: 2px
 }
 #moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(3) {
     grid-area: codec;
-    align-self: center;
-    justify-self: end
 }
 #moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(4) {
     grid-area: codecoptions;
-    align-self: center;
-    align-content: center;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    margin-left: 2px
-}
-#moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(4)>td.bottom {
-    padding-bottom: 0px !important
 }
 #moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(5) {
     grid-area: med;
-    align-self: center;
-    justify-self: end
 }
 #moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(6) {
     grid-area: medoptions;
-    align-self: center
 }
 #moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(7) {
     grid-area: origin;
-    align-self: center;
-    justify-self: end
 }
 #moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(8) {
     grid-area: originoptions;
-    align-self: center
+}
+#moresearch3>td:nth-child(2) {
+    min-width: 120px;
+    text-align: right;
+    flex: 1;
 }
 tr#moresearch2 {
     box-sizing: border-box;
@@ -1488,10 +1491,6 @@ table.bottom>tbody:nth-child(1)>tr:nth-child(4)>td:nth-child(8)>a:nth-child(1)>b
     box-sizing: border-box;
     height: 1.5rem;
     display: inline-block
-}
-#moresearch3>td:nth-child(2) {
-    min-width: 130px;
-    text-align: right
 }
 #moresearch1>td:nth-child(1) {
     display: flex;
