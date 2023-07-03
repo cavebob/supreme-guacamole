@@ -1403,7 +1403,7 @@ tr#moresearch3[style="display: table-row;"] {
 }
 #moresearch3 table.bottom tbody:nth-child(1) {
     padding: 0 !important;
-    display: grid;
+    /* display: grid;
     align-items: center;
     grid-template-areas: "cat . . ."
                          "catoptions catoptions catoptions catoptions"
@@ -1412,9 +1412,9 @@ tr#moresearch3[style="display: table-row;"] {
                          "med . . ."
                          "medoptions medoptions medoptions medoptions"
                          "origin origin . ."
-                         "originoptions originoptions . .";
+                         "originoptions originoptions . ."; */
 }
-#moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(2),
+/* #moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(2),
 #moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(4),
 #moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(6),
 #moresearch3 table.bottom>tbody:nth-child(1)>tr:nth-child(8) {
@@ -1426,11 +1426,12 @@ tr#moresearch3[style="display: table-row;"] {
 }
 #moresearch3 table.bottom>tbody>tr:nth-child(7) > td:first-child {
     width: 55%;
-}
+} */
 #moresearch3 .bottom[style="padding-bottom: 2px;padding-left: 7px"] {
-    padding: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 6px !important;
 }
-#moresearch3 a.catlink {
+/* #moresearch3 a.catlink {
     vertical-align: 2px;
     margin-left: .25rem
 }
@@ -1462,7 +1463,7 @@ tr#moresearch3[style="display: table-row;"] {
     min-width: 120px;
     text-align: right;
     flex: 1;
-}
+} */
 tr#moresearch2 {
     box-sizing: border-box;
     padding: .5em 1rem
@@ -1539,7 +1540,7 @@ select[name=imdblt] {
 #searchbox input[type="button"],
 #searchbox input[type="submit"] {
     font-size: var(--font-size);
-    padding: 4px 12px;
+    padding: 0 6px;
     min-width: 50px;
     cursor: pointer;
     font-weight: 700
