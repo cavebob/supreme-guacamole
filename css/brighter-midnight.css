@@ -341,9 +341,6 @@ body>table.main:nth-child(3) {
 .menunavigation_new {
     align-self: center;
     border-bottom: 1px solid transparent;
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
     width: max-content;
     display: block;
@@ -354,9 +351,6 @@ body>table.main:nth-child(3) {
     background: var(--svg-gradient-bg-hover-color);
     border-radius: var(--input-box-border-radius);
     color: var(--background0);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.3s ease;
 }
 .tab a:active,
@@ -404,17 +398,11 @@ td.menunavigation_new a.normal::after {
     background-size: 300%;
     opacity: 1;
     display: block;
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.3s ease;
     animation: Gradient 2s ease infinite;
 }
 td.menunavigation_new:hover a.normal::after {
     transform: scaleX(0%);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 td.menunavigation_new:hover>a.normal {
@@ -422,9 +410,6 @@ td.menunavigation_new:hover>a.normal {
     background-size: 600%;
     opacity: 1;
     animation: Gradient 2s ease infinite;
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 ul#searchselector {
@@ -506,9 +491,6 @@ div.list-links>a:hover {
     border-radius: var(--input-box-border-radius);
     background: var(--svg-gradient-bg-hover-color);
     color: var(--background0);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 .inbox,
@@ -546,9 +528,6 @@ input[type="text"]:focus {
     box-shadow: var(--bs);
     color: var(--highlight-link-text-color);
     filter: brightness(100%);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 #sitesearchsubmit.searchicon {
@@ -670,8 +649,6 @@ div#logo {
 #header td.embedded>a[href*="/"]:hover>div#logo {
     background: linear-gradient(345deg, hsl(48, 75%, 75%) 0%, hsl(2, 72%, 70%) 25%, hsl(210, 75%, 75%) 50%, hsl(2, 72%, 70%) 75%, hsl(48, 75%, 75%) 100%);
     background-size: 800%;
-    -webkit-animation: Gradient 1s ease-in-out infinite;
-    -moz-animation: Gradient 1s ease-in-out infinite;
     animation: Gradient 5s ease-in-out infinite;
 }
 .footer {
@@ -761,17 +738,11 @@ div.curuser-stats:nth-child(3) {
     background-color: rgb(34, 35, 37);
     filter: opacity(0.9) drop-shadow(0px 0px 5px rgb(0, 0, 0));
     transform: scale(0.9);
-    -moz-transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 #donate_bitcoin:hover {
     transform: scale(1.0);
     filter: opacity(1) drop-shadow(0px 0px 3px rgba(216, 214, 205, 0.473));
-    -moz-transition: all 0.15s ease;
-    -webkit-transition: all 0.15s ease;
-    -o-transition: all 0.15s ease;
     transition: all 0.15s ease;
 }
 #donate_bitcoin::before {
@@ -799,18 +770,12 @@ div.curuser-stats:nth-child(1)>b:nth-child(1)>a[href*="userdetails.php?"] {
     height: 1.5rem;
     padding: 0 0.5rem;
     gap: 1rem;
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 div.curuser-stats:nth-child(1)>b:nth-child(1)>a[href*="userdetails.php?"]:hover {
     border-radius: var(--input-box-border-radius);
     background: var(--svg-gradient-bg-hover-color);
     color: var(--background0);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 .inbox,
@@ -829,18 +794,12 @@ div.curuser-stats:nth-child(1)>a[href*="logout.php"] {
     border-radius: var(--input-box-border-radius);
     width: 2.1875rem;
     filter: brightness(80%);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 .inboxnew {
     background: var(--red);
     border-radius: var(--input-box-border-radius);
     width: 2.1875rem;
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 @-webkit-keyframes tracking-in-expand {
@@ -884,11 +843,7 @@ div.curuser-stats:nth-child(1)>a[href*="logout.php"] {
     padding-right: 0px;
     height: 1.5rem;
     border-radius: var(--input-box-border-radius);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
-    -webkit-animation: tracking-out-contract 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation: tracking-out-contract 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 .alert-box--nopms:hover:not(.bottom>.main~.alert-box),
@@ -902,19 +857,12 @@ div.curuser-stats:nth-child(1)>a[href*="logout.php"] {
     background: var(--svg-gradient-bg-hover-color);
     color: var(--background0);
     border-radius: var(--input-box-border-radius);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
-    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 .alert-box--nopms:hover>.inbox,
 .alert-box--pm:hover>.inboxnew {
     background: var(--background0);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 div.curuser-stats:nth-child(3)>a[href*="friends.php"],
@@ -925,11 +873,7 @@ div.curuser-stats:nth-child(1)>a[href*="logout.php"] {
     align-items: center;
     font-size: 0;
     height: 1.5rem;
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
-    -webkit-animation: tracking-out-contract 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation: tracking-out-contract 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 div.curuser-stats:nth-child(1)>a[href*="logout.php"]:hover,
@@ -944,11 +888,7 @@ div.curuser-stats:nth-child(1)>a[href*="my.php"]:hover {
     color: var(--background0);
     border: 1px solid var(--svg-gradient-bg-hover-color);
     border-radius: var(--input-box-border-radius);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
-    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 div.curuser-stats:nth-child(1)>a[href*="my.php"]::before {
@@ -962,9 +902,6 @@ div.curuser-stats:nth-child(1)>a[href*="my.php"]::before {
     width: 2.1875rem;
     height: 1.25rem;
     filter: brightness(85%);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 div.curuser-stats:nth-child(1)>a[href*="logout.php"]::before {
@@ -978,9 +915,6 @@ div.curuser-stats:nth-child(1)>a[href*="logout.php"]::before {
     width: 2.1875rem;
     height: 1.25rem;
     filter: brightness(85%);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 div.curuser-stats:nth-child(1)>a[href*="my.php"]:hover::before,
@@ -995,9 +929,6 @@ div.curuser-stats:nth-child(3)>a[href*="mytorrents.php"] {
 div.curuser-stats:nth-child(1)>a[href*="my.php"]:hover::before,
 div.curuser-stats:nth-child(1)>a[href*="logout.php"]:hover::before {
     margin-right: -3px;
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 div.curuser-stats:nth-child(3)>a[href*="friends.php"]:hover,
@@ -1009,9 +940,6 @@ div.curuser-stats:nth-child(3)>a[href*="mytorrents.php"]:hover {
     height: 1.5rem;
     border-radius: var(--input-box-border-radius);
     gap: 0.3rem;
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 .donor {
@@ -1033,9 +961,6 @@ img[src*="starbig.gif"] {
     height: 1.25rem;
     border-radius: var(--input-box-border-radius);
     filter: brightness(85%);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 .mytorrents {
@@ -1046,9 +971,6 @@ img[src*="starbig.gif"] {
     height: 1.25rem;
     border-radius: var(--input-box-border-radius);
     filter: brightness(85%);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 a.alert-box--news {
@@ -1062,9 +984,6 @@ a.alert-box--news {
     padding: 0 0.4rem;
     border: 1px solid;
     order: -1;
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 .alert-box--news::after:not(.bottom>h1.center+.main+.alert-box--news) {
@@ -1076,9 +995,6 @@ a.alert-box--news {
 a.alert-box:hover:not(.bottom>.main~.alert-box) {
     background: var(--svg-gradient-bg-hover-color);
     color: var(--background0);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 .alert-box--notifications {
@@ -1093,9 +1009,6 @@ a.alert-box:hover:not(.bottom>.main~.alert-box) {
     gap: 0.25rem;
     cursor: pointer;
     border: 1px solid var(--inner-table-border-color);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 .js-notifications-count {
@@ -1320,16 +1233,10 @@ td.bottom:nth-child(2)>h1+script+table[width="800"]:nth-child(3)>tbody:nth-child
     border-radius: var(--top-menu-border-radius);
     color: var(--background0);
     background: var(--svg-gradient-bg-hover-color);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 td.bottom>table>tbody>tr>td[width="20%"] a {
     color: var(--link-text-color);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 td.bottom>table>tbody>tr>td[width="20%"] a b {
@@ -1897,7 +1804,6 @@ div.chosen-container.chosen-container-multi.chosen.chosen-with-drop.chosen-conta
     border-radius: var(--input-box-border-radius)
 }
 .chosen-container * {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box
 }
 .chosen-container .chosen-drop {
@@ -1906,13 +1812,11 @@ div.chosen-container.chosen-container-multi.chosen.chosen-with-drop.chosen-conta
     width: auto;
     border-top: 0;
     clip: rect(0, 0, 0, 0);
-    -webkit-clip-path: unset;
     clip-path: unset;
     overflow: clip;
     filter: drop-shadow(0 0.6rem .5rem black);
 }
 .chosen-container.chosen-with-drop .chosen-drop {
-    -webkit-clip-path: none;
     clip-path: none
 }
 .chosen-container a {
@@ -2003,12 +1907,10 @@ div.chosen-container.chosen-container-multi.chosen.chosen-with-drop.chosen-conta
 .chosen-container-single .chosen-drop {
     margin-top: -1px;
     border-radius: 0 0 4px 4px;
-    background-clip: padding-box
 }
 .chosen-container-single.chosen-container-single-nosearch .chosen-search {
     position: absolute;
     clip: unset;
-    -webkit-clip-path: unset;
     clip-path: unset
 }
 .chosen-container .chosen-results li.active-result {
@@ -2093,7 +1995,6 @@ only screen and (min-resolution:1.5dppx) {
     box-shadow: var(--bs);
     text-decoration: none;
     border: 1px solid var(--link-text-color);
-    /* filter: brightness(120%) */
 }
 #tagassociate {
     width: 228px;
@@ -2157,8 +2058,6 @@ div.chosen-container.chosen-container-multi.chosen {
     display: inline-block;
     vertical-align: middle;
     -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     max-width: 625px;
     width: 100% !important
@@ -2168,7 +2067,6 @@ div.chosen-container .search-choice {
     background: var(--background1)
 }
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
-    /* font-size: 1px; */
     position: absolute;
     top: 0px;
     right: 0px;
@@ -2178,9 +2076,6 @@ div.chosen-container .search-choice {
     width: 100%;
     height: 18px;
     background: 0;
-    /* transform: scale(.9); */
-    /* filter: grayscale(10%) brightness(30%) sepia(100%) hue-rotate(-190deg) saturate(700%) contrast(.5); */
-    /* padding: 5px */
 }
 #moresearch5>td>div.chosen-container.chosen-container-single.chosen-container.chosen-container-multi.chosen {
     display: none;
@@ -2194,23 +2089,7 @@ div.chosen-container .search-choice {
 .chosen-container-multi .chosen-choices li.search-choice:hover {
     background-color: hsla(0, 92.1%, 65.1%, 0.3);
     border: 1px solid var(--red);
-    /* border: 4px solid #698da8; */
-    /* top: 0;
-    right: 0; */
-    /* filter: brightness(100%); */
-    /* transform: scale(.92); */
-    /* background-position: -43px -10px; */
-    /* height: 10px;
-    filter: brightness(90%) saturate(100%) contrast(2) */
 }
-/* .search-choice-close:after {
-    content: "";
-    position: absolute;
-    top: -55%;
-    left: -50%;
-    width: 200%;
-    height: 200%
-} */
 .chosen-container-multi .chosen-choices {
     position: relative;
     overflow: hidden;
@@ -2237,13 +2116,10 @@ div.chosen-container .search-choice {
     position: relative;
     margin: 2px;
     padding: 2px 5px 2px 5px;
-    /* line-height: .6875rem; */
     border: 1px solid var(--inner-table-border-color);
     box-shadow: var(--bs);
     max-width: 100%;
     border-radius: 0;
-    /* font-size: 0.625rem;
-    font-weight: 500; */
     background-image: 0;
     background-size: 0;
     background-repeat: 0;
@@ -2275,7 +2151,6 @@ li.active-result {
 }
 .chosen-container.chosen-with-drop .chosen-drop {
     clip: unset;
-    -webkit-clip-path: unset;
     clip-path: unset;
     background-color: var(--background0);
     border: 0;
@@ -3099,9 +2974,6 @@ overflow-y: scroll;
     z-index: 1;
     height: max-content;
     max-height: 100%;
-    -moz-transition: all 0.25s ease-in;
-    -webkit-transition: all 0.25s ease-in;
-    -o-transition: all 0.25s ease-in;
     transition: all 0.25s ease-in;
 }
 .cast td.cast__name>a {
@@ -3186,9 +3058,6 @@ div.list-overview__overlay {
     bottom: 0px;
     width: 100%;
     backdrop-filter: blur(10px);
-    -moz-transition: all 0.25s ease-in;
-    -webkit-transition: all 0.25s ease-in;
-    -o-transition: all 0.25s ease-in;
     transition: all 0.25s ease-in;
 }
 #showpage .contentcontent div.list-overview__overlay {
@@ -3200,9 +3069,6 @@ a.list-overview:hover:not(#showpage *) div.list-overview__overlay {
     bottom: 0px;
     width: 100%;
     height: max-content;
-    -moz-transition: all 0.25s ease-in;
-    -webkit-transition: all 0.25s ease-in;
-    -o-transition: all 0.25s ease-in;
     transition: all 0.25s ease-in;
     max-height: 100%;
     border-top: 1px solid var(--inner-table-border-color)
@@ -4998,7 +4864,6 @@ td.bottom:nth-child(2)>table.main:nth-of-type(2):nth-last-child(2)>tbody:nth-chi
 }
 img[src*="star.gif"][alt="Donor"] {
     display: inline-block;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     background: url("../pic/midnight/star2.png") no-repeat;
     width: 11px;
@@ -5007,7 +4872,6 @@ img[src*="star.gif"][alt="Donor"] {
 }
 img[src*="starbig.gif"][alt="Donor"] {
     display: inline-block;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     background: url("../pic/midnight/star2.png") no-repeat;
     width: 11px;
@@ -5016,7 +4880,6 @@ img[src*="starbig.gif"][alt="Donor"] {
 }
 img[src*="disabled.gif"] {
     display: inline-block;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 11px;
     height: 11px;
@@ -5028,7 +4891,6 @@ img[src*="disabled.gif"] {
 }
 img[src*="disabledbig.gif"] {
     display: inline-block;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 16px;
     height: 16px;
@@ -5040,7 +4902,6 @@ img[src*="disabledbig.gif"] {
 }
 img[src*="warned.gif"][alt="Warned"] {
     display: inline-block;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 13px;
     height: 13px;
@@ -5051,7 +4912,6 @@ img[src*="warned.gif"][alt="Warned"] {
 }
 img[src*="warnedbig.gif"][alt="Warned"] {
     display: inline-block;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 16px;
     height: 16px;
@@ -5095,7 +4955,6 @@ img[src*="/top.gif"][alt="Top"] {
     right: 0;
     filter: brightness(90%) grayscale(0.5);
     display: inline-block;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 13px;
     height: 13px;
@@ -5106,7 +4965,6 @@ img[src*="/top.gif"][alt="Top"] {
 }
 img[src*="/icon_latest_reply.gif"][alt="Last post"] {
     display: inline-block;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     background: url("../pic/midnight/golatest.png") center no-repeat;
     width: 13px;
@@ -5197,9 +5055,6 @@ a.tv_morelink:hover {
     font-weight: bold;
     color: var(--background0);
     filter: brightness(100%);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.5s ease;
 }
 .rc__toggle.js-rc-toggle:active,
@@ -6315,9 +6170,6 @@ div.list-links>a {
     background: var(--input-box-background);
     color: var(--link-text-color);
     margin: auto;
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all .25s ease;
 }
 .item.imdb>.item-body>div.comment {
@@ -6616,9 +6468,6 @@ td:nth-child(2).browse_td_name_cell .browse_imdb_poster {
     border-radius: 0.25rem;
     margin: 0;
     filter: brightness(0.95);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
 }
@@ -6955,9 +6804,6 @@ body>div.popup {
 }
 .spoiler {
     filter: blur(4px);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
     position: relative;
     overflow: hidden;
@@ -6992,9 +6838,6 @@ body>div.popup {
     filter: none;
     backdrop-filter: none;
     transform: scale(1);
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: filter, backdrop-filter 0.25s ease;
 }
 td.comment img,
