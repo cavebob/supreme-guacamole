@@ -5947,6 +5947,7 @@ div.list-description {
     gap: .5rem;
     max-width: 64rem;
     border: 1px solid var(--transparent-border-color);
+    font-size: .8125rem;
 }
 @media screen and (min-width: 1920px) {
     div.list-description {
