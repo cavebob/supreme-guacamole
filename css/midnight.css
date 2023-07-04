@@ -12,6 +12,7 @@
     --username-text-color: #ffcd70;    /* brighter yellow */
     --completed-tag-text-color: #ffb86c;    /* orange */
     --internal-tag-text-color: #ffcd50;    /* internal yellow */
+    --exclusive-color: hsl(240, 100%, 82%);
     --blue: hsl(212, 94%, 65%);    /* blue - freeleech tags and ratio related */
     --green: hsl(135, 94%, 65%);    /* green - seeding green and font[] color adjust */
     --red: #f85454;    /* red - new tag, alert, inbox, deletebutton(remove wishlist) */
@@ -3424,7 +3425,8 @@ table.padding2 th {
 #table_details_leechers tr:hover,
 #table_detail_files tr:hover,
 #details>tbody>tr>td>table:not(:first-child):not([class]) tr:hover,
-#tags.tablesorter tr:hover {
+#tags.tablesorter tr:hover,
+.row-seclog table tr:hover {
     filter: brightness(110%);
     background-color: var(--inner-th-bg-color);
     color: var(--foreground);
@@ -6868,33 +6870,30 @@ td.bottom a.alert-box--pm {
     font-size: 85%;
 }
 [class*="exclusive"] {
-    color: hsl(240, 100%, 82%);
+    color: var(--exclusive-color);
     filter: brightness(1);
 }
 .torrent-title~.h3_exclusive {
     font-size: .8125rem;
 }
-.row-seclog table {
-    font-family: var(--mono-font-stack);
-    font-size: 110%;
-    border: 1px solid var(--inner-table-border-color);
-}
-.row-seclog table td {
-    padding: .2rem .5rem;
-    border-bottom: 1px solid var(--inner-table-border-color);
-}
 .row-seclog>td.rowhead+td:last-child * {
     box-sizing: border-box;
 }
-.row-seclog table {
+.row-seclog>td.rowhead+td:last-child>table {
     border-spacing: 0;
     display: inline-block;
+    font-family: var(--mono-font-stack);
+    font-size: 110%;
+    border: 1px solid var(--inner-table-border-color);
     line-height: 1rem;
     background: var(--inner-td-bg-color);
-}
-.row-seclog table {
     box-shadow: var(--bs);
+    overflow: clip;
 }
-.row-seclog table td {
-    padding: .2rem .75rem;
+.row-seclog>td.rowhead+td:last-child>table td {
+    padding: .2rem .5rem;
+    border-bottom: 1px solid var(--inner-table-border-color);
+}
+.row-seclog>td.rowhead+td:last-child>table tr:last-child td{
+    border-bottom: none;
 }
