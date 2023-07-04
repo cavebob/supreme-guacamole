@@ -1974,7 +1974,6 @@ only screen and (min-resolution:1.5dppx) {
     margin: 0;
     padding: 1px 0 2px;
     background-color: var(--inner-th-bg-color);
-    box-shadow: var(--bs);
     box-shadow: none;
     background-image: none;
     background-size: 0;
@@ -2096,7 +2095,6 @@ div.chosen-container .search-choice {
     height: auto;
     border: 1px solid var(--inner-table-border-color);
     background-color: var(--background1);
-    box-shadow: var(--bs);
     background-image: none;
     cursor: text;
     border-radius: var(--input-box-border-radius);
@@ -2106,7 +2104,6 @@ div.chosen-container .search-choice {
 .chosen-container-active .chosen-choices {
     border: 1px solid var(--highlighted-input-border-focus-color);
     background: var(--background1);
-    box-shadow: var(--bs);
     box-shadow: none;
     border-radius: var(--input-box-border-radius)
 }
@@ -2115,7 +2112,6 @@ div.chosen-container .search-choice {
     margin: 2px;
     padding: 2px 5px 2px 5px;
     border: 1px solid var(--inner-table-border-color);
-    box-shadow: var(--bs);
     max-width: 100%;
     border-radius: 0;
     background-image: 0;
@@ -6877,4 +6873,28 @@ td.bottom a.alert-box--pm {
 }
 .torrent-title~.h3_exclusive {
     font-size: .8125rem;
+}
+.row-seclog table {
+    font-family: var(--mono-font-stack);
+    font-size: 110%;
+    border: 1px solid var(--inner-table-border-color);
+}
+.row-seclog table td {
+    padding: .2rem .5rem;
+    border-bottom: 1px solid var(--inner-table-border-color);
+}
+.row-seclog>td.rowhead+td:last-child * {
+    box-sizing: border-box;
+}
+.row-seclog table {
+    border-spacing: 0;
+    display: inline-block;
+    line-height: 1rem;
+    background: var(--inner-td-bg-color);
+}
+.row-seclog table {
+    box-shadow: var(--bs);
+}
+.row-seclog table td {
+    padding: .2rem .75rem;
 }
