@@ -6871,3 +6871,6 @@ a>.tag.internal {
 .row-seclog>td.rowhead+td:last-child>table tr:last-child td {
   border-bottom: none
 }
+u {
+    text-decoration: underline;
+}
