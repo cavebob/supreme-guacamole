@@ -121,8 +121,8 @@ select:focus {
 #showmore b:hover,
 #sitesearchsubmit.searchicon:hover,
 #torrent-list td>a[href^="https://hdbits.org/film/info"]:hover,
-#torrent-list td>span.genres:hover,
-.tag:hover,
+.tag.internal:hover,
+.tag.exclusive:hover,
 a.js-bookmarkadd:hover,
 a.js-bookmarkdel:hover,
 a.js-download:hover,
@@ -132,7 +132,7 @@ a.js-wishlistadd:hover,
 a.js-wishlistdel:hover,
 a[href*="imdb.com/name/nm"] img:hover,
 a[href*="javascript:addRss"]:hover,
-span.genres:hover {
+span.genres>a:hover {
   filter: brightness(120%)
 }
 #news h1,
@@ -2585,7 +2585,7 @@ table#torrent-list tbody td.center+td.center+td.center {
   font-weight: 700;
   font-variant: small-caps;
   text-align: top;
-  filter: brightness(90%) drop-shadow(0 1px 3px var(--background0));
+  filter: drop-shadow(0 1px 3px var(--background0));
   display: inline;
   background: rgba(255,255,255,.033);
   line-height: normal
@@ -2603,7 +2603,7 @@ span.tag.new {
 }
 span.tag.internal {
   color: var(--internal-tag-text-color);
-  filter: brightness(100%)
+  cursor: pointer;
 }
 span.tag.tag_seeding {
   color: var(--green)
@@ -6843,7 +6843,7 @@ td.bottom a.alert-box--pm {
 }
 [class*=exclusive] {
   color: var(--exclusive-color);
-  filter: brightness(1)
+  cursor: pointer;
 }
 .torrent-title~.h3_exclusive {
   font-size: .8125rem
