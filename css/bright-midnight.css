@@ -121,8 +121,8 @@ select:focus {
 #showmore b:hover,
 #sitesearchsubmit.searchicon:hover,
 #torrent-list td>a[href^="https://hdbits.org/film/info"]:hover,
-.tag.internal:hover,
-.tag.exclusive:hover,
+a>.tag.internal:hover,
+a>.tag.exclusive:hover,
 a.js-bookmarkadd:hover,
 a.js-bookmarkdel:hover,
 a.js-download:hover,
@@ -2603,7 +2603,6 @@ span.tag.new {
 }
 span.tag.internal {
   color: var(--internal-tag-text-color);
-  cursor: pointer;
 }
 span.tag.tag_seeding {
   color: var(--green)
@@ -6843,7 +6842,10 @@ td.bottom a.alert-box--pm {
 }
 [class*=exclusive] {
   color: var(--exclusive-color);
-  cursor: pointer;
+}
+a>.tag.exclusive,
+a>.tag.internal {
+    cursor: pointer;
 }
 .torrent-title~.h3_exclusive {
   font-size: .8125rem
