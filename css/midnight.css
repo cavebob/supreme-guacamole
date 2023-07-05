@@ -1,3 +1,6 @@
+/* #################################### */
+/* ### Midnight   v1.8   2023-07-04 ### */
+/* #################################### */
 :root {
   --background0: hsl(240, 15%, 5%);
   --background1: hsl(231, 13%, 10%);
@@ -614,7 +617,7 @@ textarea:focus {
 .autocomplete-selected {
   background: var(--svg-gradient-bg-hover-color);
   color: var(--background0);
-  font-weight: bold
+  font-weight: 700
 }
 #header.main tbody tr td.embedded {
   flex-grow: 1;
@@ -756,7 +759,7 @@ div.curuser-stats:nth-child(3) {
   box-sizing: border-box;
   content: "Donate";
   color: #ef9327;
-  font-weight: bold;
+  font-weight: 700;
   font-size: .8125rem;
   text-transform: uppercase;
   padding: 2px .75rem 2px .5rem
@@ -1400,7 +1403,7 @@ select[name=imdblt] {
 button,
 input[type=reset],
 input[type=submit] {
-  font-weight: bold;
+  font-weight: 700;
   vertical-align: middle;
   text-align: center
 }
@@ -1524,14 +1527,14 @@ select[name=imdblt] {
   padding: .5rem 0
 }
 #sidebar-container table.message tbody tr td,
-#sidebar-container>table:first-child>tbody:first-child>tr:first-child>td:first-child>table:nth-child(2)>tbody:first-child>tr:first-child>td:nth-child(1),
-#sidebar-container>table:first-child>tbody:first-child>tr:first-child>td:first-child>table:nth-child(4)>tbody:first-child>tr:first-child>td:nth-child(1) {
+#sidebar-container>table:first-child>tbody:first-child>tr:first-child>td:first-child>table:nth-child(2)>tbody:first-child>tr:first-child>td:first-child,
+#sidebar-container>table:first-child>tbody:first-child>tr:first-child>td:first-child>table:nth-child(4)>tbody:first-child>tr:first-child>td:first-child {
   height: fit-content;
   font-size: 0
 }
 #sidebar-container table.message tbody tr td a[href],
-#sidebar-container>table:first-child>tbody:first-child>tr:first-child>td:first-child>table:nth-child(2)>tbody:first-child>tr:first-child>td:nth-child(1) a[href],
-#sidebar-container>table:first-child>tbody:first-child>tr:first-child>td:first-child>table:nth-child(4)>tbody:first-child>tr:first-child>td:nth-child(1) a[href] {
+#sidebar-container>table:first-child>tbody:first-child>tr:first-child>td:first-child>table:nth-child(2)>tbody:first-child>tr:first-child>td:first-child a[href],
+#sidebar-container>table:first-child>tbody:first-child>tr:first-child>td:first-child>table:nth-child(4)>tbody:first-child>tr:first-child>td:first-child a[href] {
   padding: 5px 0!important;
   display: inline-block;
   font-size: var(--font-size)
@@ -1600,7 +1603,7 @@ body>table.main>tbody>tr>td.bottom>table.main[width="737"]:only-of-type:last-chi
 table.main:nth-child(2)>tbody:first-child>tr:first-child>td:first-child>table:nth-child(3),
 table.main:nth-child(2)>tbody:first-child>tr:first-child>td:first-child>table:nth-child(3)>tbody:first-child>tr:first-child,
 table.main:nth-child(2)>tbody:first-child>tr:first-child>td:first-child>table:nth-child(3)>tbody:first-child>tr:first-child>td:first-child,
-table.main:nth-child(2)>tbody:first-child>tr:first-child>td:first-child>table:nth-child(3)>tbody:first-child>tr:first-child>td:first-child>table:nth-child(1),
+table.main:nth-child(2)>tbody:first-child>tr:first-child>td:first-child>table:nth-child(3)>tbody:first-child>tr:first-child>td:first-child>table:first-child,
 table.main:nth-child(2)>tbody:first-child>tr:first-child>td:first-child>table:nth-child(5),
 table.main:nth-child(2)>tbody:first-child>tr:first-child>td:first-child>table:nth-child(5)>tbody:nth-child()>tr:first-child>td:first-child:not(td[style="border: 1px black dashed"]) {
   border: 0!important
@@ -2008,7 +2011,7 @@ only screen and (min-resolution:1.5dppx) {
 #details #tagassociate+br+em>a::after {
   font-size: var(--font-size);
   content: "Tags";
-  font-weight: bold;
+  font-weight: 700;
   border: 1px solid var(--inner-table-border-color);
   padding: 3px .375rem;
   border-radius: var(--input-box-border-radius)
@@ -2537,22 +2540,22 @@ a.altlink[href^="userdetails.php?id="],
 a[href*="userdetails.php?id="]:not(#sidebar-container a[href],a.sublink,#header a[href*="userdetails.php?"]:hover),
 a[href*="userdetails.php?id="]:not(a.normal) * {
   color: var(--username-text-color);
-  font-weight: bold
+  font-weight: 700
 }
 a.sublink[href*=uppedby],
 a.sublink[href*=userdetails],
 a.sublink[href="invite.php"] {
   color: var(--link-text-color);
-  font-weight: bold
+  font-weight: 700
 }
 a.sublink[href*=uppedby]:hover,
 a.sublink[href*=userdetails]:hover,
 a.sublink[href="invite.php"]:hover {
   color: var(--highlight-link-text-color);
-  font-weight: bold
+  font-weight: 700
 }
 #thanksbutton {
-  font-weight: bold;
+  font-weight: 700;
   font-size: .75rem;
   margin-top: .5rem;
   padding: .1rem 1rem
@@ -3067,7 +3070,7 @@ div.list-overview__text {
   box-sizing: border-box;
   text-align: center;
   font-size: .75rem;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--heading-color);
   width: 7.5rem
 }
@@ -3634,7 +3637,7 @@ td.bottom>h1+form[action="inbox.php"][method=post] input[type=checkbox] {
 }
 .std-content>tbody:first-child>tr:first-child>td>table:nth-child(3n-1),
 .std-content>tbody:first-child>tr:first-child>td>table:nth-last-child(2),
-html body table.main tbody tr td.bottom table.main:last-of-type>tbody:first-child>tr:first-child>td:first-child>table:first-child>tbody:first-child>tr:first-child>td:nth-child(1)>p.sub,
+html body table.main tbody tr td.bottom table.main:last-of-type>tbody:first-child>tr:first-child>td:first-child>table:first-child>tbody:first-child>tr:first-child>td:first-child>p.sub,
 td.bottom>table[width="800"]+table.main+h2+table[width="100%"]>tbody>tr>td>p.sub,
 td.comment>p.sub,
 td[style="border: 1px black dashed"]>p.sub {
@@ -3699,7 +3702,7 @@ td.bottom>p:first-child~table[cellpadding="3"]:first-of-type th {
   padding-bottom: .4rem
 }
 .readpost,
-html body table.main tbody tr td.bottom table.main:last-of-type>tbody:first-child>tr:first-child>td:first-child>table:first-child>tbody:first-child>tr:first-child>td:nth-child(1)>table.main,
+html body table.main tbody tr td.bottom table.main:last-of-type>tbody:first-child>tr:first-child>td:first-child>table:first-child>tbody:first-child>tr:first-child>td:first-child>table.main,
 td.bottom>table[width="800"]+table.main+h2+table[width="100%"]>tbody>tr>td>p.sub+table.main {
   border-radius: 0 0 var(--inner-table-border-radius) var(--inner-table-border-radius);
   background-color: var(--read-comment-color);
@@ -3819,7 +3822,7 @@ a.index[href*="comments/add?"] {
   box-shadow: var(--bs);
   border: 1px solid var(--inner-table-border-color);
   border-radius: var(--input-box-border-radius);
-  font-weight: bold;
+  font-weight: 700;
   padding: .25rem .5rem;
   display: flex;
   justify-content: center
@@ -4007,10 +4010,10 @@ form td.heading,
 form td.rowhead,
 td.heading,
 td.rowhead {
-  font-weight: bold
+  font-weight: 700
 }
 a#listsback {
-  font-weight: bold;
+  font-weight: 700;
   font-size: .8125rem;
   background: var(--background1);
   box-shadow: var(--bs);
@@ -4130,7 +4133,7 @@ td.embedded:nth-of-type(2)>img[src*="/pic/flag/"]:only-child {
   margin-left: 0!important
 }
 td.bottom:nth-child(2)>table.main:nth-child(2)>tbody:first-child>tr:first-child>td.embedded:only-child>table[width="100%"][cellspacing="0"]:nth-last-child(2)>tbody:first-child>tr:first-child>td.rowhead:first-child,
-td.bottom:nth-child(2)>table.main:nth-child(3)>tbody:first-child>tr:first-child>td.embedded:first-child>table:first-child>tbody:first-child>tr:first-child>td.rowhead:nth-child(1) {
+td.bottom:nth-child(2)>table.main:nth-child(3)>tbody:first-child>tr:first-child>td.embedded:first-child>table:first-child>tbody:first-child>tr:first-child>td.rowhead:first-child {
   display: table-cell;
   background-color: inherit;
   padding: .5rem 0 .5rem 1rem;
@@ -4310,7 +4313,7 @@ div#list-items {
 }
 .list-show-row.js-hidden {
   display: block;
-  font-weight: bold;
+  font-weight: 700;
   flex: 25%
 }
 .list-show-row.js-hidden>button[class*=js-list-entry] {
@@ -4366,7 +4369,7 @@ td.bottom>p:first-child>font>a {
   box-shadow: 0
 }
 td.bottom font[size="+1"] a:only-child {
-  font-weight: bold;
+  font-weight: 700;
   font-size: .6875rem!important
 }
 tr>td.heading+td>textarea+br+span+pre {
@@ -5025,7 +5028,7 @@ form[action*="/forums/post"] .message textarea#body {
 a.tv_morelink:hover {
   background: var(--svg-gradient-bg-hover-color);
   font-size: .8125rem;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--background0);
   filter: brightness(100%);
   transition: all .5s ease
@@ -6020,7 +6023,7 @@ div.item.tvdb {
   margin: auto;
   text-align: center;
   font-size: 1rem;
-  font-weight: bold
+  font-weight: 700
 }
 .item.tvdb>.item-body>div.description {
   text-align: left;
@@ -6039,7 +6042,7 @@ div.item.tvdb {
 }
 div.item.tvdb>.item-body>div.description>.item-title {
   display: flex;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.25rem;
   padding: 1rem;
   background: #0d0d11
@@ -6097,7 +6100,7 @@ div.item.tvdb div.list-links {
 }
 .item>.item-body>div.description>.item-title {
   display: flex;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.25rem;
   padding: 1rem;
   margin-left: -.5rem;
@@ -6115,7 +6118,7 @@ div.movie-rating {
   display: inline-block;
   padding: .5rem 0;
   color: var(--heading-color);
-  font-weight: bold
+  font-weight: 700
 }
 .item-body>div.list-links {
   position: absolute;
@@ -6195,7 +6198,7 @@ div.film-list-sorters>a {
   box-shadow: var(--bs);
   text-transform: uppercase;
   font-size: .8125rem;
-  font-weight: bold;
+  font-weight: 700;
   padding: .3rem;
   display: flex
 }
@@ -6451,7 +6454,7 @@ td:nth-child(2).browse_td_name_cell .browse_imdb_poster {
 .donated_wrapper .donated_text {
   width: auto;
   margin-right: .2rem;
-  font-weight: bold;
+  font-weight: 700;
   font-size: .6875rem;
   text-align: center;
   box-sizing: border-box
@@ -6495,7 +6498,7 @@ td:nth-child(2).browse_td_name_cell .browse_imdb_poster {
 }
 .donated_wrapper .donated_rectangle .donated_number {
   color: #000;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   text-align: center;
   margin-top: -13px;
@@ -6523,7 +6526,7 @@ body td.bottom table.main td.embedded>h2:first-child+table:last-child>tbody>tr>t
   justify-self: flex-start
 }
 div[align=center] .message td.rowhead {
-  font-weight: bold
+  font-weight: 700
 }
 .embedded>font[size="+3"]+h2+table table[width="725"] {
   background-color: var(--background1);
@@ -6576,13 +6579,13 @@ div[align=center] .message td.rowhead {
 }
 .embedded>font[size="+3"]+h2+table table[width="725"]>tbody>tr a.altlink[href*="userdetails.php?id"] {
   color: var(--username-text-color);
-  font-weight: bold
+  font-weight: 700
 }
 .embedded>font[size="+3"]+h2+table table[width="725"]>tbody>tr:nth-child(11),
 .embedded>font[size="+3"]+h2+table table[width="725"]>tbody>tr:nth-child(17),
 .embedded>font[size="+3"]+h2+table table[width="725"]>tbody>tr:nth-child(2),
 .embedded>font[size="+3"]+h2+table table[width="725"]>tbody>tr:nth-child(6) {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1rem;
   border-bottom: 1px solid var(--inner-table-border-color);
   width: 100%;
@@ -6658,7 +6661,7 @@ img[alt=Read] {
     min-width: auto!important
   }
   .readpost,
-  body table.main tbody tr td.bottom table.main:last-of-type>tbody:first-child>tr:first-child>td:first-child>table:first-child>tbody:first-child>tr:first-child>td:nth-child(1)>table.main,
+  body table.main tbody tr td.bottom table.main:last-of-type>tbody:first-child>tr:first-child>td:first-child>table:first-child>tbody:first-child>tr:first-child>td:first-child>table.main,
   td.bottom>table[width="800"]+table.main+h2+table[width="100%"]>tbody>tr>td>p.sub+table.main {
     min-width: fit-content
   }
@@ -6747,7 +6750,7 @@ body>div.popup {
   filter: drop-shadow(1px 2px 5px black)
 }
 .label_showhide {
-  font-weight: bold
+  font-weight: 700
 }
 .label_showhide span {
   padding: 0 .25rem .15rem .25rem;
@@ -6757,7 +6760,7 @@ body>div.popup {
   border-radius: var(--input-box-border-radius);
   border: 1px solid var(--inner-table-border-color);
   color: var(--link-text-color);
-  font-weight: bold;
+  font-weight: 700;
   font-variant: small-caps;
   font-size: 110%;
   margin-bottom: 1px;
@@ -6819,7 +6822,7 @@ td.bottom a.alert-box--news,
 td.bottom a.alert-box--pm {
   font-size: .8125rem;
   padding: .5rem .75rem;
-  font-weight: bold
+  font-weight: 700
 }
 td.bottom a.alert-box--pm {
   border-radius: var(--main-border-radius);
