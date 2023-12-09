@@ -2458,6 +2458,7 @@ a[onclick*=delWishlist]>img {
 #details table.fourcell>tbody>tr>td,
 #torrent-list td:hover button[onclick^=hidetorrent],
 #torrent-list td:hover button[onclick^=ignoreShow],
+#torrent-list td:hover button[onclick^=ignoreShow]+a>.tvdb_button,
 #torrent-list td:hover button[onclick^=location],
 .contentlayout.fourcell,
 .contentlayout.fourcell .content,
@@ -2473,6 +2474,7 @@ td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"] table.
 }
 button[onclick^=hidetorrent],
 button[onclick^=ignoreShow],
+button[onclick^=ignoreShow]+a>.tvdb_button,
 button[onclick^=location] {
   vertical-align: middle;
   font-size: .5rem;
@@ -2489,6 +2491,7 @@ button[onclick^=location] {
 }
 button[onclick^=hidetorrent]:hover,
 button[onclick^=ignoreShow]:hover,
+button[onclick^=ignoreShow]+a>.tvdb_button:hover,
 button[onclick^=location]:hover {
   filter: brightness(100%);
   background-color: rgba(0,0,0,.7);
