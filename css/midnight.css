@@ -16,6 +16,7 @@
   --completed-tag-text-color: #ffb86c;
   --internal-tag-text-color: #ffcd50;
   --exclusive-color: hsl(240, 100%, 82%);
+  --halfleech-color: hsl(230, 50%, 80%);
   --blue: hsl(212, 94%, 65%);
   --green: hsl(135, 94%, 65%);
   --red: #f85454;
@@ -6847,6 +6848,9 @@ td.bottom a.alert-box--pm {
 }
 [class*=exclusive] {
   color: var(--exclusive-color)
+}
+[class*="half_freeleech"] {
+  color: var(--halfleech-color)
 }
 a>.tag.exclusive,
 a>.tag.internal {
