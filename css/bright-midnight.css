@@ -360,7 +360,8 @@ body>#header~.main {
   filter: brightness(120%);
   transition: all .25s cubic-bezier(.25, .46, .45, .94)
 }
-.tab.selected {
+.tab.selected,
+.submenu-highlight {
   filter: brightness(120%)
 }
 @-webkit-keyframes Gradient {
@@ -1107,7 +1108,9 @@ td.bottom:nth-child(2)>script+table[width="800"]:nth-child(2)>tbody:first-child>
   box-sizing: border-box;
   font-weight: 700
 }
-body>table.main>tbody>tr>td.bottom:nth-child(2)>table:first-child>tbody>tr:first-child>td[width="12%"]>b>a:not(a[href*="javascript: SmileIT"],a[href*="javascript: PopMoreTags"]) {
+body>table.main>tbody>tr>td.bottom:nth-child(2)>table:first-child>tbody>tr:first-child>td[width="12%"]>b>a:not(a[href*="javascript: SmileIT"],a[href*="javascript: PopMoreTags"]),
+td.bottom:nth-child(2) > table:first-child > tbody > tr:first-child > td[width="16%"] > b > a:not(a[href*="javascript: SmileIT"]),
+.submenu-highlight__link  {
   background-color: var(--background1);
   display: inline-block;
   border: 1px solid var(--transparent-border-color);
@@ -1205,7 +1208,9 @@ li.tab,
 td.bottom:nth-child(2)>h1+script+table[width="800"]:nth-child(3)>tbody:first-child>tr:first-child>td[width="20%"],
 td.bottom:nth-child(2)>script+table[width="800"]:nth-child(2)>tbody:first-child>tr:first-child>td[width="20%"],
 td.bottom>table[width="500"]>tbody>tr>td[width="12%"][align=center],
-td.bottom>table[width="800"]>tbody>tr>td[width="12%"][align=center] {
+td.bottom>table[width="500"]>tbody>tr>td[width="16%"][align=center],
+td.bottom>table[width="800"]>tbody>tr>td[width="12%"][align=center],
+td.bottom>table[width="1000"]>tbody>tr>td[width="12%"][align=center]  {
   flex: 1;
   width: max-content;
   box-shadow: none;
@@ -1771,8 +1776,17 @@ td.bottom:nth-child(2)>table[width="800"]:first-child>tbody:first-child>tr:first
   background: var(--background1);
   box-shadow: var(--bs)
 }
-td.bottom>table[width="500"]>tbody>tr:only-child {
-  justify-content: space-around
+td.bottom>table[width="500"]>tbody>tr:only-child,
+td.bottom>table[width="1000"]>tbody>tr:only-child {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  white-space: nowrap;
+  align-items: center;
+  width: 100%;
+  background: var(--background1);
+  box-shadow: var(--bs);
 }
 body table.main td.bottom:nth-child(2)>table:first-child>tbody:first-child>tr:first-child a {
   box-shadow: none
@@ -2469,7 +2483,7 @@ a[onclick*=delWishlist]>img {
 .contentlayout.fourcell th,
 .contentlayout.fourcell>tbody,
 .lottery_table2 table.fourcell>tbody>tr>td,
-td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"] table.fourcell>tbody>tr>td {
+td.bottom>.torrent-title:nth-child(3)~table[width="930"][cellpadding="5"] table.fourcell>tbody>tr>td {
   display: block
 }
 #torrent-list tr.featured:hover {
@@ -2670,7 +2684,7 @@ html>body>table.main>tbody>tr>td.bottom:nth-child(2)>h1.internal:not(#footer) {
 }
 #details>tbody,
 .lottery_table2>tbody:not(form .lottery_table2 > tbody,.lottery_forms),
-td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"]>tbody {
+td.bottom>.torrent-title:nth-child(3)~table[width="930"][cellpadding="5"]>tbody {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2680,14 +2694,14 @@ td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"]>tbody 
 }
 #details>tbody tr td,
 .lottery_table2>tbody tr td:not(form td,.lottery_forms),
-td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"]>tbody tr td {
+td.bottom>.torrent-title:nth-child(3)~table[width="930"][cellpadding="5"]>tbody tr td {
   overflow-wrap: break-word;
   flex: 1 1 auto;
   align-self: stretch
 }
 #details>tbody>tr,
 .lottery_table2>tbody>tr:not(form tr,.lottery_forms),
-td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"]>tbody>tr {
+td.bottom>.torrent-title:nth-child(3)~table[width="930"][cellpadding="5"]>tbody>tr {
   display: flex
 }
 tr>td>div[id].label {
@@ -2740,7 +2754,7 @@ table#details>tbody>tr>td>span[style*="float:right"] {
   font-weight: 400
 }
 .lottery_table2>tbody>tr:nth-child(2)>td>div[id^=c].hideablecontent,
-td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"]>tbody>tr:nth-child(2)>td>div[id^=c].hideablecontent {
+td.bottom>.torrent-title:nth-child(3)~table[width="930"][cellpadding="5"]>tbody>tr:nth-child(2)>td>div[id^=c].hideablecontent {
   padding: .5rem .7rem;
   line-height: 1rem
 }
@@ -2753,7 +2767,7 @@ td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"]>tbody>
 #details>tbody:first-child>tr:nth-child(2)>td>div.hideablecontent>table.contentlayout,
 .film-info>table.contentlayout,
 .lottery_table2 div.hideablecontent>table.contentlayout,
-td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"] .contentlayout {
+td.bottom>.torrent-title:nth-child(3)~table[width="930"][cellpadding="5"] .contentlayout {
   display: flex;
   border-radius: var(--inner-table-border-radius);
   height: 300px;
@@ -2762,14 +2776,14 @@ td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"] .conte
 #details table:first-child>tbody:first-child>tr:first-child>td:first-child>a[href*="/film/info?id="],
 .film-info>table:first-child>tbody:first-child>tr:first-child>td:first-child>a[href*="/film/info?id="],
 .lottery_table2 .contentlayout tr>td>a[href*="/film/info?id="],
-td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"] .contentlayout tr>td>a[href*="/film/info?id="] {
+td.bottom>.torrent-title:nth-child(3)~table[width="930"][cellpadding="5"] .contentlayout tr>td>a[href*="/film/info?id="] {
   box-sizing: border-box;
   display: block
 }
 #details table:first-child>tbody:first-child>tr:first-child>td:first-child>a[href*="/film/info?id="]>img,
 .film-info>table:first-child>tbody:first-child>tr:first-child>td:first-child>a[href*="/film/info?id="]>img,
 .lottery_table2 .contentlayout tr>td>a[href*="/film/info?id="]>img,
-td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"] .contentlayout tr>td>a[href*="/film/info?id="]>img {
+td.bottom>.torrent-title:nth-child(3)~table[width="930"][cellpadding="5"] .contentlayout tr>td>a[href*="/film/info?id="]>img {
   height: 300px;
   width: auto;
   object-fit: cover;
@@ -2816,7 +2830,7 @@ textarea {
   line-height: 1
 }
 .lottery_table2 div.hideablecontent>table.contentlayout>tbody:first-child>tr:first-child>td:nth-child(2)>h1,
-td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"] div.hideablecontent>table.contentlayout>tbody:first-child>tr:first-child>td:nth-child(2)>h1 {
+td.bottom>.torrent-title:nth-child(3)~table[width="930"][cellpadding="5"] div.hideablecontent>table.contentlayout>tbody:first-child>tr:first-child>td:nth-child(2)>h1 {
   margin: .5rem 1.5rem;
   font-size: 1rem;
   filter: brightness(80%)
@@ -2824,14 +2838,14 @@ td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"] div.hi
 #details>tbody:first-child>tr:nth-child(2)>td>div.hideablecontent>table.contentlayout>tbody:first-child>tr:first-child>td:nth-child(2)>h1>a[href*="imdb.com/title"],
 .film-info>table.contentlayout>tbody:first-child>tr:first-child>td:nth-child(2)>h1>a[href*="imdb.com/title"],
 .lottery_table2 div.hideablecontent>table.contentlayout>tbody:first-child>tr:first-child>td:nth-child(2)>h1>a[href*="imdb.com/title"],
-td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"] div.hideablecontent>table.contentlayout>tbody:first-child>tr:first-child>td:nth-child(2)>h1>a[href*="imdb.com/title"] {
+td.bottom>.torrent-title:nth-child(3)~table[width="930"][cellpadding="5"] div.hideablecontent>table.contentlayout>tbody:first-child>tr:first-child>td:nth-child(2)>h1>a[href*="imdb.com/title"] {
   font-size: 1.25rem;
   filter: brightness(100%)
 }
 #details>tbody:first-child>tr:nth-child(2)>td>div.hideablecontent>table.contentlayout>tbody:first-child>tr:first-child>td:nth-child(2)>h3,
 .film-info>table.contentlayout>tbody:first-child>tr:first-child>td:nth-child(2)>h3,
 .lottery_table2 div.hideablecontent>table.contentlayout>tbody:first-child>tr:first-child>td:nth-child(2)>h3,
-td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"] div.hideablecontent>table.contentlayout>tbody:first-child>tr:first-child>td:nth-child(2)>h3 {
+td.bottom>.torrent-title:nth-child(3)~table[width="930"][cellpadding="5"] div.hideablecontent>table.contentlayout>tbody:first-child>tr:first-child>td:nth-child(2)>h3 {
   margin: -.35rem 1.5rem 0;
   filter: brightness(.6);
   font-size: .75rem
@@ -2849,7 +2863,7 @@ a[href*="imdb.com/name/nm"] img[src*="imdb.png"] {
 }
 .lottery_table2 .contentlayout>tbody:first-child>tr>td#plotcell,
 table.contentlayout>tbody:first-child>tr>td#plotcell,
-td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"] .contentlayout>tbody:first-child>tr>td#plotcell {
+td.bottom>.torrent-title:nth-child(3)~table[width="930"][cellpadding="5"] .contentlayout>tbody:first-child>tr>td#plotcell {
   font-size: 13px;
   padding: 0 1.5rem
 }
@@ -2980,7 +2994,7 @@ td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"] .conte
 #details>tbody:first-child>tr:nth-child(2)>td>div.hideablecontent>table.contentlayout>tbody:first-child>tr:first-child>td:nth-child(2)>h1>a[href*="imdb.com/title"],
 .film-info>table.contentlayout>tbody:first-child>tr:first-child>td:nth-child(2)>h1>a[href*="imdb.com/title"],
 .lottery_table2 div.hideablecontent>table.contentlayout>tbody:first-child>tr:first-child>td:nth-child(2)>h1>a[href*="imdb.com/title"],
-td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"] div.hideablecontent>table.contentlayout>tbody:first-child>tr:first-child>td:nth-child(2)>h1>a[href*="imdb.com/title"] {
+td.bottom>.torrent-title:nth-child(3)~table[width="930"][cellpadding="5"] div.hideablecontent>table.contentlayout>tbody:first-child>tr:first-child>td:nth-child(2)>h1>a[href*="imdb.com/title"] {
   font-size: 1.25rem
 }
 #cast>tbody:first-child>tr:first-child>td {
@@ -3089,7 +3103,7 @@ a.list-overview:hover .list-overview__text {
 #details div.hideablecontent>.contentlayout:only-child,
 .film-info .contentlayout,
 .lottery_table2 .hideablecontent>.contentlayout,
-td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"] div.hideablecontent {
+td.bottom>.torrent-title:nth-child(3)~table[width="930"][cellpadding="5"] div.hideablecontent {
   display: flex;
   border: 1px solid var(--inner-table-border-color);
   border-radius: var(--inner-table-border-radius);
@@ -3112,7 +3126,7 @@ div.film-info {
   border-radius: var(--main-border-radius)
 }
 .lottery_table2 table.fourcell>tbody>tr,
-td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"] table.fourcell>tbody>tr {
+td.bottom>.torrent-title:nth-child(3)~table[width="930"][cellpadding="5"] table.fourcell>tbody>tr {
   margin: .2rem;
   display: flex;
   align-items: flex-start;
@@ -3189,7 +3203,7 @@ td.comment {
 }
 #details a[href*="/show.php?id="],
 .lottery_table2 a[href*="/show.php?id="],
-td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"] a[href*="/show.php?id="] {
+td.bottom>.torrent-title:nth-child(3)~table[width="930"][cellpadding="5"] a[href*="/show.php?id="] {
   display: flex;
   justify-content: space-around
 }
@@ -3235,7 +3249,7 @@ ul.showlinks>li>a[href*="anidb.net"] {
   font-size: 0;
   display: block
 }
-td.bottom>.torrent-title:nth-child(5)~table[width="930"][cellpadding="5"] {
+td.bottom>.torrent-title:nth-child(3)~table[width="930"][cellpadding="5"] {
   background: var(--background1);
   box-shadow: var(--bs);
   width: auto!important;
@@ -4152,7 +4166,7 @@ td[bgcolor="#F4F4F0"] {
   background-color: inherit!important
 }
 td.bottom:nth-child(2)>table.main:nth-child(3)>tbody:first-child>tr:first-child>td.embedded:first-child,
-td.bottom:nth-child(2)>table.main:nth-of-type(2)>tbody:first-child>tr:first-child>td.embedded:first-child {
+td.bottom:nth-child(2)>table.main:nth-of-type(2):not(table[width="500"]+table, table[width="1000"]+table)>tbody:first-child>tr:first-child>td.embedded:first-child {
   background-color: var(--background1);
   filter: var(--filterdropshadow);
   padding: 1rem;
