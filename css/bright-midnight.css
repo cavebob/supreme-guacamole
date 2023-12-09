@@ -1107,7 +1107,7 @@ td.bottom:nth-child(2)>script+table[width="800"]:nth-child(2)>tbody:first-child>
   box-sizing: border-box;
   font-weight: 700
 }
-body>table.main>tbody>tr>td.bottom:nth-child(2)>table:first-child>tbody>tr:first-child>td[width="16%"]>b>a:not(a[href*="javascript: SmileIT"],a[href*="javascript: PopMoreTags"]) {
+body>table.main>tbody>tr>td.bottom:nth-child(2)>table:first-child>tbody>tr:first-child>td[width="12%"]>b>a:not(a[href*="javascript: SmileIT"],a[href*="javascript: PopMoreTags"]) {
   background-color: var(--background1);
   display: inline-block;
   border: 1px solid var(--transparent-border-color);
@@ -1204,24 +1204,24 @@ ul#tabs {
 li.tab,
 td.bottom:nth-child(2)>h1+script+table[width="800"]:nth-child(3)>tbody:first-child>tr:first-child>td[width="20%"],
 td.bottom:nth-child(2)>script+table[width="800"]:nth-child(2)>tbody:first-child>tr:first-child>td[width="20%"],
-td.bottom>table[width="500"]>tbody>tr>td[width="16%"][align=center],
-td.bottom>table[width="800"]>tbody>tr>td[width="16%"][align=center] {
+td.bottom>table[width="500"]>tbody>tr>td[width="12%"][align=center],
+td.bottom>table[width="800"]>tbody>tr>td[width="12%"][align=center] {
   flex: 1;
   width: max-content;
   box-shadow: none;
   white-space: nowrap
 }
-td.bottom>table[width="500"]>tbody>tr>td[width="16%"][align=center]:first-child:nth-last-child(2),
-td.bottom>table[width="500"]>tbody>tr>td[width="16%"][align=center]:last-child:nth-child(2) {
+td.bottom>table[width="500"]>tbody>tr>td[width="12%"][align=center]:first-child:nth-last-child(2),
+td.bottom>table[width="500"]>tbody>tr>td[width="12%"][align=center]:last-child:nth-child(2) {
   background: var(--background1);
   box-shadow: var(--bs);
   width: 20%;
   font-size: .8125rem
 }
-td.bottom>table[width="500"]>tbody>tr>td[width="16%"][align=center]:first-child:nth-last-child(2) {
+td.bottom>table[width="500"]>tbody>tr>td[width="12%"][align=center]:first-child:nth-last-child(2) {
   border-radius: var(--main-border-radius) 0 0 var(--main-border-radius)
 }
-td.bottom>table[width="500"]>tbody>tr>td[width="16%"][align=center]:last-child:nth-child(2) {
+td.bottom>table[width="500"]>tbody>tr>td[width="12%"][align=center]:last-child:nth-child(2) {
   border-radius: 0 var(--main-border-radius) var(--main-border-radius) 0
 }
 li.tab a {
@@ -1229,7 +1229,7 @@ li.tab a {
 }
 #tabs>.tab a:hover,
 .tab\ selected a:hover,
-body>table.main>tbody>tr>td.bottom:nth-child(2)>table:first-child>tbody:first-child>tr:first-child td[width="16%"]>b>a:not(a[href*="javascript: SmileIT"]):hover,
+body>table.main>tbody>tr>td.bottom:nth-child(2)>table:first-child>tbody:first-child>tr:first-child td[width="12%"]>b>a:not(a[href*="javascript: SmileIT"]):hover,
 td.bottom:nth-child(2)>h1+script+table[width="800"]:nth-child(3)>tbody:first-child>tr:first-child>td[width="20%"] a:hover,
 td.bottom:nth-child(2)>script+table[width="800"]:nth-child(2)>tbody:first-child>tr:first-child>td[width="20%"] a:hover {
   border-radius: var(--top-menu-border-radius);
