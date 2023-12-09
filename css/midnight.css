@@ -272,7 +272,7 @@ td.bottom>table>tbody>tr>td[width="20%"] a:hover {
 td.bottom>table>tbody>tr>td[width="20%"] a {
   display: contents
 }
-body>table.main:nth-child(3) {
+body>#header~.main {
   position: relative;
   margin-top: 1rem;
   box-sizing: border-box;
@@ -1562,11 +1562,11 @@ table.message:nth-child(6)>tbody:first-child>tr:first-child>td:first-child>div:n
   border-radius: var(--input-box-border-radius);
   height: var(--input-box-height)
 }
-body>table.main:nth-child(3)>tbody:first-child>tr:first-child {
+body>#header~.main>tbody:first-child>tr:first-child {
   display: flex;
   gap: 1rem
 }
-body>table.main:nth-child(3)>tbody:first-child>tr:first-child>td:nth-child(2) {
+body>#header~.main>tbody:first-child>tr:first-child>td:nth-child(2) {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -4736,11 +4736,11 @@ div[style="width: 900px; text-align: left"] a[href*="/lists/view"]+br {
 div[style="width: 900px; text-align: left"]>a[href*="/lists/view"]:last-of-type {
   border-radius: 0 0 var(--main-border-radius) var(--main-border-radius)
 }
-body>table.main:nth-child(3)>tbody:first-child>tr:first-child>td.bottom:nth-child(2)>table.main:first-child:nth-last-child(8)>tbody:first-child>tr:first-child>td.embedded:first-child:last-child {
+body>#header~.main>tbody:first-child>tr:first-child>td.bottom:nth-child(2)>table.main:first-child:nth-last-child(8)>tbody:first-child>tr:first-child>td.embedded:first-child:last-child {
   width: 36rem;
   white-space: normal
 }
-body>table.main:nth-child(3)>tbody:first-child>tr:first-child>td.bottom:nth-child(2)>table.main:first-child:nth-last-child(8)>tbody:first-child>tr:first-child {
+body>#header~.main>tbody:first-child>tr:first-child>td.bottom:nth-child(2)>table.main:first-child:nth-last-child(8)>tbody:first-child>tr:first-child {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -6674,13 +6674,13 @@ img[alt=Read] {
   #sidebar-container {
     display: none
   }
-  body>table.main:nth-child(3)>tbody:first-child>tr:first-child>td:nth-child(2) {
+  body>#header~.main>tbody:first-child>tr:first-child>td:nth-child(2) {
     display: flex;
     justify-content: center;
     flex: 100%;
     align-items: center
   }
-  body>table.main:nth-child(3)>tbody:first-child>tr:first-child {
+  body>#header~.main>tbody:first-child>tr:first-child {
     display: flex;
     gap: 1rem
   }
