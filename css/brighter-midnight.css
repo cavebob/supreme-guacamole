@@ -6899,3 +6899,117 @@ a>.tag.internal {
 u {
   text-decoration: underline
 }
+/* ############################################ */
+/* ########## Christmas present page ########## */
+/* ### Unintended styling issues elsewhere? ### */
+/* ############################################ */
+body > .main > tbody > tr > td.bottom > h1.center + table:not(table#tags),
+body > .main > tbody > tr > td.bottom > h1.center + table.main + br + .alert-box + br + br + table:not(table#tags),
+body > .main > tbody > tr > td.bottom > h1.center + table.main + br + br + br + table:not(table#tags)  {
+  display: flex;
+  max-width: 64rem;
+  box-sizing: border-box;
+  background-color: var(--background1);
+  border-radius: var(--main-border-radius);
+}
+body > .main > tbody > tr > td.bottom > h1.center ~ a[class^="alert-box"] {
+  font-size: var(--font-size);
+  color: var(--red);
+  border:1px solid ;
+  letter-spacing: normal;
+  -webkit-transition: none;
+  transition: none;
+  -webkit-animation: none;
+  animation: none;
+}
+body > .main > tbody > tr > td.bottom > h1.center + table:first-of-type td.embedded {
+  display: flex;
+  padding: 0.3rem 1rem 1rem 1rem;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-around;
+  gap: 0.5rem;
+}
+body > .main > tbody > tr > td.bottom > h1.center + table:first-of-type td.embedded h2 {
+  flex: 100%;
+  border-bottom: 1px solid var(--inner-table-border-color)
+}
+body > .main > tbody > tr > td.bottom > h1.center ~ br + table:last-of-type:not(table#tags, table.main) {
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  row-gap: 1rem;
+  column-gap: 0rem;
+  padding: 1rem;
+  width: auto;
+}
+body > .main > tbody > tr > td.bottom > h1.center ~ br + table:last-of-type:not(table#tags, table.main) > tbody,
+body > .main > tbody > tr > td.bottom > h1.center ~ br + table:last-of-type:not(table#tags, table.main) > tbody > tr,
+body > .main > tbody > tr > td.bottom > h1.center ~ br + table:last-of-type:not(table#tags, table.main) > tbody > tr > td,
+body > .main > tbody > tr > td.bottom > h1.center ~ br + table:last-of-type:not(table#tags, table.main) > tbody > tr > td > table{
+  display: contents;
+}
+body > .main > tbody > tr > td.bottom > h1.center ~ br + table:last-of-type:not(table#tags, table.main) > tbody > tr > td > table > tbody {
+  flex: 1 0 100%;
+  min-width: min-content;
+  max-width: 22%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+  border: 1px solid var(--inner-table-border-color);
+  border-radius: var(--inner-table-border-radius);
+  overflow: clip;
+}
+body > .main > tbody > tr > td.bottom > h1.center ~ br + table:last-of-type:not(table#tags, table.main) > tbody > tr > td > table > tbody > tr:first-child {
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: var(--inner-th-bg-color);
+  flex: 100%;
+  display: flex;
+  justify-content: center
+}
+body > .main > tbody > tr > td.bottom > h1.center ~ br + table:last-of-type:not(table#tags, table.main) > tbody > tr > td > table > tbody > tr:last-child:nth-child(2){
+  background-color: rgba(255, 255, 255, 0.021);
+  flex: 100%
+}
+body > .main > tbody > tr > td.bottom > h1.center ~ br + table:last-of-type:not(table#tags, table.main) > tbody > tr > td > table > tbody:hover {
+  border: 1px solid var(--highlighted-border-hover-color);
+}
+body > .main > tbody > tr > td.bottom > h1.center ~ br + table:last-of-type:not(table#tags, table.main) > tbody > tr > td > table > tbody:hover> tr:first-child {
+  background: var(--svg-gradient-bg-hover-color);
+  -moz-transition: all 0.25s ease; 
+  -webkit-transition: all 0.25s ease; 
+  -o-transition: all 0.25s ease;
+  transition:all 0.25s ease;
+}
+body > .main > tbody > tr > td.bottom > h1.center ~ br + table:last-of-type:not(table#tags, table.main) > tbody > tr > td > table > tbody:hover> tr:last-child  {
+  background-color: var(--inner-td-bg-color);
+  -moz-transition: all 0.25s ease; 
+  -webkit-transition: all 0.25s ease; 
+  -o-transition: all 0.25s ease;
+  transition:all 0.25s ease;
+}
+body > .main > tbody > tr > td.bottom > h1.center ~ br + table:last-of-type:not(table#tags, table.main) > tbody > tr > td > table > tbody:hover> tr:first-child > td > strong{
+color: var(--background0);
+-moz-transition: all 0.25s ease; 
+-webkit-transition: all 0.25s ease; 
+-o-transition: all 0.25s ease;
+transition:all 0.25s ease;
+}
+body > .main > tbody > tr > td.bottom > h1.center ~ br + table:last-of-type:not(table#tags, table.main) > tbody > tr > td > table > tbody > tr:last-child > td[width="200"] {
+  display: block;
+  transform: scale(0.8);
+  -moz-transition: all 0.25s ease; 
+  -webkit-transition: all 0.25s ease; 
+  -o-transition: all 0.25s ease;
+  transition:all 0.25s ease;
+}
+body > .main > tbody > tr > td.bottom > h1.center ~ br + table:last-of-type:not(table#tags, table.main) > tbody > tr > td > table > tbody:hover > tr:last-child > td[width="200"] {
+  transform: scale(0.9);
+  -moz-transition: all 0.25s ease; 
+  -webkit-transition: all 0.25s ease; 
+  -o-transition: all 0.25s ease;
+  transition:all 0.25s ease;
+} 
