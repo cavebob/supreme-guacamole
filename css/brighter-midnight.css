@@ -4555,7 +4555,7 @@ tr>td>strong>a[href*="/userdetails"] {
 td.bottom form[method=get][action=""][style="margin-bottom:20px;"]+table[cellpadding="5"]>tbody>tr>td {
   line-height: 1.25rem
 }
-.lottery_table tr>td,
+.lottery_table tr>td:not(.nopad),
 .lottery_table tr>th {
   padding: .2rem .5rem!important
 }
