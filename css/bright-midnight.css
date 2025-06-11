@@ -1878,7 +1878,7 @@ div.chosen-container.chosen-container-multi.chosen.chosen-with-drop.chosen-conta
   display: block;
   width: 12px;
   height: 12px;
-  background: url(/pic/chosen-sprite.png) -42px 1px no-repeat;
+  background: none;
   font-size: 1px
 }
 .chosen-container-multi .chosen-choices li.search-choice-focus .search-choice-close,
@@ -1898,7 +1898,7 @@ div.chosen-container.chosen-container-multi.chosen.chosen-with-drop.chosen-conta
   display: block;
   width: 100%;
   height: 100%;
-  background: url(/pic/chosen-sprite.png) 0 2px no-repeat
+  background: none
 }
 .chosen-container-single .chosen-search {
   position: relative;
@@ -1913,7 +1913,7 @@ div.chosen-container.chosen-container-multi.chosen.chosen-with-drop.chosen-conta
   width: 100%;
   height: auto;
   outline: 0;
-  background: url(/pic/chosen-sprite.png) 100% -20px no-repeat;
+  background: 0;
   font-size: 1em;
   font-family: sans-serif;
   line-height: normal;

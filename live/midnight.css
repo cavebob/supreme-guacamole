@@ -38,7 +38,7 @@
   --font-size: .6875rem;
   --top-menu-border-radius: .5rem;
   --svg-gradient-bg-hover-color: linear-gradient(135deg, hsl(195, 100%, 57%), hsl(225, 100%, 69%));
-  --logo-url: url("../pic/midnight/logo/logo.svg");
+  --logo-url: url("/pic/midnight/logo/logo.svg");
   --logo-gradient: linear-gradient(45turn, hsl(2, 72%, 70%), hsl(48, 75%, 75%));
   --highlighted-border-hover-color: hsla(207, 56%, 60%, .5);
   --highlighted-input-border-focus-color: hsl(207, 44%, 49%);
@@ -537,7 +537,7 @@ textarea:focus {
   display: inline-block;
   padding: 12px;
   margin-left: -1.5rem;
-  background: url("../pic/midnight/loupe.png") center no-repeat;
+  background: url("/pic/midnight/loupe.png") center no-repeat;
   filter: brightness(70%);
   cursor: pointer;
   border: 1px solid transparent;
@@ -751,7 +751,7 @@ div.curuser-stats:nth-child(3) {
 #donate_bitcoin::before {
   box-sizing: border-box;
   content: "";
-  background-image: url("../pic/midnight/icon/btc.svg");
+  background-image: url("/pic/midnight/icon/btc.svg");
   background-size: 22px 22px;
   width: 22px;
   height: 22px;
@@ -783,8 +783,8 @@ div.curuser-stats:first-child>b:first-child>a[href*="userdetails.php?"]:hover {
 }
 .inbox,
 .inboxnew {
-  -webkit-mask: url("../pic/midnight/icon/mail.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/mail.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/mail.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/mail.svg") center no-repeat;
   height: 1.5rem;
   align-self: center
 }
@@ -898,8 +898,8 @@ div.curuser-stats:first-child>a[href*="my.php"]::before {
   content: "";
   display: flex;
   background: var(--svg-gradient-bg-hover-color);
-  -webkit-mask: url("../pic/midnight/icon/profile.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/profile.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/profile.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/profile.svg") center no-repeat;
   -webkit-mask-size: 70%;
   mask-size: 70%;
   width: 2.1875rem;
@@ -911,8 +911,8 @@ div.curuser-stats:first-child>a[href*="logout.php"]::before {
   content: "";
   display: flex;
   background: var(--svg-gradient-bg-hover-color);
-  -webkit-mask: url("../pic/midnight/icon/logout.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/logout.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/logout.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/logout.svg") center no-repeat;
   -webkit-mask-size: 55%;
   mask-size: 55%;
   width: 2.1875rem;
@@ -947,19 +947,19 @@ div.curuser-stats:nth-child(3)>a[href*="mytorrents.php"]:hover {
 }
 .donor {
   grid-area: dnr;
-  background: url("../pic/midnight/star2.png");
+  background: url("/pic/midnight/star2.png");
   height: 10px;
   width: .6875rem;
   margin-left: -13px;
   opacity: 1
 }
 img[src*="starbig.gif"] {
-  background-image: url("../pic/midnight/star2.png")!important
+  background-image: url("/pic/midnight/star2.png")!important
 }
 .buddylist {
   background: var(--svg-gradient-bg-hover-color);
-  -webkit-mask: url("../pic/midnight/icon/friends.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/friends.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/friends.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/friends.svg") center no-repeat;
   width: 2.1875rem;
   height: 1.25rem;
   border-radius: var(--input-box-border-radius);
@@ -968,8 +968,8 @@ img[src*="starbig.gif"] {
 }
 .mytorrents {
   background: var(--svg-gradient-bg-hover-color);
-  -webkit-mask: url("../pic/midnight/icon/mytorrents.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/mytorrents.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/mytorrents.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/mytorrents.svg") center no-repeat;
   width: 2.1875rem;
   height: 1.25rem;
   border-radius: var(--input-box-border-radius);
@@ -1167,8 +1167,8 @@ html body table.main td.bottom table.main td.embedded h2+table[width="100%"][bor
   display: inline-flex;
   margin: 0;
   background: var(--svg-gradient-bg-hover-color);
-  -webkit-mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/rss.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/rss.svg") center no-repeat;
   max-width: 1rem;
   height: 1rem;
   filter: brightness(90%);
@@ -2375,32 +2375,32 @@ a[href*="javascript:delBookmark"] {
 }
 a.js-download {
   background: var(--svg-gradient-bg-hover-color);
-  -webkit-mask: url("../pic/midnight/icon/download.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/download.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/download.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/download.svg") center no-repeat;
   width: 1rem;
   height: 1rem;
   filter: brightness(90%)
 }
 a.js-rssadd {
   background: var(--svg-gradient-bg-hover-color);
-  -webkit-mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/rss.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/rss.svg") center no-repeat;
   width: 1rem;
   height: 1rem;
   filter: brightness(90%)
 }
 a.js-rssdel {
   background: var(--red);
-  -webkit-mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/rss.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/rss.svg") center no-repeat;
   width: 1rem;
   height: 1rem;
   filter: brightness(90%)
 }
 a.js-bookmarkadd {
   background: var(--svg-gradient-bg-hover-color);
-  -webkit-mask: url("../pic/midnight/icon/bookmark.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/bookmark.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/bookmark.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/bookmark.svg") center no-repeat;
   width: 1rem;
   height: 1rem;
   filter: brightness(90%)
@@ -2408,8 +2408,8 @@ a.js-bookmarkadd {
 a.js-bookmarkdel,
 a[href*="javascript:delBookmark"] {
   background: var(--red);
-  -webkit-mask: url("../pic/midnight/icon/bookmark.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/bookmark.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/bookmark.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/bookmark.svg") center no-repeat;
   width: 1rem;
   height: 1rem;
   filter: brightness(90%)
@@ -2419,8 +2419,8 @@ a[title="Add this film to your wishlist"],
 a[title="Add to wishlist"],
 a[title="Add to wishlist"][onclick*=delWishlist],
 img.info__wishlist {
-  -webkit-mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/wishlist.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/wishlist.svg") center no-repeat;
   background: var(--svg-gradient-bg-hover-color);
   width: 1rem;
   height: 1rem;
@@ -2441,8 +2441,8 @@ a[onclick*=removeFromWishlist],
 a[title="Remove from wishlist"],
 a[title="Remove this film from your wishlist"] {
   background: var(--red);
-  -webkit-mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/wishlist.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/wishlist.svg") center no-repeat;
   width: 1rem;
   height: 1rem;
   filter: brightness(90%);
@@ -2455,8 +2455,8 @@ a[title="Remove from wishlist"],
 a[title="Remove this film from your wishlist"] {
   display: inline-block;
   background: var(--red);
-  -webkit-mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/wishlist.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/wishlist.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/wishlist.svg") center no-repeat;
   width: 1rem;
   height: 1rem;
   filter: brightness(90%);
@@ -2724,8 +2724,8 @@ a.index.js-download {
 }
 #details>tbody:first-child>tr:first-child>td>a[id^=rss] {
   background: var(--svg-gradient-bg-hover-color);
-  -webkit-mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/rss.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/rss.svg") center no-repeat;
   width: 1rem;
   height: 1rem;
   filter: brightness(90%);
@@ -3223,7 +3223,7 @@ ul.showlinks>li:hover {
   filter: brightness(160%)
 }
 ul.showlinks>li>a[href*="tvdb.com/?tab=series"] {
-  background: url("../pic/midnight/icon/tvdb.svg") center no-repeat;
+  background: url("/pic/midnight/icon/tvdb.svg") center no-repeat;
   width: 2.5rem;
   height: 1.25rem;
   filter: brightness(60%);
@@ -3231,7 +3231,7 @@ ul.showlinks>li>a[href*="tvdb.com/?tab=series"] {
   display: block
 }
 ul.showlinks>li>a[href*="imdb.com/title/tt"] {
-  background: url("../pic/midnight/icon/imdb.svg") center no-repeat;
+  background: url("/pic/midnight/icon/imdb.svg") center no-repeat;
   width: 2.5rem;
   height: 1.25rem;
   filter: brightness(60%);
@@ -3239,7 +3239,7 @@ ul.showlinks>li>a[href*="imdb.com/title/tt"] {
   display: block
 }
 ul.showlinks>li>a[href*="anidb.net"] {
-  background: url("../pic/midnight/icon/anidb.webp") center no-repeat;
+  background: url("/pic/midnight/icon/anidb.webp") center no-repeat;
   width: 3.5rem;
   height: 1.25rem;
   filter: brightness(60%);
@@ -3773,8 +3773,8 @@ p.sig img {
 div.default_avatar {
   max-width: 150px;
   max-height: 150px;
-  -webkit-mask: url("../pic/midnight/icon/avatar.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/avatar.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/avatar.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/avatar.svg") center no-repeat;
   background: var(--default-avatar-color);
   width: 150px;
   height: 150px
@@ -4861,7 +4861,7 @@ td.bottom:nth-child(2)>table.main:nth-of-type(2):nth-last-child(2)>tbody:first-c
 img[src*="star.gif"][alt=Donor] {
   display: inline-block;
   box-sizing: border-box;
-  background: url("../pic/midnight/star2.png") no-repeat;
+  background: url("/pic/midnight/star2.png") no-repeat;
   width: 11px;
   height: 10px;
   padding-left: 11px
@@ -4869,7 +4869,7 @@ img[src*="star.gif"][alt=Donor] {
 img[src*="starbig.gif"][alt=Donor] {
   display: inline-block;
   box-sizing: border-box;
-  background: url("../pic/midnight/star2.png") no-repeat;
+  background: url("/pic/midnight/star2.png") no-repeat;
   width: 11px;
   height: 10px;
   padding-left: 11px
@@ -4880,8 +4880,8 @@ img[src*="disabled.gif"] {
   width: 11px;
   height: 11px;
   padding-left: 11px;
-  -webkit-mask: url("../pic/midnight/icon/disabled.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/disabled.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/disabled.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/disabled.svg") center no-repeat;
   background: #c83232;
   margin-bottom: -1px
 }
@@ -4891,8 +4891,8 @@ img[src*="disabledbig.gif"] {
   width: 16px;
   height: 16px;
   padding-left: 16px;
-  -webkit-mask: url("../pic/midnight/icon/disabled.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/disabled.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/disabled.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/disabled.svg") center no-repeat;
   background: #c83232;
   margin-bottom: -1px
 }
@@ -4902,8 +4902,8 @@ img[src*="warned.gif"][alt=Warned] {
   width: 13px;
   height: 13px;
   padding-left: 13px;
-  -webkit-mask: url("../pic/midnight/icon/warned.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/warned.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/warned.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/warned.svg") center no-repeat;
   background: #c83232
 }
 img[src*="warnedbig.gif"][alt=Warned] {
@@ -4912,32 +4912,32 @@ img[src*="warnedbig.gif"][alt=Warned] {
   width: 16px;
   height: 16px;
   padding-left: 16px;
-  -webkit-mask: url("../pic/midnight/icon/warned.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/warned.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/warned.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/warned.svg") center no-repeat;
   background: #c83232
 }
 .unlockednew {
   width: 30px;
   height: 30px;
-  background: url("../pic/midnight/unlockednew.png") center no-repeat
+  background: url("/pic/midnight/unlockednew.png") center no-repeat
 }
 .unlocked {
   width: 30px;
   height: 30px;
-  background: url("../pic/midnight/unlocked.png") center no-repeat
+  background: url("/pic/midnight/unlocked.png") center no-repeat
 }
 .lockednew {
   width: 30px;
   height: 30px;
-  background: url("../pic/midnight/lockednew.png") center no-repeat
+  background: url("/pic/midnight/lockednew.png") center no-repeat
 }
 .locked {
   width: 30px;
   height: 30px;
-  background: url("../pic/midnight/locked.png") center no-repeat
+  background: url("/pic/midnight/locked.png") center no-repeat
 }
 .hasposted::after {
-  content: url("../pic/midnight/hasposted.png");
+  content: url("/pic/midnight/hasposted.png");
   display: block;
   height: 8px;
   width: 8px;
@@ -4955,14 +4955,14 @@ img[src*="/top.gif"][alt=Top] {
   width: 13px;
   height: 13px;
   padding-left: 13px;
-  -webkit-mask: url("../pic/midnight/icon/top.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/top.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/top.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/top.svg") center no-repeat;
   background: #4682b4
 }
 img[src*="/icon_latest_reply.gif"][alt="Last post"] {
   display: inline-block;
   box-sizing: border-box;
-  background: url("../pic/midnight/golatest.png") center no-repeat;
+  background: url("/pic/midnight/golatest.png") center no-repeat;
   width: 13px;
   height: 10px;
   padding-left: 13px;
@@ -5243,9 +5243,9 @@ div.default_avatar_small[style^="width:75px"] {
   max-height: 150px;
   height: 80px;
   width: 70px!important;
-  -webkit-mask: url("../pic/midnight/icon/avatar.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/avatar.svg") center no-repeat;
   -webkit-mask-size: fill;
-  mask: url("../pic/midnight/icon/avatar.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/avatar.svg") center no-repeat;
   mask-size: fill;
   background: rgba(51,96,133,.501)
 }
@@ -5867,8 +5867,8 @@ li.notorrents h3 {
 .torrent-download.js-download {
   margin: 0;
   background: var(--svg-gradient-bg-hover-color);
-  -webkit-mask: url("../pic/midnight/icon/download.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/download.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/download.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/download.svg") center no-repeat;
   width: 1rem;
   height: 1rem;
   filter: brightness(90%)
@@ -5877,8 +5877,8 @@ li.notorrents h3 {
 .tv-torrent-watched {
   display: inline-block;
   background: var(--svg-gradient-bg-hover-color);
-  -webkit-mask: url("../pic/midnight/icon/watched.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/watched.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/watched.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/watched.svg") center no-repeat;
   width: 1rem;
   height: 1rem;
   border-radius: var(--input-box-border-radius);
@@ -5895,8 +5895,8 @@ a[href*="javascript:addRss"] {
   display: inline-block;
   margin: 0;
   background: var(--svg-gradient-bg-hover-color);
-  -webkit-mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/rss.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/rss.svg") center no-repeat;
   width: 1rem;
   height: 1rem;
   filter: brightness(90%)
@@ -5904,8 +5904,8 @@ a[href*="javascript:addRss"] {
 a.js-rssdel {
   margin: 0;
   background: var(--red);
-  -webkit-mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/rss.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/rss.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/rss.svg") center no-repeat;
   width: 1rem;
   height: 1rem;
   filter: brightness(90%)
@@ -6632,8 +6632,8 @@ img[alt*=Online] {
 }
 img[alt="Send PM"] {
   background: var(--svg-gradient-bg-hover-color);
-  -webkit-mask: url("../pic/midnight/icon/mail.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/mail.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/mail.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/mail.svg") center no-repeat;
   height: 1.2rem;
   width: 1.25rem;
   align-self: center;
@@ -6643,8 +6643,8 @@ img[alt="Send PM"] {
 }
 img[alt=Read] {
   background: var(--svg-gradient-bg-hover-color);
-  -webkit-mask: url("../pic/midnight/icon/mail.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/mail.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/mail.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/mail.svg") center no-repeat;
   height: 1rem;
   width: 1rem;
   align-self: center;
@@ -6656,8 +6656,8 @@ img[alt=Read] {
 #details a[href*="/sendmessageanon.php?id"] {
   content: "";
   background: var(--svg-gradient-bg-hover-color);
-  -webkit-mask: url("../pic/midnight/icon/mail.svg") center no-repeat;
-  mask: url("../pic/midnight/icon/mail.svg") center no-repeat;
+  -webkit-mask: url("/pic/midnight/icon/mail.svg") center no-repeat;
+  mask: url("/pic/midnight/icon/mail.svg") center no-repeat;
   height: 14px;
   width: 1rem;
   align-self: center;
